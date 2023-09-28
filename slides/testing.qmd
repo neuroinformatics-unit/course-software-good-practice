@@ -11,15 +11,16 @@
 
 ## How to think about what to test
 
-Try to cover all bases[^1]: what happens if ...?
-* I pass an invalid input ("zero")
-* I pass a simplest possible input ("one")
-* I run the code several times ("two")
-* I pass a typical input ("two to max-1")
-* I pass the extremest allowable input ("max")
-* I pass a too extreme input ("max+1")
+Try to cover all bases[^2]: what happens if ...?  
 
-[^1]https://www.freecodecamp.org/news/a-beginners-guide-to-testing-implement-these-quick-checks-to-test-your-code-d50027ad5eed/
+* I pass an invalid input ("zero")  
+* I pass a simplest possible input ("one")  
+* I run the code several times ("two")  
+* I pass a typical input ("two to max-1")  
+* I pass the extremest allowable input ("max")  
+* I pass a too extreme input ("max+1")  
+
+[^2]: [A Beginner’s Guide to Testing: Error Handling Edge Cases](https://www.freecodecamp.org/news/a-beginners-guide-to-testing-implement-these-quick-checks-to-test-your-code-d50027ad5eed/)
 
 ## What test cases should be covered?
 
