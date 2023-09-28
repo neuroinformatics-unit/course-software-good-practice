@@ -1,0 +1,107 @@
+## What does packaging mean?
+
+:::: {.columns}
+
+::: {.column width="50%"}
+![Photo by <a href="https://unsplash.com/@kseegars?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Kadarius Seegars</a> on <a href="https://unsplash.com/photos/DevJkLB3hWE?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>](img/kadarius-seegars-DevJkLB3hWE-unsplash.jpg){height=400}
+:::
+
+::: {.column width="50%"}
+Packaging your code makes it easy-to-install.
+
+```{.bash code-line-numbers="false"}
+pip install my-awesome-package
+```
+:::
+
+::::
+
+## The Python package structure
+
+:::: {.columns}
+
+::: {.column width="50%"}
+![Photo by <a href="https://unsplash.com/@kseegars?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Kadarius Seegars</a> on <a href="https://unsplash.com/photos/DevJkLB3hWE?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>](img/kadarius-seegars-DevJkLB3hWE-unsplash.jpg){height=400}
+:::
+
+::: {.column width="50%"}
+```
+└── my-awesome-package/
+	├── LICENSE
+	├── MANIFEST.in
+	├── README.md
+	├── pyproject.toml
+	├── tox.ini
+	├── docs/
+	├── my_awesome_package/
+	│	└── __init__.py
+	│	└── do_something_awesome.py
+	└── tests/
+		├── __init__.py
+		└──  test_placeholder.py
+```
+:::
+
+::::
+
+## Automating package creation
+
+
+:::: {.columns}
+::: {.column width="50%"}
+![Photo by <a href="https://unsplash.com/@nevenkrcmarek?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Neven Krcmarek</a> on <a href="https://unsplash.com/photos/0TH1H1rq_eY?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>](img/neven-krcmarek-0TH1H1rq_eY-unsplash.jpg){height=400}
+:::
+
+::: {.column width="50%"}
+Use [the NIU cookiecutter template](https://github.com/neuroinformatics-unit/python-cookiecutter).
+
+```{.bash code-line-numbers="false"}
+conda create -n "playground"
+conda activate playground
+pip install cookiecutter
+cookiecutter https://github.com/neuroinformatics-unit/python-cookiecutter 
+```
+:::
+::::
+
+
+## The Python Package Index (PyPi)
+
+:::: {.columns}
+::: {.column width="50%"}
+![](img/logo-large.9f732b5f.svg){height=400}
+:::
+
+::: {.column width="50%"}
+* Once it's ready, publish your package.
+* [Python packaging tutorial](https://packaging.python.org/en/latest/tutorials/packaging-projects/)
+:::
+::::
+
+## Summary
+
+:::: {.columns}
+
+::: {.column width="50%"}
+![Photo by <a href="https://unsplash.com/@kseegars?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Kadarius Seegars</a> on <a href="https://unsplash.com/photos/DevJkLB3hWE?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>](img/kadarius-seegars-DevJkLB3hWE-unsplash.jpg){height=400}
+:::
+
+::: {.column width="50%"}
+```
+└── my-awesome-package/
+	├── LICENSE
+	├── MANIFEST.in
+	├── README.md
+	├── pyproject.toml
+	├── tox.ini
+	├── docs/
+	├── my_awesome_package/
+	│	└── __init__.py
+	│	└── do_something_awesome.py
+	└── tests/
+		├── __init__.py
+		└──  test_placeholder.py
+```
+:::
+
+::::

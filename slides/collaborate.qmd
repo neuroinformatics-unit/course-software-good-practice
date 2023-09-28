@@ -1,0 +1,82 @@
+## Collaborative coding
+
+:::: {.columns}
+
+::: {.column width="50%"}
+![Photo by <a href="https://unsplash.com/@mparzuchowski?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Michał Parzuchowski</a> on <a href="https://unsplash.com/photos/yqD-v4fidt0?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>](img/michal-parzuchowski-yqD-v4fidt0-unsplash.jpg){height=400}
+:::
+
+::: {.column width="50%"}
+* benefits from different perspectives
+* needs communication and coordination of tasks
+:::
+::::
+
+## [The development cycle](https://github.com/neuroinformatics-unit/rse-best-practices-playground){preview-link="true" style="text-align: center"}  {.smaller}
+
+:::: {.columns}
+
+::: {.column width="50%"}
+![Photo by <a href="https://unsplash.com/@mparzuchowski?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Michał Parzuchowski</a> on <a href="https://unsplash.com/photos/yqD-v4fidt0?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>](img/michal-parzuchowski-yqD-v4fidt0-unsplash.jpg){height=400}
+:::
+
+::: {.column width="50%"}
+* open/choose an task
+* fork a repository/make a branch
+* add collaborators
+* contribute a solution to the task
+* open a pull request
+* review a pull request
+:::
+::::
+
+## Setting up our playgrounds
+
+:::: {.columns}
+
+::: {.column width="29%"}
+![Photo by <a href="https://unsplash.com/@tlemaitre?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Thierry Lemaitre</a> on <a href="https://unsplash.com/photos/DCTz78QCY24?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>](img/thierry-lemaitre-DCTz78QCY24-unsplash.jpg){height=500}
+:::
+
+::: {.column width="70%"}
+* fork [the playground repository](https://github.com/neuroinformatics-unit/rse-best-practices-playground) on GitHub
+* locally, ensure your `conda` env is activated
+```{.bash code-line-numbers="false"}
+git clone git@github.com:<YOUR_GITHUB_USERNAME>/rse-best-practices-playground
+```
+:::
+::::
+
+
+
+## Code review and issue tracking
+:::: {.columns}
+
+::: {.column width="50%"}
+![Photo by <a href="https://unsplash.com/@mparzuchowski?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Michał Parzuchowski</a> on <a href="https://unsplash.com/photos/yqD-v4fidt0?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>](img/michal-parzuchowski-yqD-v4fidt0-unsplash.jpg){height=400}
+:::
+
+::: {.column width="50%"}
+* [Step-by-step guide](https://blog.ossph.org/a-beginners-guide-to-contributing-to-open-source-projects/)
+* Advice on how to do code review:
+  * as [an author](https://mtlynch.io/code-review-love/)
+  * as [a reviewer](https://mtlynch.io/human-code-reviews-1/)
+* The Zeigarnik effect: Why creating issues [helps you switch off](https://todoist.com/inspiration/zeigarnik-effect-comic)
+:::
+::::
+
+## Collaborative coding
+
+:::: {.columns}
+
+::: {.column width="50%"}
+![Photo by <a href="https://unsplash.com/@mparzuchowski?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Michał Parzuchowski</a> on <a href="https://unsplash.com/photos/yqD-v4fidt0?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>](img/michal-parzuchowski-yqD-v4fidt0-unsplash.jpg){height=400}
+:::
+
+::: {.column width="50%"}
+* track and prioritise issues
+* solve one issue at a time
+* submit a solution (PR) for discussion
+* let someone review your solution
+:::
+::::

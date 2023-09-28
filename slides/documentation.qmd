@@ -1,0 +1,13 @@
+## What goes into documentation
+
+## Docstrings and 
+
+## What does this function do?
+
+{{< include slides/mentimeter.qmd >}}
+
+## A first task: [writing a docstring](https://github.com/neuroinformatics-unit/rse-best-practices-playground)
+
+::: {style="text-align: center; margin-top: 1em"}
+[Exercise: write a docstring](https://packaging.python.org/en/latest/tutorials/packaging-projects/)
+:::
