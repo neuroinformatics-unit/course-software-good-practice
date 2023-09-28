@@ -21,10 +21,10 @@
 :::
 
 ::: {.column width="50%"}
-* open/choose a task
-* fork a repository/make a branch
+* open / choose a task
+* fork a repository / make a branch
 * add collaborators
-* contribute a solution to the task
+* contribute to a solution to the task
 * open a pull request
 * review a pull request
 :::
