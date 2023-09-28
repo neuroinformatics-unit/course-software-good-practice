@@ -21,7 +21,7 @@
 :::
 
 ::: {.column width="50%"}
-* open/choose an task
+* open/choose a task
 * fork a repository/make a branch
 * add collaborators
 * contribute a solution to the task
