@@ -38,7 +38,7 @@
 ![Photo by <a href="https://unsplash.com/@tlemaitre?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Thierry Lemaitre</a> on <a href="https://unsplash.com/photos/DCTz78QCY24?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>](img/thierry-lemaitre-DCTz78QCY24-unsplash.jpg){height=500}
 :::
 
-::: {.column width="70%"}
+::: {.column width="50%"}
 * fork [the playground repository](https://github.com/neuroinformatics-unit/rse-best-practices-playground) on GitHub
 * locally, ensure your `conda` env is activated
 ```{.bash code-line-numbers="false"}
