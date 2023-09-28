@@ -12,7 +12,7 @@
 :::
 ::::
 
-## [The development cycle](https://github.com/neuroinformatics-unit/rse-best-practices-playground){preview-link="true" style="text-align: center"}  {.smaller}
+## [The development cycle](https://github.com/neuroinformatics-unit/rse-best-practices-playground){preview-link="true" style="text-align: center"} 
 
 :::: {.columns}
 
