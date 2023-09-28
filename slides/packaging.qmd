@@ -38,7 +38,7 @@ pip install my-awesome-package
 	│	└── do_something_awesome.py
 	└── tests/
 		├── __init__.py
-		└──  test_placeholder.py
+		└── test_placeholder.py
 ```
 :::
 
@@ -100,7 +100,7 @@ cookiecutter https://github.com/neuroinformatics-unit/python-cookiecutter
 	│	└── do_something_awesome.py
 	└── tests/
 		├── __init__.py
-		└──  test_placeholder.py
+		└── test_placeholder.py
 ```
 :::
 
