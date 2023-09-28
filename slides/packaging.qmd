@@ -2,7 +2,7 @@
 
 :::: {.columns}
 
-::: {.column width="50%"}
+::: {.column width="50%" style="font-size: 0.5em;"}
 ![Photo by <a href="https://unsplash.com/@kseegars?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Kadarius Seegars</a> on <a href="https://unsplash.com/photos/DevJkLB3hWE?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>](img/kadarius-seegars-DevJkLB3hWE-unsplash.jpg){height=400}
 :::
 
@@ -20,7 +20,7 @@ pip install my-awesome-package
 
 :::: {.columns}
 
-::: {.column width="50%"}
+::: {.column width="50%" style="font-size: 0.5em;"}
 ![Photo by <a href="https://unsplash.com/@kseegars?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Kadarius Seegars</a> on <a href="https://unsplash.com/photos/DevJkLB3hWE?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>](img/kadarius-seegars-DevJkLB3hWE-unsplash.jpg){height=400}
 :::
 
@@ -48,7 +48,7 @@ pip install my-awesome-package
 
 
 :::: {.columns}
-::: {.column width="50%"}
+::: {.column width="50%" style="font-size: 0.5em;"}
 ![Photo by <a href="https://unsplash.com/@nevenkrcmarek?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Neven Krcmarek</a> on <a href="https://unsplash.com/photos/0TH1H1rq_eY?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>](img/neven-krcmarek-0TH1H1rq_eY-unsplash.jpg){height=400}
 :::
 
@@ -82,7 +82,7 @@ cookiecutter https://github.com/neuroinformatics-unit/python-cookiecutter
 
 :::: {.columns}
 
-::: {.column width="50%"}
+::: {.column width="50%" style="font-size: 0.5em;"}
 ![Photo by <a href="https://unsplash.com/@kseegars?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Kadarius Seegars</a> on <a href="https://unsplash.com/photos/DevJkLB3hWE?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>](img/kadarius-seegars-DevJkLB3hWE-unsplash.jpg){height=400}
 :::
 
