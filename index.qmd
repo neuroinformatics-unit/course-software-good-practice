@@ -1,14 +1,17 @@
 ---
-title: A template presentation
-subtitle: so much fun
-author: SWC Neuroinformatics Unit
+title: Beyond your script
+title-slide-attributes:
+  data-background-image: img/jukan-tateisi-bJhT_8nbUA0-unsplash.jpg
+  data-background-opacity: "0.5"
+subtitle: An introduction to collaborative coding and software engineering good practice
+author: Alessandro Felder*, Laura Porta, Adam Tyson
 execute: 
   enabled: true
 format:
     revealjs:
         theme: [default, niu-dark.scss]
         logo: img/logo_niu_dark.png
-        footer: "Edit this footer | 2023-07-26"
+        footer: "Collaborative coding and software engineering good practice | 2023-10-23"
         slide-number: c
         menu:
             numbers: true
@@ -41,62 +44,139 @@ format:
         page-layout: full
 ---
 
-## Contents
+## [Neuroinformatics unit](https://neuroinformatics.dev/people.html){preview-link="true"}
 
-Some example slides - [also look at example RevealJS slides in the Quarto docs](https://quarto.org/docs/presentations/revealjs/)
+:::: {.columns}
 
-* Non-executable and executable code-blocks
-* bullet points with highlighting 
-* two-column slides 
-* how to include a slide from a separate MD file
-* preview and link to a webpage
-
-## Just a code block, nothing gets executed...
-
-... but there is some fancy highlighting
-
-```{.python code-line-numbers="1|3|4-9"}
-from pathlib import Path
-
-home_path = Path.home()
-if home_path.exists():
-  data_path = home_path / "data"
-else:
-  pass
-  # raise some error maybe?
-```
-
-## A code block that's actually executed at render-time
-
-```{python}
-#| echo: true
-#| code-fold: true
-
-from pathlib import Path
-
-print("Hello world")
-```
-
-## You can execute code without showing that you have by using #|echo: false
-```{python}
-#| echo: false
-
-from pathlib import Path
-
-print("Hello world")
-```
-
-{{< include slides/extra_slide.qmd >}}
-
-## An example image
-
-Include an image:
-
-![](img/bg_logo_wide.png){width=900 fig-align=center}
-
-
-## Link and a preview a webpage:
-
-::: {style="text-align: center; margin-top: 1em"}
-[interoperable Python-based tools for computational neuroanatomy](https://brainglobe.info/index.html){preview-link="true" style="text-align: center"}
+<!--  make size of font smaller -->
+::: {.column width="50%" style="font-size: 0.5em;"}
+![Photo by <a href="https://unsplash.com/@momentance?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">SwapnIl Dwivedi</a> on <a href="https://unsplash.com/photos/w46tRF64qNc?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>](img/swapnil-dwivedi-w46tRF64qNc-unsplash.jpg){height=300 fig-align=center}
 :::
+
+::: {.column width="50%"}
+We are passionate about writing research software well [^1].
+:::
+::::
+
+[^1]: [Research Software Engineering in context](https://ieeexplore.ieee.org/document/8994167)
+
+    [The Software Sustainability Institute](https://www.software.ac.uk/)
+
+    [The hidden REF – Celebrating all research outputs](https://hidden-ref.org/)
+
+
+## The next step
+:::: {.columns}
+  
+::: {.column width="50%" style="font-size: 0.5em;"}
+![Photo by <a href="https://unsplash.com/@tateisimikito?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jukan Tateisi</a> on <a href="https://unsplash.com/photos/bJhT_8nbUA0?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>](img/jukan-tateisi-bJhT_8nbUA0-unsplash.jpg)
+:::
+
+::: {.column width="50%"}
+```{.python}
+import pandas
+import numpy
+
+def do_something_awesome(input):
+  p = process(input)
+  a = analyze(p)
+  g = plot(a)
+  output = g, a
+  return output
+  
+if __name__ == "__main__":
+  print(do_something_awesome(42))
+```
+:::
+
+::::
+
+## The next step
+:::: {.columns}
+
+::: {.column width="50%" style="font-size: 0.5em;"}
+![Photo by <a href="https://unsplash.com/@tateisimikito?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jukan Tateisi</a> on <a href="https://unsplash.com/photos/bJhT_8nbUA0?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>](img/jukan-tateisi-bJhT_8nbUA0-unsplash.jpg)
+:::
+
+  
+::: {.column width="50%"}
+```
+└── my-awesome-package/
+	├── LICENSE
+	├── MANIFEST.in
+	├── README.md
+	├── pyproject.toml
+	├── tox.ini
+	├── docs/
+	├── my_awesome_package/
+	│	└── __init__.py
+	│	└── do_something_awesome.py
+	└── tests/
+		├── __init__.py
+		└── test_placeholder.py
+```
+:::
+
+::::
+
+## Prerequisites
+
+:::: {.columns}
+
+::: {.column width="50%" style="font-size: 0.5em;"}
+![Photo by <a href="https://unsplash.com/@alicekat?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Alice Donovan Rouse</a> on <a href="https://unsplash.com/photos/z9F_yK4Nmf8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>](img/alice-donovan-rouse-z9F_yK4Nmf8-unsplash.jpg)
+:::
+
+::: {.column width="50%"}
+* initial Python
+* initial `git`
+* a GitHub account
+:::
+
+::::
+
+## We are in a playground today
+
+:::: {.columns}
+
+::: {.column width="50%" style="font-size: 0.5em;"}
+![Photo by <a href="https://unsplash.com/@tlemaitre?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Thierry Lemaitre</a> on <a href="https://unsplash.com/photos/DCTz78QCY24?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>](img/thierry-lemaitre-DCTz78QCY24-unsplash.jpg){height=500}
+:::
+
+::: {.column width="50%"}
+* make a mess
+* break things
+* have fun
+:::
+
+::::
+
+## What makes code good?
+
+{{< include slides/mentimeter.qmd >}}
+
+## Table of contents
+
+* creating a python package 📦
+* coding collaboratively 🤝
+* how to approach writing documentation 📃
+* how to approach writing tests ✅
+* how to approach evaluating and improving the quality of code 🤔
+
+{{< include slides/packaging.qmd >}}
+
+{{< include slides/collaborate.qmd >}}
+
+{{< include slides/documentation.qmd >}}
+
+{{< include slides/testing.qmd >}}
+
+{{< include slides/refactoring.qmd >}}
+
+## RSE Community
+
+* join the community!
+  * [SWC slack `#forum-programming`](swc-neuro.slack.com)
+  * [UCL Research Programming Hub](https://www.ucl.ac.uk/advanced-research-computing/community/ucl-research-programming-hub)
+  * [Research Software London](https://rslondon.ac.uk/)
+  * [Research Software Engineering societies](https://society-rse.org/international-rse-organisations/)

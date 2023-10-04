@@ -1,0 +1,77 @@
+## Why should you test
+
+{{< include slides/mentimeter.qmd >}}
+
+## Why should you test
+
+* to find (current and future) bugs earlier and more quickly
+* to have confidence in your code changes
+* to document how you expect your code to behave
+
+
+## How to think about what to test
+
+Try to cover all bases[^2]: what happens if ...?  
+
+* I pass an invalid input ("zero")  
+* I pass a simplest possible input ("one")  
+* I run the code several times ("two")  
+* I pass a typical input ("two to max-1")  
+* I pass the extremest allowable input ("max")  
+* I pass a too extreme input ("max+1")  
+
+[^2]: [A Beginner’s Guide to Testing: Error Handling Edge Cases](https://www.freecodecamp.org/news/a-beginners-guide-to-testing-implement-these-quick-checks-to-test-your-code-d50027ad5eed/)
+
+## What test cases should be covered?
+
+```{.python}
+def compute_overlap_time(range1, range2):
+    overlap_time = []
+    for start1, end1 in range1:
+        for start2, end2 in range2:
+            low = max(start1, start2)
+            high = min(end1, end2)
+            overlap_time.append((low, high))
+    return overlap_time
+```
+
+## What test cases should be covered?
+
+{{< include slides/mentimeter.qmd >}}
+
+
+## Testing with pytest
+
+```{.python}
+import time_range
+import compute_overlap_time
+
+# pytest will pick up any function starting with "test"
+def test_simple_overlap():
+    long = time_range("2010-01-12 10:00:00", "2010-01-12 12:00:00")
+    short = time_range("2010-01-12 10:30:00", "2010-01-12 10:45:00")
+    expected_overlap = [('2010-01-12 10:30:00', '2010-01-12 10:45:00')]
+    assert compute_overlap_time(long, short) == expected 
+```
+
+## Testing exercise
+
+[Testing exercise](https://github.com/neuroinformatics-unit/rse-good-practice-playground/issues/2)
+
+## Testing at different levels
+
+* unit tests
+* integration tests
+* end-to-end tests
+
+## Be careful
+
+No matter how much you test, things can still go wrong!
+
+* [Therac-25](https://en.wikipedia.org/wiki/Therac-25)
+* [Software Horror Stories](https://software.ac.uk/news/software-horror-stories-fire-lab)
+
+## Testing resources
+
+* [Pytest docs](https://docs.pytest.org/en/7.3.x/)
+* 
