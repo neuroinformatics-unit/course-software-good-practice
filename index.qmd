@@ -157,19 +157,19 @@ if __name__ == "__main__":
 
 ## Table of contents
 
-* creating a python package 📦
 * coding collaboratively 🤝
 * how to approach writing documentation 📃
 * how to approach writing tests ✅
+* creating a python package 📦
 * how to approach evaluating and improving the quality of code 🤔
-
-{{< include slides/packaging.qmd >}}
 
 {{< include slides/collaborate.qmd >}}
 
 {{< include slides/documentation.qmd >}}
 
 {{< include slides/testing.qmd >}}
+
+{{< include slides/packaging.qmd >}}
 
 {{< include slides/refactoring.qmd >}}
 
