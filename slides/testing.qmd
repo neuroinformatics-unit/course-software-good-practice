@@ -21,6 +21,16 @@ We very sincerely regret the confusion that these papers have caused and, in par
 ## What test cases should be covered?
 
 ```{.python}
+def time_range(
+    start_time, end_time, number_of_intervals=1, gap_between_intervals_s=0
+):
+    """
+    Example:
+    >>> time_range("2010-01-12 10:00:00", "2010-01-12 12:00:00", 2, 60)
+    [('2010-01-12 10:00:00', '2010-01-12 12:00:00')]
+    """
+    ...
+
 def compute_overlap_time(range1, range2):
     overlap_time = []
     for start1, end1 in range1:
