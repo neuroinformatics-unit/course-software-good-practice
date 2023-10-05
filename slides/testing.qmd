@@ -18,7 +18,7 @@ We very sincerely regret the confusion that these papers have caused and, in par
 
 [^fire-lab]: [https://software.ac.uk/news/software-horror-stories-fire-lab](https://software.ac.uk/news/software-horror-stories-fire-lab)
 
-## What test cases should be covered?
+## What things should we sanity check about this code?
 
 ```{.python}
 def time_range(
@@ -80,7 +80,8 @@ def test_simple_overlap():
 
 ## How to think about what to test
 
-Try to cover all bases[^2]: what happens if ...?  
+What we've called sanity checks are referred to as "test cases".
+Try to cover all "edge" cases[^2]: what happens if ...?  
 
 * I pass an invalid input ("zero")  
 * I pass a simplest possible input ("one")  
