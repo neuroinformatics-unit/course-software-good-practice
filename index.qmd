@@ -54,7 +54,7 @@ format:
 :::
 
 ::: {.column width="50%"}
-We are passionate about writing research software well [^1].
+We are passionate about writing research software well [^1]. Please talk to us about software, we like to help.
 :::
 ::::
 
@@ -65,7 +65,30 @@ We are passionate about writing research software well [^1].
     [The hidden REF – Celebrating all research outputs](https://hidden-ref.org/)
 
 
-## The next step
+::: {.notes}
+Tell the students to find us on 4th floor or in Brasserie.
+Remark about RSE movement and its importance to research.
+:::
+
+
+## Prerequisites
+
+:::: {.columns}
+
+::: {.column width="50%" style="font-size: 0.5em;"}
+![Photo by <a href="https://unsplash.com/@alicekat?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Alice Donovan Rouse</a> on <a href="https://unsplash.com/photos/z9F_yK4Nmf8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>](img/alice-donovan-rouse-z9F_yK4Nmf8-unsplash.jpg)
+:::
+
+::: {.column width="50%"}
+* initial Python experience
+* initial `git` experience
+* a GitHub account
+* followed setup instructions
+:::
+
+::::
+
+## The next steps
 :::: {.columns}
   
 ::: {.column width="50%" style="font-size: 0.5em;"}
@@ -91,7 +114,7 @@ if __name__ == "__main__":
 
 ::::
 
-## The next step
+## The next steps
 :::: {.columns}
 
 ::: {.column width="50%" style="font-size: 0.5em;"}
@@ -119,21 +142,13 @@ if __name__ == "__main__":
 
 ::::
 
-## Prerequisites
+## Table of contents
 
-:::: {.columns}
-
-::: {.column width="50%" style="font-size: 0.5em;"}
-![Photo by <a href="https://unsplash.com/@alicekat?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Alice Donovan Rouse</a> on <a href="https://unsplash.com/photos/z9F_yK4Nmf8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>](img/alice-donovan-rouse-z9F_yK4Nmf8-unsplash.jpg)
-:::
-
-::: {.column width="50%"}
-* initial Python
-* initial `git`
-* a GitHub account
-:::
-
-::::
+* coding collaboratively 🤝
+* how to approach writing documentation 📃
+* how to approach writing tests ✅
+* creating a python package 📦
+* how to approach evaluating and improving the quality of code 🤔
 
 ## We are in a playground today
 
@@ -150,18 +165,6 @@ if __name__ == "__main__":
 :::
 
 ::::
-
-## What makes code good?
-
-{{< include slides/mentimeter.qmd >}}
-
-## Table of contents
-
-* coding collaboratively 🤝
-* how to approach writing documentation 📃
-* how to approach writing tests ✅
-* creating a python package 📦
-* how to approach evaluating and improving the quality of code 🤔
 
 {{< include slides/collaborate.qmd >}}
 
