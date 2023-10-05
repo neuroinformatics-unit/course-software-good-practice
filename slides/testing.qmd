@@ -1,6 +1,4 @@
-##
-
-Testing
+## Testing
 
 
 ## Why should you test your research code?
