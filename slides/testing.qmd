@@ -103,7 +103,10 @@ Testing at different levels
 * integration tests: tests several functions work together as expected
 * end-to-end tests: tests an entire pipeline from start to finish
 
+## Some software testing vocabulary
+
 Types of test:
+
 * negative test: test that the expected error is raised when bad input is passed
 * regression test: test that behaviour hasn't changed 
 
