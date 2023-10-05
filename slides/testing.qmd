@@ -3,20 +3,20 @@
 > "Second, a 15-year-old bug was found ... (the bug was fixed ... during preparation of this manuscript). The bug essentially reduced the size of the image searched for clusters, underestimating the severity of the multiplicity correction and overestimating significance ." 
 [^cluster-failure]
 
-[^cluster-failure]: https://www.pnas.org/doi/full/10.1073/pnas.1602413113
+[^cluster-failure]: [https://www.pnas.org/doi/full/10.1073/pnas.1602413113](https://www.pnas.org/doi/full/10.1073/pnas.1602413113)
 
 ## Why should you test your research code?
 
 > "An in-house data reduction program introduced a change in sign for anomalous differences. This program, which was not part of a conventional data processing package, converted ...
 We very sincerely regret the confusion that these papers have caused and, in particular, subsequent research efforts that were unproductive as a result of our original findings." [^science-retraction]
 
-[^science-retraction]: https://www.science.org/doi/10.1126/science.314.5807.1875b
+[^science-retraction]: [https://www.science.org/doi/10.1126/science.314.5807.1875b](https://www.science.org/doi/10.1126/science.314.5807.1875b)
 
 ## Why should you test you research code?
 
 > "...basically, I forgot to set something to zero after I finished looping through the loop that moved the motor [and that caused a fire in the lab]"[^fire-lab]
 
-[^fire-lab]:https://software.ac.uk/news/software-horror-stories-fire-lab
+[^fire-lab]: [https://software.ac.uk/news/software-horror-stories-fire-lab](https://software.ac.uk/news/software-horror-stories-fire-lab)
 
 ## What test cases should be covered?
 
