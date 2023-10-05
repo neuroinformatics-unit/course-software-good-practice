@@ -8,10 +8,13 @@
 
 [^cluster-failure]: [https://www.pnas.org/doi/full/10.1073/pnas.1602413113](https://www.pnas.org/doi/full/10.1073/pnas.1602413113)
 
-## Why should you test your research code?
+## Why should you test your research code? {.smaller}
 
-> "An in-house data reduction program introduced a change in sign for anomalous differences. This program, which was not part of a conventional data processing package, converted the anomalous pairs (I+ and I−) to (F− and F+), thereby introducing a sign change. 
-We very sincerely regret the confusion that these papers have caused and, in particular, subsequent research efforts that were unproductive as a result of our original findings." [^science-retraction]
+> "An in-house data reduction program introduced a change in sign for anomalous differences.  
+>
+> This program, which was not part of a conventional data processing package, converted the anomalous pairs (I+ and I−) to (F− and F+), thereby introducing a sign change.  
+> 
+> We very sincerely regret the confusion that these papers have caused and, in particular, subsequent research efforts that were unproductive as a result of our original findings." [^science-retraction]
 
 [^science-retraction]: [https://www.science.org/doi/10.1126/science.314.5807.1875b](https://www.science.org/doi/10.1126/science.314.5807.1875b)
 
