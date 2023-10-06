@@ -71,6 +71,10 @@ Remark about RSE movement and its importance to research.
 :::
 
 
+## Initial checkup
+
+{{< include slides/mentimeter.qmd >}}
+
 ## Prerequisites
 
 :::: {.columns}
@@ -147,8 +151,8 @@ if __name__ == "__main__":
 * coding collaboratively 🤝
 * how to approach writing documentation 📃
 * how to approach writing tests ✅
-* creating a python package 📦
 * how to approach evaluating and improving the quality of code 🤔
+* creating a python package 📦
 
 ## We are in a playground today
 
@@ -161,6 +165,7 @@ if __name__ == "__main__":
 ::: {.column width="50%"}
 * make a mess
 * break things
+* embrace the chaos
 * have fun
 :::
 
@@ -168,13 +173,14 @@ if __name__ == "__main__":
 
 {{< include slides/collaborate.qmd >}}
 
-{{< include slides/documentation.qmd >}}
+<!--{{< include slides/documentation.qmd >}}-->
 
 {{< include slides/testing.qmd >}}
 
+<!--{{< include slides/refactoring.qmd >}}-->
+
 {{< include slides/packaging.qmd >}}
 
-{{< include slides/refactoring.qmd >}}
 
 ## RSE Community
 

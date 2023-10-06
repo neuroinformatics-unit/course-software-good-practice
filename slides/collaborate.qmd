@@ -33,6 +33,10 @@ Collaborative coding
 :::
 ::::
 
+## Exercise: Have you set up [your playground?](https://github.com/neuroinformatics-unit/rse-best-practices-playground-trial/issues/1){preview-link="true" style="text-align: center"} 
+
+
+
 ## Code review and issue tracking
 :::: {.columns}
 
@@ -49,23 +53,8 @@ Collaborative coding
 :::
 ::::
 
-## Collaborative coding
+## What makes research code good?
 
-:::: {.columns}
-
-::: {.column width="50%" style="font-size: 0.5em;"}
-![Photo by <a href="https://unsplash.com/@mparzuchowski?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Michał Parzuchowski</a> on <a href="https://unsplash.com/photos/yqD-v4fidt0?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>](img/michal-parzuchowski-yqD-v4fidt0-unsplash.jpg){height=400}
-:::
-
-We will do this today!
-
-::: {.column width="50%"}
-* track and prioritise issues
-* solve one issue at a time
-* submit a solution (PR) for discussion
-* let someone review your solution
-:::
-::::
+{{< include slides/mentimeter.qmd >}}
 
 
-## Exercise: Have you set up your playground?
