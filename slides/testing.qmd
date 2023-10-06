@@ -1,5 +1,10 @@
-## Testing
+# Testing
 
+## Why should you test
+
+* to find (current and future) bugs earlier and more quickly (before you publish your results, ideally!)
+* to have confidence in your code changes
+* (to document how you expect your code to behave)
 
 ## Why should you test your research code?
 
@@ -10,7 +15,7 @@
 
 ## Why should you test your research code? {.smaller}
 
-> "An in-house data reduction program introduced a change in sign for anomalous differences.  
+> "An __in-house__ data reduction program introduced a change in sign for anomalous differences.  
 >
 > This program, which was not part of a conventional data processing package, converted the anomalous pairs (I+ and I−) to (F− and F+), thereby introducing a sign change.  
 > 
@@ -24,7 +29,7 @@
 
 [^fire-lab]: [https://software.ac.uk/news/software-horror-stories-fire-lab](https://software.ac.uk/news/software-horror-stories-fire-lab)
 
-## What things should we sanity check about this code?
+## What things should we sanity check about the `compute_overlap` function?
 
 ```{.python}
 def time_range(
@@ -51,37 +56,28 @@ def compute_overlap_time(range1, range2):
 
 {{< include slides/mentimeter.qmd >}}
 
-## Exercise: write some sanity checks
+## Demo: write some sanity checks
 
-::: {style="text-align: center; margin-top: 1em"}
-[Exercise: write some sanity tests](https://github.com/neuroinformatics-unit/rse-good-practice-playground/issues/2)
-:::
+Switch to VS Code
+{{< include slides/mentimeter.qmd >}}
 
 ## Testing with pytest
 
 A neater way to run sanity checks
 
 ```{.python}
-import time_range
 import compute_overlap_time
 
-# pytest will pick up any function starting with "test"
-def test_simple_overlap():
-    long = time_range("2010-01-12 10:00:00", "2010-01-12 12:00:00")
-    short = time_range("2010-01-12 10:30:00", "2010-01-12 10:45:00")
-    expected_overlap = [('2010-01-12 10:30:00', '2010-01-12 10:45:00')]
-    assert compute_overlap_time(long, short) == expected 
+def test_given_input():
+    ...
+    result = ...
+    expected = ...
+    assert result == expected
 ```
 
 ## Exercise: convert a sanity check into a test
 
 [Testing exercise](https://github.com/neuroinformatics-unit/rse-good-practice-playground/issues/2)
-
-## Why should you test
-
-* to find (current and future) bugs earlier and more quickly (before you publish your results, ideally!)
-* to have confidence in your code changes
-* (to document how you expect your code to behave)
 
 
 ## How to think about what to test
@@ -97,6 +93,18 @@ Try to cover all "edge" cases[^2]: what happens if ...?
 * I pass a too extreme input ("max+1")  
 
 [^2]: [A Beginner’s Guide to Testing: Error Handling Edge Cases](https://www.freecodecamp.org/news/a-beginners-guide-to-testing-implement-these-quick-checks-to-test-your-code-d50027ad5eed/)
+
+
+## How to think about what to test
+
+What we've called sanity checks are referred to as "test cases".
+For example, what happens/should happen when you call...?
+* `calculate_fastest_time("this is a string")` ("zero")
+* `calculate_fastest_time([1.0])` ("one")  
+* `calculate_fastest_time([1.0]); calculate_fastest_time([2.0])` ("two")  
+* `calculate_fastest_time([1.0, 0.5, 2.0])` ("two to max-1")  
+* `calculate_fastest_time([1.0, 0.5, 2.0, sys.float_info.max])` ("max")  
+* `calculate_fastest_time([1.0, 0.5, 2.0, float("inf")])` ("max+1")  
 
 ## Some software testing vocabulary
 
@@ -121,7 +129,3 @@ No matter how much you test, things can still go wrong! (and it's [OK to make mi
 ― [Edsger W. Dijkstra](https://en.wikipedia.org/wiki/Edsger_W._Dijkstra)
 
 * [Therac-25](https://en.wikipedia.org/wiki/Therac-25)
-
-## Testing resources
-
-* [Pytest docs](https://docs.pytest.org/en/7.3.x/)

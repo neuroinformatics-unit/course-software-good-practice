@@ -1,3 +1,5 @@
+# Packaging
+
 ## What does packaging mean?
 
 :::: {.columns}
@@ -56,8 +58,8 @@ pip install my-awesome-package
 Use [the NIU cookiecutter template](https://github.com/neuroinformatics-unit/python-cookiecutter).
 
 ```{.bash code-line-numbers="false"}
-conda create -n "playground"
-conda activate playground
+conda create -n "package-playground"
+conda activate package-playground
 pip install cookiecutter
 cookiecutter https://github.com/neuroinformatics-unit/python-cookiecutter 
 ```

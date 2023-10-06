@@ -54,16 +54,9 @@ format:
 :::
 
 ::: {.column width="50%"}
-We are passionate about writing research software well [^1]. Please talk to us about software, we like to help.
+We are passionate about writing research software well. Please talk to us about software, we like to help.
 :::
 ::::
-
-[^1]: [Research Software Engineering in context](https://ieeexplore.ieee.org/document/8994167)
-
-    [The Software Sustainability Institute](https://www.software.ac.uk/)
-
-    [The hidden REF – Celebrating all research outputs](https://hidden-ref.org/)
-
 
 ::: {.notes}
 Tell the students to find us on 4th floor or in Brasserie.
@@ -84,8 +77,6 @@ Remark about RSE movement and its importance to research.
 :::
 
 ::: {.column width="50%"}
-* initial Python experience
-* initial `git` experience
 * a GitHub account
 * followed setup instructions
 :::
@@ -127,20 +118,8 @@ if __name__ == "__main__":
 
   
 ::: {.column width="50%"}
-```
-└── my-awesome-package/
-	├── LICENSE
-	├── MANIFEST.in
-	├── README.md
-	├── pyproject.toml
-	├── tox.ini
-	├── docs/
-	├── my_awesome_package/
-	│	└── __init__.py
-	│	└── do_something_awesome.py
-	└── tests/
-		├── __init__.py
-		└── test_placeholder.py
+```{.bash}
+pip install my_awesome_package
 ```
 :::
 
@@ -149,9 +128,9 @@ if __name__ == "__main__":
 ## Table of contents
 
 * coding collaboratively 🤝
-* how to approach writing documentation 📃
-* how to approach writing tests ✅
-* how to approach evaluating and improving the quality of code 🤔
+* writing documentation 📃
+* writing tests ✅
+* evaluating and improving the quality of code 🤔
 * creating a python package 📦
 
 ## We are in a playground today
@@ -173,19 +152,56 @@ if __name__ == "__main__":
 
 {{< include slides/collaborate.qmd >}}
 
-<!--{{< include slides/documentation.qmd >}}-->
+{{< include slides/documentation.qmd >}}
 
 {{< include slides/testing.qmd >}}
 
-<!--{{< include slides/refactoring.qmd >}}-->
+{{< include slides/refactoring.qmd >}}
 
 {{< include slides/packaging.qmd >}}
 
+# Summary
+
+## Summary
+
+* coding collaboratively 🤝 (issues and pull requests)
+* writing documentation 📃 (docstrings, sphinx)
+* writing tests ✅ (pytest, test cases)
+* evaluating and improving the quality of code 🤔 (code smells, refactoring, DRY)
+* creating a python package 📦 (cookiecutter, pypi)
+
+## Documentation resources
+
+## Testing resources
+
+* [Pytest docs](https://docs.pytest.org/en/7.3.x/)
+
+## Code review and issue tracking resources
+:::: {.columns}
+
+::: {.column width="50%" style="font-size: 0.5em;"}
+![Photo by <a href="https://unsplash.com/@mparzuchowski?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Michał Parzuchowski</a> on <a href="https://unsplash.com/photos/yqD-v4fidt0?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>](img/michal-parzuchowski-yqD-v4fidt0-unsplash.jpg){height=400}
+:::
+
+::: {.column width="50%"}
+* [Step-by-step guide](https://blog.ossph.org/a-beginners-guide-to-contributing-to-open-source-projects/)
+* Advice on how to do code review:
+  * as [an author](https://mtlynch.io/code-review-love/)
+  * as [a reviewer](https://mtlynch.io/human-code-reviews-1/)
+* The Zeigarnik effect: Why creating issues [helps you switch off](https://todoist.com/inspiration/zeigarnik-effect-comic)
+:::
+::::
 
 ## RSE Community
 
 * join the community!
-  * [SWC slack `#forum-programming`](swc-neuro.slack.com)
+  * [SWC slack `#software-skills`](swc-neuro.slack.com)
   * [UCL Research Programming Hub](https://www.ucl.ac.uk/advanced-research-computing/community/ucl-research-programming-hub)
   * [Research Software London](https://rslondon.ac.uk/)
   * [Research Software Engineering societies](https://society-rse.org/international-rse-organisations/)
+
+### More context about Research Software Engineering
+
+* [The four pillare of RSE](https://ieeexplore.ieee.org/document/8994167)
+* [The Software Sustainability Institute](https://www.software.ac.uk/)
+* [The hidden REF – Celebrating all research outputs](https://hidden-ref.org/)
