@@ -416,7 +416,7 @@ Alessandro Felder*, Laura Porta, Adam Tyson
 </figure>
 </div>
 </div><div class="column" style="width:50%;">
-<p>We are passionate about writing research software well <sup>1</sup>. Please talk to us about software, we like to help.</p>
+<p>We are passionate about writing research software well. Please talk to us about software, we like to help.</p>
 </div>
 </div>
 <aside class="notes">
@@ -432,9 +432,7 @@ Alessandro Felder*, Laura Porta, Adam Tyson
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
-<aside><ol class="aside-footnotes"><li id="fn1"><p><a href="https://ieeexplore.ieee.org/document/8994167">Research Software Engineering in context</a></p>
-<p><a href="https://www.software.ac.uk/">The Software Sustainability Institute</a></p>
-<p><a href="https://hidden-ref.org/">The hidden REF – Celebrating all research outputs</a></p></li></ol></aside></section>
+</section>
 <section id="initial-checkup" class="slide level2">
 <h2>Initial checkup</h2>
 <div style="text-align: center; margin-top: 1em">
@@ -453,8 +451,6 @@ Alessandro Felder*, Laura Porta, Adam Tyson
 </div>
 </div><div class="column" style="width:50%;">
 <ul>
-<li>initial Python experience</li>
-<li>initial <code>git</code> experience</li>
 <li>a GitHub account</li>
 <li>followed setup instructions</li>
 </ul>
@@ -498,19 +494,7 @@ Alessandro Felder*, Laura Porta, Adam Tyson
 </figure>
 </div>
 </div><div class="column" style="width:50%;">
-<pre><code>└── my-awesome-package/
-    ├── LICENSE
-    ├── MANIFEST.in
-    ├── README.md
-    ├── pyproject.toml
-    ├── tox.ini
-    ├── docs/
-    ├── my_awesome_package/
-    │   └── __init__.py
-    │   └── do_something_awesome.py
-    └── tests/
-        ├── __init__.py
-        └── test_placeholder.py</code></pre>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1"></a><span class="ex">pip</span> install my_awesome_package</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </section>
@@ -518,9 +502,9 @@ Alessandro Felder*, Laura Porta, Adam Tyson
 <h2>Table of contents</h2>
 <ul>
 <li>coding collaboratively 🤝</li>
-<li>how to approach writing documentation 📃</li>
-<li>how to approach writing tests ✅</li>
-<li>how to approach evaluating and improving the quality of code 🤔</li>
+<li>writing documentation 📃</li>
+<li>writing tests ✅</li>
+<li>evaluating and improving the quality of code 🤔</li>
 <li>creating a python package 📦</li>
 </ul>
 </section>
@@ -544,11 +528,12 @@ Alessandro Felder*, Laura Porta, Adam Tyson
 </div>
 </div>
 </section>
-<section id="section" class="slide level2">
-<h2></h2>
-<p>Collaborative coding</p>
+<section>
+<section id="collaborative-coding" class="title-slide slide level1 center">
+<h1>Collaborative coding</h1>
+
 </section>
-<section id="collaborative-coding" class="slide level2">
+<section id="collaborative-coding-1" class="slide level2">
 <h2>Collaborative coding</h2>
 <div class="columns">
 <div class="column" style="font-size: 0.5em;">
@@ -562,6 +547,23 @@ Alessandro Felder*, Laura Porta, Adam Tyson
 <ul>
 <li>benefits from different perspective and division of labour</li>
 <li>needs async communication and coordination of tasks</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="collaborative-coding-2" class="slide level2">
+<h2>Collaborative coding</h2>
+<div class="columns">
+<div class="column" style="font-size: 0.5em;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/michal-parzuchowski-yqD-v4fidt0-unsplash.jpg" height="400"></p>
+<figcaption>Photo by <a href="https://unsplash.com/@mparzuchowski?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Michał Parzuchowski</a> on <a href="https://unsplash.com/photos/yqD-v4fidt0?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:50%;">
+<ul>
+<li>for example, someone else in your lab, or someone in a partner lab in a different time zone.</li>
 </ul>
 </div>
 </div>
@@ -589,108 +591,76 @@ Alessandro Felder*, Laura Porta, Adam Tyson
 <section id="exercise-have-you-set-up-your-playground" class="slide level2">
 <h2>Exercise: Have you set up <a href="https://github.com/neuroinformatics-unit/rse-best-practices-playground-trial/issues/1" data-preview-link="true" style="text-align: center">your playground?</a></h2>
 </section>
-<section id="code-review-and-issue-tracking" class="slide level2">
-<h2>Code review and issue tracking</h2>
-<div class="columns">
-<div class="column" style="font-size: 0.5em;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="img/michal-parzuchowski-yqD-v4fidt0-unsplash.jpg" height="400"></p>
-<figcaption>Photo by <a href="https://unsplash.com/@mparzuchowski?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Michał Parzuchowski</a> on <a href="https://unsplash.com/photos/yqD-v4fidt0?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></figcaption>
-</figure>
-</div>
-</div><div class="column" style="width:50%;">
-<ul>
-<li><a href="https://blog.ossph.org/a-beginners-guide-to-contributing-to-open-source-projects/">Step-by-step guide</a></li>
-<li>Advice on how to do code review:
-<ul>
-<li>as <a href="https://mtlynch.io/code-review-love/">an author</a></li>
-<li>as <a href="https://mtlynch.io/human-code-reviews-1/">a reviewer</a></li>
-</ul></li>
-<li>The Zeigarnik effect: Why creating issues <a href="https://todoist.com/inspiration/zeigarnik-effect-comic">helps you switch off</a></li>
-</ul>
-</div>
-</div>
-</section>
 <section id="what-makes-research-code-good" class="slide level2">
 <h2>What makes research code good?</h2>
 <div style="text-align: center; margin-top: 1em">
 <p><a href="https://www.menti.com/alstthrccvqk" data-preview-link="true" style="text-align: center">Mentimeter</a></p>
 </div>
-<!--{{< include slides/documentation.qmd >}}-->
+</section></section>
+<section>
+<section id="documentation" class="title-slide slide level1 center">
+<h1>Documentation</h1>
+
 </section>
-<section id="testing" class="slide level2">
-<h2>Testing</h2>
+<section id="a-simple-python-function" class="slide level2">
+<h2>A simple Python function</h2>
+<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1"></a><span class="kw">def</span> calculate_fastest_time(time_list):</span>
+<span id="cb3-2"><a href="#cb3-2"></a>    fastest_time <span class="op">=</span> time_list[<span class="dv">0</span>]</span>
+<span id="cb3-3"><a href="#cb3-3"></a>    <span class="cf">for</span> time <span class="kw">in</span> time_list:</span>
+<span id="cb3-4"><a href="#cb3-4"></a>        <span class="cf">if</span> time <span class="op">&gt;</span> fastest_time:</span>
+<span id="cb3-5"><a href="#cb3-5"></a>            fastest_time <span class="op">=</span> time</span>
+<span id="cb3-6"><a href="#cb3-6"></a>    <span class="cf">return</span> fastest_time</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="why-should-you-test-your-research-code" class="slide level2">
-<h2>Why should you test your research code?</h2>
-<blockquote>
-<p>“Second, a 15-year-old bug was found … (the bug was fixed … during preparation of this manuscript). The bug essentially reduced the size of the image searched for clusters, underestimating the severity of the multiplicity correction and overestimating significance .” <sup>1</sup></p>
-</blockquote>
-<aside><ol class="aside-footnotes"><li id="fn2"><p><a href="https://www.pnas.org/doi/full/10.1073/pnas.1602413113">https://www.pnas.org/doi/full/10.1073/pnas.1602413113</a></p></li></ol></aside></section>
-<section id="why-should-you-test-your-research-code-1" class="slide level2 smaller">
-<h2>Why should you test your research code?</h2>
-<blockquote>
-<p>“An in-house data reduction program introduced a change in sign for anomalous differences.</p>
-<p>This program, which was not part of a conventional data processing package, converted the anomalous pairs (I+ and I−) to (F− and F+), thereby introducing a sign change.</p>
-<p>We very sincerely regret the confusion that these papers have caused and, in particular, subsequent research efforts that were unproductive as a result of our original findings.” <sup>1</sup></p>
-</blockquote>
-<aside><ol class="aside-footnotes"><li id="fn3"><p><a href="https://www.science.org/doi/10.1126/science.314.5807.1875b">https://www.science.org/doi/10.1126/science.314.5807.1875b</a></p></li></ol></aside></section>
-<section id="why-should-you-test-you-research-code" class="slide level2">
-<h2>Why should you test you research code?</h2>
-<blockquote>
-<p>“…basically, I forgot to set something to zero after I finished looping through the loop that moved the motor [and that caused a fire in the lab]”<sup>1</sup></p>
-</blockquote>
-<aside><ol class="aside-footnotes"><li id="fn4"><p><a href="https://software.ac.uk/news/software-horror-stories-fire-lab">https://software.ac.uk/news/software-horror-stories-fire-lab</a></p></li></ol></aside></section>
-<section id="what-things-should-we-sanity-check-about-this-code" class="slide level2">
-<h2>What things should we sanity check about this code?</h2>
-<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1"></a><span class="kw">def</span> time_range(</span>
-<span id="cb3-2"><a href="#cb3-2"></a>    start_time, end_time, number_of_intervals<span class="op">=</span><span class="dv">1</span>, gap_between_intervals_s<span class="op">=</span><span class="dv">0</span></span>
-<span id="cb3-3"><a href="#cb3-3"></a>):</span>
-<span id="cb3-4"><a href="#cb3-4"></a>    <span class="co">"""</span></span>
-<span id="cb3-5"><a href="#cb3-5"></a><span class="co">    Example:</span></span>
-<span id="cb3-6"><a href="#cb3-6"></a><span class="co">    &gt;&gt;&gt; time_range("2010-01-12 10:00:00", "2010-01-12 12:00:00", 2, 60)</span></span>
-<span id="cb3-7"><a href="#cb3-7"></a><span class="co">    [('2010-01-12 10:00:00', '2010-01-12 12:00:00')]</span></span>
-<span id="cb3-8"><a href="#cb3-8"></a><span class="co">    """</span></span>
-<span id="cb3-9"><a href="#cb3-9"></a>    ...</span>
-<span id="cb3-10"><a href="#cb3-10"></a></span>
-<span id="cb3-11"><a href="#cb3-11"></a><span class="kw">def</span> compute_overlap_time(range1, range2):</span>
-<span id="cb3-12"><a href="#cb3-12"></a>    overlap_time <span class="op">=</span> []</span>
-<span id="cb3-13"><a href="#cb3-13"></a>    <span class="cf">for</span> start1, end1 <span class="kw">in</span> range1:</span>
-<span id="cb3-14"><a href="#cb3-14"></a>        <span class="cf">for</span> start2, end2 <span class="kw">in</span> range2:</span>
-<span id="cb3-15"><a href="#cb3-15"></a>            low <span class="op">=</span> <span class="bu">max</span>(start1, start2)</span>
-<span id="cb3-16"><a href="#cb3-16"></a>            high <span class="op">=</span> <span class="bu">min</span>(end1, end2)</span>
-<span id="cb3-17"><a href="#cb3-17"></a>            overlap_time.append((low, high))</span>
-<span id="cb3-18"><a href="#cb3-18"></a>    <span class="cf">return</span> overlap_time</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-<section id="what-things-should-we-sanity-check-about-this-code-1" class="slide level2">
-<h2>What things should we sanity check about this code?</h2>
+<section id="what-does-this-function-do" class="slide level2">
+<h2>What does this function do?</h2>
 <div style="text-align: center; margin-top: 1em">
 <p><a href="https://www.menti.com/alstthrccvqk" data-preview-link="true" style="text-align: center">Mentimeter</a></p>
 </div>
 </section>
-<section id="exercise-write-some-sanity-checks" class="slide level2">
-<h2>Exercise: write some sanity checks</h2>
+<section id="demo-document-what-the-function-does-with-a-multiline-string" class="slide level2">
+<h2>Demo: document what the function does with a multiline string</h2>
+<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1"></a><span class="kw">def</span> calculate_fastest_time(time_list):</span>
+<span id="cb4-2"><a href="#cb4-2"></a>    fastest_time <span class="op">=</span> time_list[<span class="dv">0</span>]</span>
+<span id="cb4-3"><a href="#cb4-3"></a>    <span class="cf">for</span> time <span class="kw">in</span> time_list:</span>
+<span id="cb4-4"><a href="#cb4-4"></a>        <span class="cf">if</span> time <span class="op">&gt;</span> fastest_time:</span>
+<span id="cb4-5"><a href="#cb4-5"></a>            fastest_time <span class="op">=</span> time</span>
+<span id="cb4-6"><a href="#cb4-6"></a>    <span class="cf">return</span> fastest_time</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="the-matplotlib-documentation" class="slide level2">
+<h2>The Matplotlib documentation</h2>
+<p><a href="https://matplotlib.org/stable/api/_as_gen/matplotlib.colors.get_named_colors_mapping.html" data-preview-link="true"><code>matplotlib.colors.get_named_colors_mapping()</code></a></p>
+<ul>
+<li>Where does this information come from?</li>
+<li>How is it generated?</li>
+</ul>
+</section>
+<section id="the-matplotlib-source-code" class="slide level2">
+<h2>The Matplotlib source code</h2>
+<p><a href="https://github.com/matplotlib/matplotlib/blob/main/lib/matplotlib/colors.py#L92" data-preview-link="true"><code>matplotlib.colors.get_named_colors_mapping()</code> source code</a></p>
+</section>
+<section id="this-is-called-a-docstring-in-python" class="slide level2">
+<h2>This is called a “docstring” in Python</h2>
+<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1"></a><span class="kw">def</span> get_named_colors_mapping():</span>
+<span id="cb5-2"><a href="#cb5-2"></a>    <span class="co">"""Return the global mapping of names to named colors."""</span></span>
+<span id="cb5-3"><a href="#cb5-3"></a>    <span class="cf">return</span> _colors_full_map</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Docstrings (should) follow an <a href="https://peps.python.org/pep-0257/" data-preview-link="true">agreed convention</a></p>
+</section>
+<section id="a-first-task-writing-a-docstring" class="slide level2">
+<h2>A first task: <a href="https://github.com/neuroinformatics-unit/rse-best-practices-playground">writing a docstring</a></h2>
+<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1"></a><span class="kw">def</span> calculate_fastest_time(time_list):</span>
+<span id="cb6-2"><a href="#cb6-2"></a>    fastest_time <span class="op">=</span> time_list[<span class="dv">0</span>]</span>
+<span id="cb6-3"><a href="#cb6-3"></a>    <span class="cf">for</span> time <span class="kw">in</span> time_list:</span>
+<span id="cb6-4"><a href="#cb6-4"></a>        <span class="cf">if</span> time <span class="op">&gt;</span> fastest_time:</span>
+<span id="cb6-5"><a href="#cb6-5"></a>            fastest_time <span class="op">=</span> time</span>
+<span id="cb6-6"><a href="#cb6-6"></a>    <span class="cf">return</span> fastest_time</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div style="text-align: center; margin-top: 1em">
-<p><a href="https://github.com/neuroinformatics-unit/rse-good-practice-playground/issues/2">Exercise: write some sanity tests</a></p>
+<p><a href="https://packaging.python.org/en/latest/tutorials/packaging-projects/">Exercise: write a docstring for a function in <code>times.py</code></a></p>
 </div>
-</section>
-<section id="testing-with-pytest" class="slide level2">
-<h2>Testing with pytest</h2>
-<p>A neater way to run sanity checks</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1"></a><span class="im">import</span> time_range</span>
-<span id="cb4-2"><a href="#cb4-2"></a><span class="im">import</span> compute_overlap_time</span>
-<span id="cb4-3"><a href="#cb4-3"></a></span>
-<span id="cb4-4"><a href="#cb4-4"></a><span class="co"># pytest will pick up any function starting with "test"</span></span>
-<span id="cb4-5"><a href="#cb4-5"></a><span class="kw">def</span> test_simple_overlap():</span>
-<span id="cb4-6"><a href="#cb4-6"></a>    <span class="bu">long</span> <span class="op">=</span> time_range(<span class="st">"2010-01-12 10:00:00"</span>, <span class="st">"2010-01-12 12:00:00"</span>)</span>
-<span id="cb4-7"><a href="#cb4-7"></a>    short <span class="op">=</span> time_range(<span class="st">"2010-01-12 10:30:00"</span>, <span class="st">"2010-01-12 10:45:00"</span>)</span>
-<span id="cb4-8"><a href="#cb4-8"></a>    expected_overlap <span class="op">=</span> [(<span class="st">'2010-01-12 10:30:00'</span>, <span class="st">'2010-01-12 10:45:00'</span>)]</span>
-<span id="cb4-9"><a href="#cb4-9"></a>    <span class="cf">assert</span> compute_overlap_time(<span class="bu">long</span>, short) <span class="op">==</span> expected </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-<section id="exercise-convert-a-sanity-check-into-a-test" class="slide level2">
-<h2>Exercise: convert a sanity check into a test</h2>
-<p><a href="https://github.com/neuroinformatics-unit/rse-good-practice-playground/issues/2">Testing exercise</a></p>
+</section></section>
+<section>
+<section id="testing" class="title-slide slide level1 center">
+<h1>Testing</h1>
+
 </section>
 <section id="why-should-you-test" class="slide level2">
 <h2>Why should you test</h2>
@@ -699,6 +669,72 @@ Alessandro Felder*, Laura Porta, Adam Tyson
 <li>to have confidence in your code changes</li>
 <li>(to document how you expect your code to behave)</li>
 </ul>
+</section>
+<section id="why-should-you-test-your-research-code" class="slide level2">
+<h2>Why should you test your research code?</h2>
+<blockquote>
+<p>“Second, a 15-year-old bug was found … (the bug was fixed … during preparation of this manuscript). The bug essentially reduced the size of the image searched for clusters, underestimating the severity of the multiplicity correction and overestimating significance .” <sup>1</sup></p>
+</blockquote>
+<aside><ol class="aside-footnotes"><li id="fn1"><p><a href="https://www.pnas.org/doi/full/10.1073/pnas.1602413113">https://www.pnas.org/doi/full/10.1073/pnas.1602413113</a></p></li></ol></aside></section>
+<section id="why-should-you-test-your-research-code-1" class="slide level2 smaller">
+<h2>Why should you test your research code?</h2>
+<blockquote>
+<p>“An <strong>in-house</strong> data reduction program introduced a change in sign for anomalous differences.</p>
+<p>This program, which was not part of a conventional data processing package, converted the anomalous pairs (I+ and I−) to (F− and F+), thereby introducing a sign change.</p>
+<p>We very sincerely regret the confusion that these papers have caused and, in particular, subsequent research efforts that were unproductive as a result of our original findings.” <sup>1</sup></p>
+</blockquote>
+<aside><ol class="aside-footnotes"><li id="fn2"><p><a href="https://www.science.org/doi/10.1126/science.314.5807.1875b">https://www.science.org/doi/10.1126/science.314.5807.1875b</a></p></li></ol></aside></section>
+<section id="why-should-you-test-you-research-code" class="slide level2">
+<h2>Why should you test you research code?</h2>
+<blockquote>
+<p>“…basically, I forgot to set something to zero after I finished looping through the loop that moved the motor [and that caused a fire in the lab]”<sup>1</sup></p>
+</blockquote>
+<aside><ol class="aside-footnotes"><li id="fn3"><p><a href="https://software.ac.uk/news/software-horror-stories-fire-lab">https://software.ac.uk/news/software-horror-stories-fire-lab</a></p></li></ol></aside></section>
+<section id="what-things-should-we-sanity-check-about-the-compute_overlap-function" class="slide level2">
+<h2>What things should we sanity check about the <code>compute_overlap</code> function?</h2>
+<div class="sourceCode" id="cb7"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1"></a><span class="kw">def</span> time_range(</span>
+<span id="cb7-2"><a href="#cb7-2"></a>    start_time, end_time, number_of_intervals<span class="op">=</span><span class="dv">1</span>, gap_between_intervals_s<span class="op">=</span><span class="dv">0</span></span>
+<span id="cb7-3"><a href="#cb7-3"></a>):</span>
+<span id="cb7-4"><a href="#cb7-4"></a>    <span class="co">"""</span></span>
+<span id="cb7-5"><a href="#cb7-5"></a><span class="co">    Example:</span></span>
+<span id="cb7-6"><a href="#cb7-6"></a><span class="co">    &gt;&gt;&gt; time_range("2010-01-12 10:00:00", "2010-01-12 12:00:00", 2, 60)</span></span>
+<span id="cb7-7"><a href="#cb7-7"></a><span class="co">    [('2010-01-12 10:00:00', '2010-01-12 12:00:00')]</span></span>
+<span id="cb7-8"><a href="#cb7-8"></a><span class="co">    """</span></span>
+<span id="cb7-9"><a href="#cb7-9"></a>    ...</span>
+<span id="cb7-10"><a href="#cb7-10"></a></span>
+<span id="cb7-11"><a href="#cb7-11"></a><span class="kw">def</span> compute_overlap_time(range1, range2):</span>
+<span id="cb7-12"><a href="#cb7-12"></a>    overlap_time <span class="op">=</span> []</span>
+<span id="cb7-13"><a href="#cb7-13"></a>    <span class="cf">for</span> start1, end1 <span class="kw">in</span> range1:</span>
+<span id="cb7-14"><a href="#cb7-14"></a>        <span class="cf">for</span> start2, end2 <span class="kw">in</span> range2:</span>
+<span id="cb7-15"><a href="#cb7-15"></a>            low <span class="op">=</span> <span class="bu">max</span>(start1, start2)</span>
+<span id="cb7-16"><a href="#cb7-16"></a>            high <span class="op">=</span> <span class="bu">min</span>(end1, end2)</span>
+<span id="cb7-17"><a href="#cb7-17"></a>            overlap_time.append((low, high))</span>
+<span id="cb7-18"><a href="#cb7-18"></a>    <span class="cf">return</span> overlap_time</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="what-things-should-we-sanity-check-about-this-code" class="slide level2">
+<h2>What things should we sanity check about this code?</h2>
+<div style="text-align: center; margin-top: 1em">
+<p><a href="https://www.menti.com/alstthrccvqk" data-preview-link="true" style="text-align: center">Mentimeter</a></p>
+</div>
+</section>
+<section id="demo-write-some-sanity-checks" class="slide level2">
+<h2>Demo: write some sanity checks</h2>
+<p>Switch to VS Code ::: {style=“text-align: center; margin-top: 1em”} <a href="https://www.menti.com/alstthrccvqk" data-preview-link="true" style="text-align: center">Mentimeter</a> :::</p>
+</section>
+<section id="testing-with-pytest" class="slide level2">
+<h2>Testing with pytest</h2>
+<p>A neater way to run sanity checks</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1"></a><span class="im">import</span> compute_overlap_time</span>
+<span id="cb8-2"><a href="#cb8-2"></a></span>
+<span id="cb8-3"><a href="#cb8-3"></a><span class="kw">def</span> test_given_input():</span>
+<span id="cb8-4"><a href="#cb8-4"></a>    ...</span>
+<span id="cb8-5"><a href="#cb8-5"></a>    result <span class="op">=</span> ...</span>
+<span id="cb8-6"><a href="#cb8-6"></a>    expected <span class="op">=</span> ...</span>
+<span id="cb8-7"><a href="#cb8-7"></a>    <span class="cf">assert</span> result <span class="op">==</span> expected</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="exercise-convert-a-sanity-check-into-a-test" class="slide level2">
+<h2>Exercise: convert a sanity check into a test</h2>
+<p><a href="https://github.com/neuroinformatics-unit/rse-good-practice-playground/issues/2">Testing exercise</a></p>
 </section>
 <section id="how-to-think-about-what-to-test" class="slide level2">
 <h2>How to think about what to test</h2>
@@ -716,7 +752,15 @@ Alessandro Felder*, Laura Porta, Adam Tyson
 </li>
 <li>I pass a too extreme input (“max+1”)</li>
 </ul>
-<aside><ol class="aside-footnotes"><li id="fn5"><p><a href="https://www.freecodecamp.org/news/a-beginners-guide-to-testing-implement-these-quick-checks-to-test-your-code-d50027ad5eed/">A Beginner’s Guide to Testing: Error Handling Edge Cases</a></p></li></ol></aside></section>
+<aside><ol class="aside-footnotes"><li id="fn4"><p><a href="https://www.freecodecamp.org/news/a-beginners-guide-to-testing-implement-these-quick-checks-to-test-your-code-d50027ad5eed/">A Beginner’s Guide to Testing: Error Handling Edge Cases</a></p></li></ol></aside></section>
+<section id="how-to-think-about-what-to-test-1" class="slide level2">
+<h2>How to think about what to test</h2>
+<p>What we’ve called sanity checks are referred to as “test cases”. For example, what happens/should happen when you call…? * <code>calculate_fastest_time("this is a string")</code> (“zero”) * <code>calculate_fastest_time([1.0])</code> (“one”)<br>
+* <code>calculate_fastest_time([1.0]); calculate_fastest_time([2.0])</code> (“two”)<br>
+* <code>calculate_fastest_time([1.0, 0.5, 2.0])</code> (“two to max-1”)<br>
+* <code>calculate_fastest_time([1.0, 0.5, 2.0, sys.float_info.max])</code> (“max”)<br>
+* <code>calculate_fastest_time([1.0, 0.5, 2.0, float("inf")])</code> (“max+1”)</p>
+</section>
 <section id="some-software-testing-vocabulary" class="slide level2">
 <h2>Some software testing vocabulary</h2>
 <p>Testing at different levels</p>
@@ -743,13 +787,16 @@ Alessandro Felder*, Laura Porta, Adam Tyson
 <ul>
 <li><a href="https://en.wikipedia.org/wiki/Therac-25">Therac-25</a></li>
 </ul>
+</section></section>
+<section id="code-quality" class="title-slide slide level1 center">
+<h1>Code Quality</h1>
+
 </section>
-<section id="testing-resources" class="slide level2">
-<h2>Testing resources</h2>
-<ul>
-<li><a href="https://docs.pytest.org/en/7.3.x/">Pytest docs</a></li>
-</ul>
-<!--{{< include slides/refactoring.qmd >}}-->
+
+<section>
+<section id="packaging" class="title-slide slide level1 center">
+<h1>Packaging</h1>
+
 </section>
 <section id="what-does-packaging-mean" class="slide level2">
 <h2>What does packaging mean?</h2>
@@ -763,7 +810,7 @@ Alessandro Felder*, Laura Porta, Adam Tyson
 </div>
 </div><div class="column" style="width:50%;">
 <p>Packaging your code makes it easy-to-install.</p>
-<div class="sourceCode" id="cb5" data-code-line-numbers="false"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install my-awesome-package</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb9" data-code-line-numbers="false"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install my-awesome-package</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </section>
@@ -806,10 +853,10 @@ Alessandro Felder*, Laura Porta, Adam Tyson
 </div>
 </div><div class="column" style="width:50%;">
 <p>Use <a href="https://github.com/neuroinformatics-unit/python-cookiecutter">the NIU cookiecutter template</a>.</p>
-<div class="sourceCode" id="cb7" data-code-line-numbers="false"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> create <span class="at">-n</span> <span class="st">"playground"</span></span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> activate playground</span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install cookiecutter</span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="ex">cookiecutter</span> https://github.com/neuroinformatics-unit/python-cookiecutter </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb11" data-code-line-numbers="false"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> create <span class="at">-n</span> <span class="st">"package-playground"</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> activate package-playground</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install cookiecutter</span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a><span class="ex">cookiecutter</span> https://github.com/neuroinformatics-unit/python-cookiecutter </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </section>
@@ -852,23 +899,76 @@ Alessandro Felder*, Laura Porta, Adam Tyson
         └── test_placeholder.py</code></pre>
 </div>
 </div>
+</section></section>
+<section>
+<section id="summary-1" class="title-slide slide level1 center">
+<h1>Summary</h1>
+
+</section>
+<section id="summary-2" class="slide level2">
+<h2>Summary</h2>
+<ul>
+<li>coding collaboratively 🤝 (issues and pull requests)</li>
+<li>writing documentation 📃 (docstrings, sphinx)</li>
+<li>writing tests ✅ (pytest, test cases)</li>
+<li>evaluating and improving the quality of code 🤔 (code smells, refactoring, DRY)</li>
+<li>creating a python package 📦 (cookiecutter, pypi)</li>
+</ul>
+</section>
+<section id="documentation-resources" class="slide level2">
+<h2>Documentation resources</h2>
+</section>
+<section id="testing-resources" class="slide level2">
+<h2>Testing resources</h2>
+<ul>
+<li><a href="https://docs.pytest.org/en/7.3.x/">Pytest docs</a></li>
+</ul>
+</section>
+<section id="code-review-and-issue-tracking-resources" class="slide level2">
+<h2>Code review and issue tracking resources</h2>
+<div class="columns">
+<div class="column" style="font-size: 0.5em;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/michal-parzuchowski-yqD-v4fidt0-unsplash.jpg" height="400"></p>
+<figcaption>Photo by <a href="https://unsplash.com/@mparzuchowski?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Michał Parzuchowski</a> on <a href="https://unsplash.com/photos/yqD-v4fidt0?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:50%;">
+<ul>
+<li><a href="https://blog.ossph.org/a-beginners-guide-to-contributing-to-open-source-projects/">Step-by-step guide</a></li>
+<li>Advice on how to do code review:
+<ul>
+<li>as <a href="https://mtlynch.io/code-review-love/">an author</a></li>
+<li>as <a href="https://mtlynch.io/human-code-reviews-1/">a reviewer</a></li>
+</ul></li>
+<li>The Zeigarnik effect: Why creating issues <a href="https://todoist.com/inspiration/zeigarnik-effect-comic">helps you switch off</a></li>
+</ul>
+</div>
+</div>
 </section>
 <section id="rse-community" class="slide level2">
 <h2>RSE Community</h2>
 <ul>
 <li>join the community!
 <ul>
-<li><a href="swc-neuro.slack.com">SWC slack <code>#forum-programming</code></a></li>
+<li><a href="swc-neuro.slack.com">SWC slack <code>#software-skills</code></a></li>
 <li><a href="https://www.ucl.ac.uk/advanced-research-computing/community/ucl-research-programming-hub">UCL Research Programming Hub</a></li>
 <li><a href="https://rslondon.ac.uk/">Research Software London</a></li>
 <li><a href="https://society-rse.org/international-rse-organisations/">Research Software Engineering societies</a></li>
 </ul></li>
 </ul>
+<h3 id="more-context-about-research-software-engineering">More context about Research Software Engineering</h3>
+<ul>
+<li><a href="https://ieeexplore.ieee.org/document/8994167">The four pillare of RSE</a></li>
+<li><a href="https://www.software.ac.uk/">The Software Sustainability Institute</a></li>
+<li><a href="https://hidden-ref.org/">The hidden REF – Celebrating all research outputs</a></li>
+</ul>
 
 <img src="img/logo_niu_dark.png" class="slide-logo r-stretch"><div class="footer footer-default">
 <p>Collaborative coding and software engineering good practice | 2023-10-23</p>
 </div>
-</section>
+</section></section>
 
     </div>
   </div>
