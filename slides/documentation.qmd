@@ -1,17 +1,64 @@
-## 
+# Documentation
 
-Documentation
+## A simple Python function
 
-## What goes into documentation
-
-## Docstrings and 
+``` {.python}
+def calculate_fastest_time(time_list):
+    fastest_time = time_list[0]
+    for time in time_list:
+        if time > fastest_time:
+            fastest_time = time
+    return fastest_time
+```
 
 ## What does this function do?
 
 {{< include slides/mentimeter.qmd >}}
 
+## Demo: document what the function does with a multiline string
+
+``` {.python}
+def calculate_fastest_time(time_list):
+    fastest_time = time_list[0]
+    for time in time_list:
+        if time > fastest_time:
+            fastest_time = time
+    return fastest_time
+```
+
+## The Matplotlib documentation
+
+[`matplotlib.colors.get_named_colors_mapping()`](https://matplotlib.org/stable/api/_as_gen/matplotlib.colors.get_named_colors_mapping.html){preview-link="true"}
+
+* Where does this information come from?
+* How is it generated?
+
+## The Matplotlib source code
+
+[`matplotlib.colors.get_named_colors_mapping()` source code](https://github.com/matplotlib/matplotlib/blob/main/lib/matplotlib/colors.py#L92){preview-link="true"}
+
+## This is called a "docstring" in Python
+
+``` {.python}
+def get_named_colors_mapping():
+    """Return the global mapping of names to named colors."""
+    return _colors_full_map
+```
+
+Docstrings (should) follow an [agreed convention](https://peps.python.org/pep-0257/){preview-link="true"}
+
+
 ## A first task: [writing a docstring](https://github.com/neuroinformatics-unit/rse-best-practices-playground)
 
+``` {.python}
+def calculate_fastest_time(time_list):
+    fastest_time = time_list[0]
+    for time in time_list:
+        if time > fastest_time:
+            fastest_time = time
+    return fastest_time
+```
+
 ::: {style="text-align: center; margin-top: 1em"}
-[Exercise: write a docstring](https://packaging.python.org/en/latest/tutorials/packaging-projects/)
+[Exercise: write a docstring for a function in `times.py`](https://packaging.python.org/en/latest/tutorials/packaging-projects/)
 :::

@@ -1,6 +1,4 @@
-## 
-
-Collaborative coding
+# Collaborative coding
 
 ## Collaborative coding
 
@@ -16,6 +14,18 @@ Collaborative coding
 :::
 ::::
 
+## Collaborative coding
+
+:::: {.columns}
+
+::: {.column width="50%" style="font-size: 0.5em;"}
+![Photo by <a href="https://unsplash.com/@mparzuchowski?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Michał Parzuchowski</a> on <a href="https://unsplash.com/photos/yqD-v4fidt0?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>](img/michal-parzuchowski-yqD-v4fidt0-unsplash.jpg){height=400}
+:::
+
+::: {.column width="50%"}
+* for example, someone else in your lab, or someone in a partner lab in a different time zone.
+:::
+::::
 
 ## [The development cycle](https://github.com/neuroinformatics-unit/rse-best-practices-playground){preview-link="true" style="text-align: center"} 
 
@@ -35,23 +45,6 @@ Collaborative coding
 
 ## Exercise: Have you set up [your playground?](https://github.com/neuroinformatics-unit/rse-best-practices-playground-trial/issues/1){preview-link="true" style="text-align: center"} 
 
-
-
-## Code review and issue tracking
-:::: {.columns}
-
-::: {.column width="50%" style="font-size: 0.5em;"}
-![Photo by <a href="https://unsplash.com/@mparzuchowski?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Michał Parzuchowski</a> on <a href="https://unsplash.com/photos/yqD-v4fidt0?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>](img/michal-parzuchowski-yqD-v4fidt0-unsplash.jpg){height=400}
-:::
-
-::: {.column width="50%"}
-* [Step-by-step guide](https://blog.ossph.org/a-beginners-guide-to-contributing-to-open-source-projects/)
-* Advice on how to do code review:
-  * as [an author](https://mtlynch.io/code-review-love/)
-  * as [a reviewer](https://mtlynch.io/human-code-reviews-1/)
-* The Zeigarnik effect: Why creating issues [helps you switch off](https://todoist.com/inspiration/zeigarnik-effect-comic)
-:::
-::::
 
 ## What makes research code good?
 
