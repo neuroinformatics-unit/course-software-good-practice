@@ -1,3 +1,7 @@
+## 
+
+Collaborative coding
+
 ## Collaborative coding
 
 :::: {.columns}
@@ -7,10 +11,11 @@
 :::
 
 ::: {.column width="50%"}
-* benefits from different perspectives
-* needs communication and coordination of tasks
+* benefits from different perspective and division of labour
+* needs async communication and coordination of tasks
 :::
 ::::
+
 
 ## [The development cycle](https://github.com/neuroinformatics-unit/rse-best-practices-playground){preview-link="true" style="text-align: center"} 
 
@@ -21,31 +26,14 @@
 :::
 
 ::: {.column width="50%"}
-* open / choose a task
-* fork a repository / make a branch
-* add collaborators
-* contribute to a solution to the task
-* open a pull request
-* review a pull request
+* open / choose a task ("issue")
+* write a solution to the task independent of main code (on a "branch"/"fork")
+* open a solution proposal ("pull request")
+* review a solution proposal ("pull request")
 :::
 ::::
 
-## Setting up our playgrounds
-
-:::: {.columns}
-
-::: {.column width="50%" style="font-size: 0.5em;"}
-![Photo by <a href="https://unsplash.com/@tlemaitre?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Thierry Lemaitre</a> on <a href="https://unsplash.com/photos/DCTz78QCY24?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>](img/thierry-lemaitre-DCTz78QCY24-unsplash.jpg){height=500}
-:::
-
-::: {.column width="50%"}
-* fork [the playground repository](https://github.com/neuroinformatics-unit/rse-best-practices-playground) on GitHub
-* locally, ensure your `conda` env is activated
-```{.bash code-line-numbers="false"}
-git clone git@github.com:<YOUR_GITHUB_USERNAME>/rse-best-practices-playground
-```
-:::
-::::
+## Exercise: Have you set up [your playground?](https://github.com/neuroinformatics-unit/rse-best-practices-playground-trial/issues/1){preview-link="true" style="text-align: center"} 
 
 
 
@@ -65,18 +53,8 @@ git clone git@github.com:<YOUR_GITHUB_USERNAME>/rse-best-practices-playground
 :::
 ::::
 
-## Collaborative coding
+## What makes research code good?
 
-:::: {.columns}
+{{< include slides/mentimeter.qmd >}}
 
-::: {.column width="50%" style="font-size: 0.5em;"}
-![Photo by <a href="https://unsplash.com/@mparzuchowski?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Michał Parzuchowski</a> on <a href="https://unsplash.com/photos/yqD-v4fidt0?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>](img/michal-parzuchowski-yqD-v4fidt0-unsplash.jpg){height=400}
-:::
 
-::: {.column width="50%"}
-* track and prioritise issues
-* solve one issue at a time
-* submit a solution (PR) for discussion
-* let someone review your solution
-:::
-::::
