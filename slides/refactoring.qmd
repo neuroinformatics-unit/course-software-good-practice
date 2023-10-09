@@ -1,1 +1,7 @@
 # Code Quality
+
+## Code smells
+
+> A code smell is a surface indication that usually corresponds to a deeper problem in the system.
+
+- Martin Fowler

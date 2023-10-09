@@ -84,7 +84,7 @@ Try to cover all "edge" cases[^2]: what happens if ...?
 [^2]: [A Beginner’s Guide to Testing: Error Handling Edge Cases](https://www.freecodecamp.org/news/a-beginners-guide-to-testing-implement-these-quick-checks-to-test-your-code-d50027ad5eed/)
 
 
-## How to think about what to test
+## How to think about what to test {.smaller}
 
 What we've called sanity checks are referred to as "test cases".
 For example, what happens/should happen when you call...?
