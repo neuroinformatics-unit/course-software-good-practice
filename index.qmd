@@ -42,6 +42,8 @@ format:
           margin-left: 0
         embed-resources: true
         page-layout: full
+exercises:
+    org-repo: "rse-best-practices-course-2023/rse-best-practices-playground"
 ---
 
 ## [Neuroinformatics unit](https://neuroinformatics.dev/people.html){preview-link="true"}

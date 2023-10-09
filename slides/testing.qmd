@@ -66,7 +66,7 @@ def test_fastest_time_in_a_specific_case():
 
 ## Exercise: convert a sanity check into a test
 
-[Testing exercise](https://github.com/neuroinformatics-unit/rse-good-practice-playground/issues/2)
+[Testing exercise](https://github.com/{{< meta exercises.org-repo >}}/issues/2)
 
 
 ## How to think about what to test

@@ -27,7 +27,7 @@
 :::
 ::::
 
-## [The development cycle](https://github.com/neuroinformatics-unit/rse-best-practices-playground){preview-link="true" style="text-align: center"} 
+## [The development cycle](https://github.com/{{< meta exercises.org-repo >}}){preview-link="true" style="text-align: center"} 
 
 :::: {.columns}
 
@@ -43,7 +43,7 @@
 :::
 ::::
 
-## Exercise: Have you set up [your playground?](https://github.com/neuroinformatics-unit/rse-best-practices-playground-trial/issues/1){preview-link="true" style="text-align: center"} 
+## Exercise: Have you set up [your playground?](https://github.com/{{< meta exercises.org-repo >}}/issues/1){preview-link="true" style="text-align: center"} 
 
 
 ## What makes (research) code good?
