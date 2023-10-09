@@ -3,7 +3,7 @@
 ## Why should you test
 
 * to find (current and future) bugs earlier and more quickly (before you publish your results, ideally!)
-* to have confidence in your code changes
+* to have confidence in your current and future code
 * (to document how you expect your code to behave)
 
 ## Why should you test your research code?
@@ -29,36 +29,25 @@
 
 [^fire-lab]: [https://software.ac.uk/news/software-horror-stories-fire-lab](https://software.ac.uk/news/software-horror-stories-fire-lab)
 
-## What things should we sanity check about the `compute_overlap` function?
+## What things should we sanity check about the `calculate_fastest_time` function?
 
 ```{.python}
-def time_range(
-    start_time, end_time, number_of_intervals=1, gap_between_intervals_s=0
-):
-    """
-    Example:
-    >>> time_range("2010-01-12 10:00:00", "2010-01-12 12:00:00", 2, 60)
-    [('2010-01-12 10:00:00', '2010-01-12 12:00:00')]
-    """
-    ...
-
-def compute_overlap_time(range1, range2):
-    overlap_time = []
-    for start1, end1 in range1:
-        for start2, end2 in range2:
-            low = max(start1, start2)
-            high = min(end1, end2)
-            overlap_time.append((low, high))
-    return overlap_time
+def calculate_fastest_time(time_list):
+    fastest_time = time_list[0]
+    for time in time_list:
+        if time > fastest_time:
+            fastest_time = time
+    return fastest_time
 ```
 
-## What things should we sanity check about this code?
+## What things should we sanity check about the `calculate_fastest_time` function?
 
 {{< include slides/mentimeter.qmd >}}
 
 ## Demo: write some sanity checks
 
 Switch to VS Code
+
 {{< include slides/mentimeter.qmd >}}
 
 ## Testing with pytest
@@ -66,9 +55,9 @@ Switch to VS Code
 A neater way to run sanity checks
 
 ```{.python}
-import compute_overlap_time
+import .calculate_fastest_time
 
-def test_given_input():
+def test_fastest_time_in_a_specific_case():
     ...
     result = ...
     expected = ...

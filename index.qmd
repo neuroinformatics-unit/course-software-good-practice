@@ -79,6 +79,7 @@ Remark about RSE movement and its importance to research.
 ::: {.column width="50%"}
 * a GitHub account
 * followed setup instructions
+* open these slides on your laptop
 :::
 
 ::::
@@ -144,6 +145,7 @@ pip install my_awesome_package
 ::: {.column width="50%"}
 * make a mess
 * break things
+* be active
 * embrace the chaos
 * have fun
 :::

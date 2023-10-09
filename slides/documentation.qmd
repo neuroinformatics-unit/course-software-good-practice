@@ -60,5 +60,5 @@ def calculate_fastest_time(time_list):
 ```
 
 ::: {style="text-align: center; margin-top: 1em"}
-[Exercise: write a docstring for a function in `times.py`](https://packaging.python.org/en/latest/tutorials/packaging-projects/)
+[Exercise: write a docstring for a function in `times.py`](https://github.com/neuroinformatics-unit/rse-best-practices-playground)
 :::
