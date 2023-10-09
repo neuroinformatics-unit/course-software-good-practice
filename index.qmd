@@ -42,6 +42,8 @@ format:
           margin-left: 0
         embed-resources: true
         page-layout: full
+exercises:
+    org-repo: "rse-best-practices-course-2023/rse-best-practices-playground"
 ---
 
 ## [Neuroinformatics unit](https://neuroinformatics.dev/people.html){preview-link="true"}
@@ -79,6 +81,7 @@ Remark about RSE movement and its importance to research.
 ::: {.column width="50%"}
 * a GitHub account
 * followed setup instructions
+* open these slides on your laptop
 :::
 
 ::::
@@ -144,6 +147,7 @@ pip install my_awesome_package
 ::: {.column width="50%"}
 * make a mess
 * break things
+* be active
 * embrace the chaos
 * have fun
 :::
@@ -170,38 +174,5 @@ pip install my_awesome_package
 * evaluating and improving the quality of code 🤔 (code smells, refactoring, DRY)
 * creating a python package 📦 (cookiecutter, pypi)
 
-## Documentation resources
 
-## Testing resources
-
-* [Pytest docs](https://docs.pytest.org/en/7.3.x/)
-
-## Code review and issue tracking resources
-:::: {.columns}
-
-::: {.column width="50%" style="font-size: 0.5em;"}
-![Photo by <a href="https://unsplash.com/@mparzuchowski?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Michał Parzuchowski</a> on <a href="https://unsplash.com/photos/yqD-v4fidt0?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>](img/michal-parzuchowski-yqD-v4fidt0-unsplash.jpg){height=400}
-:::
-
-::: {.column width="50%"}
-* [Step-by-step guide](https://blog.ossph.org/a-beginners-guide-to-contributing-to-open-source-projects/)
-* Advice on how to do code review:
-  * as [an author](https://mtlynch.io/code-review-love/)
-  * as [a reviewer](https://mtlynch.io/human-code-reviews-1/)
-* The Zeigarnik effect: Why creating issues [helps you switch off](https://todoist.com/inspiration/zeigarnik-effect-comic)
-:::
-::::
-
-## RSE Community
-
-* join the community!
-  * [SWC slack `#software-skills`](swc-neuro.slack.com)
-  * [UCL Research Programming Hub](https://www.ucl.ac.uk/advanced-research-computing/community/ucl-research-programming-hub)
-  * [Research Software London](https://rslondon.ac.uk/)
-  * [Research Software Engineering societies](https://society-rse.org/international-rse-organisations/)
-
-### More context about Research Software Engineering
-
-* [The four pillare of RSE](https://ieeexplore.ieee.org/document/8994167)
-* [The Software Sustainability Institute](https://www.software.ac.uk/)
-* [The hidden REF – Celebrating all research outputs](https://hidden-ref.org/)
+{{< include slides/resources.qmd >}}

@@ -48,7 +48,7 @@ def get_named_colors_mapping():
 Docstrings (should) follow an [agreed convention](https://peps.python.org/pep-0257/){preview-link="true"}
 
 
-## A first task: [writing a docstring](https://github.com/neuroinformatics-unit/rse-best-practices-playground)
+## A first task: [writing a docstring](https://github.com/{{< meta exercises.org-repo >}})
 
 ``` {.python}
 def calculate_fastest_time(time_list):
@@ -60,5 +60,5 @@ def calculate_fastest_time(time_list):
 ```
 
 ::: {style="text-align: center; margin-top: 1em"}
-[Exercise: write a docstring for a function in `times.py`](https://packaging.python.org/en/latest/tutorials/packaging-projects/)
+[Exercise: write a docstring for a function in `times.py`](https://github.com/{{< meta exercises.org-repo >}}/issues/2)
 :::
