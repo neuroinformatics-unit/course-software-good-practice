@@ -88,6 +88,7 @@ Try to cover all "edge" cases[^2]: what happens if ...?
 
 What we've called sanity checks are referred to as "test cases".
 For example, what happens/should happen when you call...?
+
 * `calculate_fastest_time("this is a string")` ("zero")
 * `calculate_fastest_time([1.0])` ("one")  
 * `calculate_fastest_time([1.0]); calculate_fastest_time([2.0])` ("two")  
