@@ -74,12 +74,12 @@ def test_fastest_time_in_a_specific_case():
 What we've called sanity checks are referred to as "test cases".
 Try to cover all "edge" cases[^2]: what happens if ...?  
 
-* I pass an invalid input ("zero")  
-* I pass a simplest possible input ("one")  
-* I run the code several times ("two")  
-* I pass a typical input ("two to max-1")  
-* I pass the extremest allowable input ("max")  
-* I pass a too extreme input ("max+1")  
+* "zero": I pass an invalid input
+* "one":  I pass a simplest possible input
+* "two": I run the code several times
+* "two to max-1": I pass a typical input  
+* "max": I pass the extremest allowable input
+* "max+1": I pass a too extreme input  
 
 [^2]: [A Beginner’s Guide to Testing: Error Handling Edge Cases](https://www.freecodecamp.org/news/a-beginners-guide-to-testing-implement-these-quick-checks-to-test-your-code-d50027ad5eed/)
 
@@ -89,12 +89,12 @@ Try to cover all "edge" cases[^2]: what happens if ...?
 What we've called sanity checks are referred to as "test cases".
 For example, what happens/should happen when you call...?
 
-* `calculate_fastest_time("this is a string")` ("zero")
-* `calculate_fastest_time([1.0])` ("one")  
-* `calculate_fastest_time([1.0]); calculate_fastest_time([2.0])` ("two")  
-* `calculate_fastest_time([1.0, 0.5, 2.0])` ("two to max-1")  
-* `calculate_fastest_time([1.0, 0.5, 2.0, sys.float_info.max])` ("max")  
-* `calculate_fastest_time([1.0, 0.5, 2.0, float("inf")])` ("max+1")  
+* "zero": `calculate_fastest_time("this is a string")`
+* "one":  `calculate_fastest_time([])`
+* "two": `calculate_fastest_time([1.0]); calculate_fastest_time([2.0])`
+* "two to max-1": `calculate_fastest_time([1.0, 0.5, 2.0])`
+* "max": `calculate_fastest_time([1.0, 0.5, 2.0, sys.float_info.max]) # other extreme cases?`
+* "max+1": `calculate_fastest_time([1.0, 0.5, 2.0, float("inf")])`
 
 ## Some software testing vocabulary
 

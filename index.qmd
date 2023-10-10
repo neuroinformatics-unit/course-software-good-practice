@@ -42,6 +42,7 @@ format:
           margin-left: 0
         embed-resources: true
         page-layout: full
+        default-image-extension: png
 exercises:
     org-repo: "rse-best-practices-course-2023/rse-best-practices-playground"
 ---
