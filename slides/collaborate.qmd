@@ -36,10 +36,13 @@
 :::
 
 ::: {.column width="50%"}
-* open / choose a task ("issue")
-* write a solution to the task independent of main code (on a "branch"/"fork")
-* open a solution proposal ("pull request")
-* review a solution proposal ("pull request")
+![](icons/issue){height=25 style="margin:0 !important"} open / choose a task  
+
+![](icons/branch){height=30 style="margin:0 !important"} write a solution to the task independent of main code  
+
+![](icons/pull){height=25 style="margin:0 !important"} open a solution proposal  
+
+![](icons/pull){height=25 style="margin:0 !important"} review a solution proposal  
 :::
 ::::
 
