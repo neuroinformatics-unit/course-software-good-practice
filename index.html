@@ -581,12 +581,10 @@ Alessandro Felder*, Laura Porta, Adam Tyson
 </figure>
 </div>
 </div><div class="column" style="width:50%;">
-<ul>
-<li>open / choose a task (“issue”)</li>
-<li>write a solution to the task independent of main code (on a “branch”/“fork”)</li>
-<li>open a solution proposal (“pull request”)</li>
-<li>review a solution proposal (“pull request”)</li>
-</ul>
+<p><img data-src="icons/issue.png" style="margin:0 !important" height="25"> open / choose a task</p>
+<p><img data-src="icons/branch.png" style="margin:0 !important" height="30"> write a solution to the task independent of main code</p>
+<p><img data-src="icons/pull.png" style="margin:0 !important" height="25"> open a solution proposal</p>
+<p><img data-src="icons/pull.png" style="margin:0 !important" height="25"> review a solution proposal</p>
 </div>
 </div>
 </section>
@@ -648,7 +646,7 @@ Alessandro Felder*, Laura Porta, Adam Tyson
 <p>Docstrings (should) follow an <a href="https://peps.python.org/pep-0257/" data-preview-link="true">agreed convention</a></p>
 </section>
 <section id="a-first-task-writing-a-docstring" class="slide level2">
-<h2>A first task: <a href="https://github.com/rse-best-practices-course-2023/rse-best-practices-playground">writing a docstring</a></h2>
+<h2>A first task: writing a docstring</h2>
 <div class="sourceCode" id="cb6"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1"></a><span class="kw">def</span> calculate_fastest_time(time_list):</span>
 <span id="cb6-2"><a href="#cb6-2"></a>    fastest_time <span class="op">=</span> time_list[<span class="dv">0</span>]</span>
 <span id="cb6-3"><a href="#cb6-3"></a>    <span class="cf">for</span> time <span class="kw">in</span> time_list:</span>
@@ -733,33 +731,25 @@ Alessandro Felder*, Laura Porta, Adam Tyson
 <h2>How to think about what to test</h2>
 <p>What we’ve called sanity checks are referred to as “test cases”. Try to cover all “edge” cases<sup>1</sup>: what happens if …?</p>
 <ul>
-<li>I pass an invalid input (“zero”)<br>
+<li>“zero”: I pass an invalid input</li>
+<li>“one”: I pass a simplest possible input</li>
+<li>“two”: I run the code several times</li>
+<li>“two to max-1”: I pass a typical input<br>
 </li>
-<li>I pass a simplest possible input (“one”)<br>
-</li>
-<li>I run the code several times (“two”)<br>
-</li>
-<li>I pass a typical input (“two to max-1”)<br>
-</li>
-<li>I pass the extremest allowable input (“max”)<br>
-</li>
-<li>I pass a too extreme input (“max+1”)</li>
+<li>“max”: I pass the extremest allowable input</li>
+<li>“max+1”: I pass a too extreme input</li>
 </ul>
 <aside><ol class="aside-footnotes"><li id="fn4"><p><a href="https://www.freecodecamp.org/news/a-beginners-guide-to-testing-implement-these-quick-checks-to-test-your-code-d50027ad5eed/">A Beginner’s Guide to Testing: Error Handling Edge Cases</a></p></li></ol></aside></section>
 <section id="how-to-think-about-what-to-test-1" class="slide level2 smaller">
 <h2>How to think about what to test</h2>
 <p>What we’ve called sanity checks are referred to as “test cases”. For example, what happens/should happen when you call…?</p>
 <ul>
-<li><code>calculate_fastest_time("this is a string")</code> (“zero”)</li>
-<li><code>calculate_fastest_time([1.0])</code> (“one”)<br>
-</li>
-<li><code>calculate_fastest_time([1.0]); calculate_fastest_time([2.0])</code> (“two”)<br>
-</li>
-<li><code>calculate_fastest_time([1.0, 0.5, 2.0])</code> (“two to max-1”)<br>
-</li>
-<li><code>calculate_fastest_time([1.0, 0.5, 2.0, sys.float_info.max])</code> (“max”)<br>
-</li>
-<li><code>calculate_fastest_time([1.0, 0.5, 2.0, float("inf")])</code> (“max+1”)</li>
+<li>“zero”: <code>calculate_fastest_time("this is a string")</code></li>
+<li>“one”: <code>calculate_fastest_time([])</code></li>
+<li>“two”: <code>calculate_fastest_time([1.0]); calculate_fastest_time([2.0])</code></li>
+<li>“two to max-1”: <code>calculate_fastest_time([1.0, 0.5, 2.0])</code></li>
+<li>“max”: <code>calculate_fastest_time([1.0, 0.5, 2.0, sys.float_info.max]) # other extreme cases?</code></li>
+<li>“max+1”: <code>calculate_fastest_time([1.0, 0.5, 2.0, float("inf")])</code></li>
 </ul>
 </section>
 <section id="some-software-testing-vocabulary" class="slide level2">
