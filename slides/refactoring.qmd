@@ -5,3 +5,32 @@
 > A code smell is a surface indication that usually corresponds to a deeper problem in the system.
 
 - Martin Fowler
+
+## An example of a code smell
+
+```{.python}
+def calculate_fastest_time(time_list):
+    fastest_time = time_list[0]
+    for time in time_list:
+        if time > fastest_time:
+            fastest_time = time
+    return fastest_time
+
+
+def print_fastest_time(time_list):
+    fastest_time = time_list[0]
+    for time in time_list:
+        if time > fastest_time:
+            fastest_time = time
+
+    print(f"This is the fastest time: {fastest_time} 🚀")
+```
+
+## What might be not-so-good about these two functions?
+
+{{< include slides/mentimeter.qmd >}}
+
+## [Exercise: don't repeat yourself (DRY)](https://github.com/{{< meta exercises.org-repo >}}/issues/4)
+
+
+
