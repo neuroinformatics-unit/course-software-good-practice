@@ -439,8 +439,9 @@ Alessandro Felder*, Laura Porta, Adam Tyson
 <p><a href="https://www.menti.com/alstthrccvqk" data-preview-link="true" style="text-align: center">Mentimeter</a></p>
 </div>
 </section>
-<section id="prerequisites" class="slide level2">
+<section id="prerequisites" class="slide level2 smaller">
 <h2>Prerequisites</h2>
+<p><a href="%5Bhttps://neuroinformatics-unit.github.io/software-good-practice-course/%5D">https://neuroinformatics-unit.github.io/software-good-practice-course/</a></p>
 <div class="columns">
 <div class="column" style="font-size: 0.5em;">
 <div class="quarto-figure quarto-figure-center">
@@ -617,8 +618,8 @@ Alessandro Felder*, Laura Porta, Adam Tyson
 <p><a href="https://www.menti.com/alstthrccvqk" data-preview-link="true" style="text-align: center">Mentimeter</a></p>
 </div>
 </section>
-<section id="demo-document-what-the-function-does-with-a-multiline-string" class="slide level2">
-<h2>Demo: document what the function does with a multiline string</h2>
+<section id="demo-document-what-the-function-does" class="slide level2">
+<h2>Demo: document what the function does?</h2>
 <div class="sourceCode" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1"></a><span class="kw">def</span> calculate_fastest_time(time_list):</span>
 <span id="cb4-2"><a href="#cb4-2"></a>    fastest_time <span class="op">=</span> time_list[<span class="dv">0</span>]</span>
 <span id="cb4-3"><a href="#cb4-3"></a>    <span class="cf">for</span> time <span class="kw">in</span> time_list:</span>
@@ -792,6 +793,33 @@ Alessandro Felder*, Laura Porta, Adam Tyson
 <ul>
 <li>Martin Fowler</li>
 </ul>
+</section>
+<section id="an-example-of-a-code-smell" class="slide level2">
+<h2>An example of a code smell</h2>
+<div class="sourceCode" id="cb9"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1"></a><span class="kw">def</span> calculate_fastest_time(time_list):</span>
+<span id="cb9-2"><a href="#cb9-2"></a>    fastest_time <span class="op">=</span> time_list[<span class="dv">0</span>]</span>
+<span id="cb9-3"><a href="#cb9-3"></a>    <span class="cf">for</span> time <span class="kw">in</span> time_list:</span>
+<span id="cb9-4"><a href="#cb9-4"></a>        <span class="cf">if</span> time <span class="op">&gt;</span> fastest_time:</span>
+<span id="cb9-5"><a href="#cb9-5"></a>            fastest_time <span class="op">=</span> time</span>
+<span id="cb9-6"><a href="#cb9-6"></a>    <span class="cf">return</span> fastest_time</span>
+<span id="cb9-7"><a href="#cb9-7"></a></span>
+<span id="cb9-8"><a href="#cb9-8"></a></span>
+<span id="cb9-9"><a href="#cb9-9"></a><span class="kw">def</span> print_fastest_time(time_list):</span>
+<span id="cb9-10"><a href="#cb9-10"></a>    fastest_time <span class="op">=</span> time_list[<span class="dv">0</span>]</span>
+<span id="cb9-11"><a href="#cb9-11"></a>    <span class="cf">for</span> time <span class="kw">in</span> time_list:</span>
+<span id="cb9-12"><a href="#cb9-12"></a>        <span class="cf">if</span> time <span class="op">&gt;</span> fastest_time:</span>
+<span id="cb9-13"><a href="#cb9-13"></a>            fastest_time <span class="op">=</span> time</span>
+<span id="cb9-14"><a href="#cb9-14"></a></span>
+<span id="cb9-15"><a href="#cb9-15"></a>    <span class="bu">print</span>(<span class="ss">f"This is the fastest time: </span><span class="sc">{</span>fastest_time<span class="sc">}</span><span class="ss"> 🚀"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="what-might-be-not-so-good-about-these-two-functions" class="slide level2">
+<h2>What might be not-so-good about these two functions?</h2>
+<div style="text-align: center; margin-top: 1em">
+<p><a href="https://www.menti.com/alstthrccvqk" data-preview-link="true" style="text-align: center">Mentimeter</a></p>
+</div>
+</section>
+<section id="exercise-dont-repeat-yourself-dry" class="slide level2">
+<h2><a href="https://github.com/rse-best-practices-course-2023/rse-best-practices-playground/issues/4">Exercise: don’t repeat yourself (DRY)</a></h2>
 </section></section>
 <section>
 <section id="packaging" class="title-slide slide level1 center">
@@ -810,7 +838,7 @@ Alessandro Felder*, Laura Porta, Adam Tyson
 </div>
 </div><div class="column" style="width:50%;">
 <p>Packaging your code makes it easy-to-install.</p>
-<div class="sourceCode" id="cb9" data-code-line-numbers="false"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install my-awesome-package</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb10" data-code-line-numbers="false"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install my-awesome-package</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </section>
@@ -853,10 +881,10 @@ Alessandro Felder*, Laura Porta, Adam Tyson
 </div>
 </div><div class="column" style="width:50%;">
 <p>Use <a href="https://github.com/neuroinformatics-unit/python-cookiecutter">the NIU cookiecutter template</a>.</p>
-<div class="sourceCode" id="cb11" data-code-line-numbers="false"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> create <span class="at">-n</span> <span class="st">"package-playground"</span></span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> activate package-playground</span>
-<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install cookiecutter</span>
-<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a><span class="ex">cookiecutter</span> https://github.com/neuroinformatics-unit/python-cookiecutter </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb12" data-code-line-numbers="false"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> create <span class="at">-n</span> <span class="st">"package-playground"</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> activate package-playground</span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install cookiecutter</span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a><span class="ex">cookiecutter</span> https://github.com/neuroinformatics-unit/python-cookiecutter </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </section>
@@ -920,13 +948,33 @@ Alessandro Felder*, Laura Porta, Adam Tyson
 <h1>Resources</h1>
 
 </section>
+<section id="code-review-and-issue-tracking-resources" class="slide level2">
+<h2>Code review and issue tracking resources</h2>
+<ul>
+<li><a href="https://blog.ossph.org/a-beginners-guide-to-contributing-to-open-source-projects/">Step-by-step guide</a></li>
+<li>Advice on how to do code review:
+<ul>
+<li>as <a href="https://mtlynch.io/code-review-love/">an author</a></li>
+<li>as <a href="https://mtlynch.io/human-code-reviews-1/">a reviewer</a></li>
+</ul></li>
+<li>The Zeigarnik effect: Why creating issues <a href="https://todoist.com/inspiration/zeigarnik-effect-comic">helps you switch off</a></li>
+</ul>
+</section>
 <section id="documentation-resources" class="slide level2">
 <h2>Documentation resources</h2>
+<ul>
+<li><a href="https://peps.python.org/pep-0257/#specification">PEP 257 – Docstring Conventions | peps.python.org</a></li>
+<li><a href="https://www.sphinx-doc.org/en/master/usage/quickstart.html">Getting Started — Sphinx documentation</a></li>
+<li><a href="https://sphinx-rtd-tutorial.readthedocs.io/en/latest/read-the-docs.html">Publishing the documentation to ReadTheDocs — Sphinx-RTD-Tutorial documentation</a></li>
+<li><a href="https://www.mkdocs.org/">Mkdocs - a simpler alternative to sphinx</a></li>
+<li><a href="https://diataxis.fr/">Diátaxis - a framework to write technical documentation</a></li>
+</ul>
 </section>
 <section id="testing-resources" class="slide level2">
 <h2>Testing resources</h2>
 <ul>
 <li><a href="https://docs.pytest.org/en/7.3.x/">Pytest docs</a></li>
+<li><a href="https://medium.com/swlh/taking-the-edge-off-of-edge-cases-7b3008d83a57">Taking the edge off edge-cases blog</a></li>
 </ul>
 </section>
 <section id="refactoring-resources" class="slide level2">
@@ -943,32 +991,23 @@ Alessandro Felder*, Laura Porta, Adam Tyson
 <li><a href="https://youtu.be/FpIJ7T1Gpjo?feature=shared&amp;t=1638">Python wheels walkthrough</a></li>
 </ul>
 </section>
-<section id="code-review-and-issue-tracking-resources" class="slide level2">
-<h2>Code review and issue tracking resources</h2>
-<ul>
-<li><a href="https://blog.ossph.org/a-beginners-guide-to-contributing-to-open-source-projects/">Step-by-step guide</a></li>
-<li>Advice on how to do code review:
-<ul>
-<li>as <a href="https://mtlynch.io/code-review-love/">an author</a></li>
-<li>as <a href="https://mtlynch.io/human-code-reviews-1/">a reviewer</a></li>
-</ul></li>
-<li>The Zeigarnik effect: Why creating issues <a href="https://todoist.com/inspiration/zeigarnik-effect-comic">helps you switch off</a></li>
-</ul>
-</section>
 <section id="rse-community" class="slide level2">
 <h2>RSE Community</h2>
 <ul>
 <li>join the community!
 <ul>
+<li>Talk to the NIU members about code!</li>
 <li><a href="swc-neuro.slack.com">SWC slack <code>#software-skills</code></a></li>
 <li><a href="https://www.ucl.ac.uk/advanced-research-computing/community/ucl-research-programming-hub">UCL Research Programming Hub</a></li>
 <li><a href="https://rslondon.ac.uk/">Research Software London</a></li>
 <li><a href="https://society-rse.org/international-rse-organisations/">Research Software Engineering societies</a></li>
 </ul></li>
 </ul>
-<h3 id="more-context-about-research-software-engineering">More context about Research Software Engineering</h3>
+</section>
+<section id="more-context-about-research-software-engineering" class="slide level2">
+<h2>More context about Research Software Engineering</h2>
 <ul>
-<li><a href="https://ieeexplore.ieee.org/document/8994167">The four pillare of RSE</a></li>
+<li><a href="https://ieeexplore.ieee.org/document/8994167">The four pillars of RSE</a></li>
 <li><a href="https://www.software.ac.uk/">The Software Sustainability Institute</a></li>
 <li><a href="https://hidden-ref.org/">The hidden REF – Celebrating all research outputs</a></li>
 </ul>
