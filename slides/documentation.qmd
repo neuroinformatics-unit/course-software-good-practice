@@ -15,7 +15,7 @@ def calculate_fastest_time(time_list):
 
 {{< include slides/mentimeter.qmd >}}
 
-## Demo: document what the function does with a multiline string
+## Demo: document what the function does?
 
 ``` {.python}
 def calculate_fastest_time(time_list):

@@ -71,7 +71,10 @@ Remark about RSE movement and its importance to research.
 
 {{< include slides/mentimeter.qmd >}}
 
-## Prerequisites
+## Prerequisites {.smaller}
+
+[https://neuroinformatics-unit.github.io/software-good-practice-course/](
+[https://neuroinformatics-unit.github.io/software-good-practice-course/])
 
 :::: {.columns}
 
@@ -86,6 +89,7 @@ Remark about RSE movement and its importance to research.
 :::
 
 ::::
+ 
 
 ## The next steps
 :::: {.columns}

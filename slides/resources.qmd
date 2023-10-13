@@ -1,10 +1,25 @@
 # Resources
 
+## Code review and issue tracking resources
+
+* [Step-by-step guide](https://blog.ossph.org/a-beginners-guide-to-contributing-to-open-source-projects/)
+* Advice on how to do code review:
+  * as [an author](https://mtlynch.io/code-review-love/)
+  * as [a reviewer](https://mtlynch.io/human-code-reviews-1/)
+* The Zeigarnik effect: Why creating issues [helps you switch off](https://todoist.com/inspiration/zeigarnik-effect-comic)
+
 ## Documentation resources
+
+* [PEP 257 – Docstring Conventions | peps.python.org](https://peps.python.org/pep-0257/#specification)
+* [Getting Started — Sphinx documentation](https://www.sphinx-doc.org/en/master/usage/quickstart.html)
+* [Publishing the documentation to ReadTheDocs — Sphinx-RTD-Tutorial documentation](https://sphinx-rtd-tutorial.readthedocs.io/en/latest/read-the-docs.html)
+* [Mkdocs - a simpler alternative to sphinx](https://www.mkdocs.org/)
+* [Diátaxis - a framework to write technical documentation](https://diataxis.fr/)
 
 ## Testing resources
 
 * [Pytest docs](https://docs.pytest.org/en/7.3.x/)
+* [Taking the edge off edge-cases blog](https://medium.com/swlh/taking-the-edge-off-of-edge-cases-7b3008d83a57)
 
 ## Refactoring resources
 
@@ -17,24 +32,17 @@
 * [Python packaging tutorial](https://packaging.python.org/en/latest/tutorials/packaging-projects/)
 * [Python wheels walkthrough](https://youtu.be/FpIJ7T1Gpjo?feature=shared&t=1638)
 
-## Code review and issue tracking resources
-
-* [Step-by-step guide](https://blog.ossph.org/a-beginners-guide-to-contributing-to-open-source-projects/)
-* Advice on how to do code review:
-  * as [an author](https://mtlynch.io/code-review-love/)
-  * as [a reviewer](https://mtlynch.io/human-code-reviews-1/)
-* The Zeigarnik effect: Why creating issues [helps you switch off](https://todoist.com/inspiration/zeigarnik-effect-comic)
-
 ## RSE Community
 
 * join the community!
+  * Talk to the NIU members about code! 
   * [SWC slack `#software-skills`](swc-neuro.slack.com)
   * [UCL Research Programming Hub](https://www.ucl.ac.uk/advanced-research-computing/community/ucl-research-programming-hub)
   * [Research Software London](https://rslondon.ac.uk/)
   * [Research Software Engineering societies](https://society-rse.org/international-rse-organisations/)
 
-### More context about Research Software Engineering
+## More context about Research Software Engineering
 
-* [The four pillare of RSE](https://ieeexplore.ieee.org/document/8994167)
+* [The four pillars of RSE](https://ieeexplore.ieee.org/document/8994167)
 * [The Software Sustainability Institute](https://www.software.ac.uk/)
 * [The hidden REF – Celebrating all research outputs](https://hidden-ref.org/)
