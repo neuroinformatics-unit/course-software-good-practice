@@ -168,7 +168,7 @@ pip install my_awesome_package
 :::
 
 ::: {.column width="50%"}
-* fork and clone the repo locally as described
+* fork and clone the repo locally [as described in Exercise 1](https://github.com/rse-best-practices-course-2023/rse-best-practices-playground/issues/1)
 * set up a conda environment for today:
 
 ```{.bash}
