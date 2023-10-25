@@ -57,7 +57,7 @@ exercises:
 :::
 
 ::: {.column width="50%"}
-We are passionate about writing research software well. Please talk to us about software, we like to help.
+We are passionate about writing research software well. Please talk to us about software, we like to help (office 439).
 :::
 ::::
 
@@ -85,7 +85,7 @@ Remark about RSE movement and its importance to research.
 ::: {.column width="50%"}
 * a GitHub account
 * followed setup instructions
-* open these slides on your laptop
+* open these slides on your laptop: [https://neuroinformatics.dev/software-good-practice-course/](https://neuroinformatics.dev/software-good-practice-course/)
 :::
 
 ::::
@@ -159,6 +159,31 @@ pip install my_awesome_package
 
 ::::
 
+## Set up your playground
+
+:::: {.columns}
+
+::: {.column width="50%" style="font-size: 0.5em;"}
+![Photo by <a href="https://unsplash.com/@tlemaitre?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Thierry Lemaitre</a> on <a href="https://unsplash.com/photos/DCTz78QCY24?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>](img/thierry-lemaitre-DCTz78QCY24-unsplash.jpg){height=500}
+:::
+
+::: {.column width="50%"}
+* fork and clone the repo locally as described
+* set up a conda environment for today:
+
+```{.bash}
+conda create -n "software-good-practice-course" python=3.11 
+```
+```{.bash}
+conda activate software-good-practice-course
+```
+
+:::
+
+::::
+
+
+
 {{< include slides/collaborate.qmd >}}
 
 {{< include slides/documentation.qmd >}}
@@ -179,5 +204,9 @@ pip install my_awesome_package
 * evaluating and improving the quality of code 🤔 (code smells, refactoring, DRY)
 * creating a python package 📦 (cookiecutter, pypi)
 
+## Retrospective
+
+* Anonymously tell us what you thought [on this ideaboardz](https://ideaboardz.com/for/Collaborative%20coding%20retrospective/5104750)...
+* ... and talk to us anytime!
 
 {{< include slides/resources.qmd >}}
