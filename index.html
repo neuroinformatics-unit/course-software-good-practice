@@ -416,7 +416,7 @@ Alessandro Felder*, Laura Porta, Adam Tyson
 </figure>
 </div>
 </div><div class="column" style="width:50%;">
-<p>We are passionate about writing research software well. Please talk to us about software, we like to help.</p>
+<p>We are passionate about writing research software well. Please talk to us about software, we like to help (office 439).</p>
 </div>
 </div>
 <aside class="notes">
@@ -454,7 +454,7 @@ Alessandro Felder*, Laura Porta, Adam Tyson
 <ul>
 <li>a GitHub account</li>
 <li>followed setup instructions</li>
-<li>open these slides on your laptop</li>
+<li>open these slides on your laptop: <a href="https://neuroinformatics.dev/software-good-practice-course/">https://neuroinformatics.dev/software-good-practice-course/</a></li>
 </ul>
 </div>
 </div>
@@ -528,6 +528,26 @@ Alessandro Felder*, Laura Porta, Adam Tyson
 <li>embrace the chaos</li>
 <li>have fun</li>
 </ul>
+</div>
+</div>
+</section>
+<section id="set-up-your-playground" class="slide level2">
+<h2>Set up your playground</h2>
+<div class="columns">
+<div class="column" style="font-size: 0.5em;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/thierry-lemaitre-DCTz78QCY24-unsplash.jpg" height="500"></p>
+<figcaption>Photo by <a href="https://unsplash.com/@tlemaitre?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Thierry Lemaitre</a> on <a href="https://unsplash.com/photos/DCTz78QCY24?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:50%;">
+<ul>
+<li>fork and clone the repo locally as described</li>
+<li>set up a conda environment for today:</li>
+</ul>
+<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1"></a><span class="ex">conda</span> create <span class="at">-n</span> <span class="st">"software-good-practice-course"</span> python=3.11 </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1"></a><span class="ex">conda</span> activate software-good-practice-course</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </section>
@@ -605,12 +625,12 @@ Alessandro Felder*, Laura Porta, Adam Tyson
 </section>
 <section id="a-simple-python-function" class="slide level2">
 <h2>A simple Python function</h2>
-<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1"></a><span class="kw">def</span> calculate_fastest_time(time_list):</span>
-<span id="cb3-2"><a href="#cb3-2"></a>    fastest_time <span class="op">=</span> time_list[<span class="dv">0</span>]</span>
-<span id="cb3-3"><a href="#cb3-3"></a>    <span class="cf">for</span> time <span class="kw">in</span> time_list:</span>
-<span id="cb3-4"><a href="#cb3-4"></a>        <span class="cf">if</span> time <span class="op">&gt;</span> fastest_time:</span>
-<span id="cb3-5"><a href="#cb3-5"></a>            fastest_time <span class="op">=</span> time</span>
-<span id="cb3-6"><a href="#cb3-6"></a>    <span class="cf">return</span> fastest_time</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1"></a><span class="kw">def</span> calculate_fastest_time(time_list):</span>
+<span id="cb5-2"><a href="#cb5-2"></a>    fastest_time <span class="op">=</span> time_list[<span class="dv">0</span>]</span>
+<span id="cb5-3"><a href="#cb5-3"></a>    <span class="cf">for</span> time <span class="kw">in</span> time_list:</span>
+<span id="cb5-4"><a href="#cb5-4"></a>        <span class="cf">if</span> time <span class="op">&gt;</span> fastest_time:</span>
+<span id="cb5-5"><a href="#cb5-5"></a>            fastest_time <span class="op">=</span> time</span>
+<span id="cb5-6"><a href="#cb5-6"></a>    <span class="cf">return</span> fastest_time</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="what-does-this-function-do" class="slide level2">
 <h2>What does this function do?</h2>
@@ -620,12 +640,12 @@ Alessandro Felder*, Laura Porta, Adam Tyson
 </section>
 <section id="demo-document-what-the-function-does" class="slide level2">
 <h2>Demo: document what the function does?</h2>
-<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1"></a><span class="kw">def</span> calculate_fastest_time(time_list):</span>
-<span id="cb4-2"><a href="#cb4-2"></a>    fastest_time <span class="op">=</span> time_list[<span class="dv">0</span>]</span>
-<span id="cb4-3"><a href="#cb4-3"></a>    <span class="cf">for</span> time <span class="kw">in</span> time_list:</span>
-<span id="cb4-4"><a href="#cb4-4"></a>        <span class="cf">if</span> time <span class="op">&gt;</span> fastest_time:</span>
-<span id="cb4-5"><a href="#cb4-5"></a>            fastest_time <span class="op">=</span> time</span>
-<span id="cb4-6"><a href="#cb4-6"></a>    <span class="cf">return</span> fastest_time</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1"></a><span class="kw">def</span> calculate_fastest_time(time_list):</span>
+<span id="cb6-2"><a href="#cb6-2"></a>    fastest_time <span class="op">=</span> time_list[<span class="dv">0</span>]</span>
+<span id="cb6-3"><a href="#cb6-3"></a>    <span class="cf">for</span> time <span class="kw">in</span> time_list:</span>
+<span id="cb6-4"><a href="#cb6-4"></a>        <span class="cf">if</span> time <span class="op">&gt;</span> fastest_time:</span>
+<span id="cb6-5"><a href="#cb6-5"></a>            fastest_time <span class="op">=</span> time</span>
+<span id="cb6-6"><a href="#cb6-6"></a>    <span class="cf">return</span> fastest_time</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="the-matplotlib-documentation" class="slide level2">
 <h2>The Matplotlib documentation</h2>
@@ -641,19 +661,19 @@ Alessandro Felder*, Laura Porta, Adam Tyson
 </section>
 <section id="this-is-called-a-docstring-in-python" class="slide level2">
 <h2>This is called a “docstring” in Python</h2>
-<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1"></a><span class="kw">def</span> get_named_colors_mapping():</span>
-<span id="cb5-2"><a href="#cb5-2"></a>    <span class="co">"""Return the global mapping of names to named colors."""</span></span>
-<span id="cb5-3"><a href="#cb5-3"></a>    <span class="cf">return</span> _colors_full_map</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1"></a><span class="kw">def</span> get_named_colors_mapping():</span>
+<span id="cb7-2"><a href="#cb7-2"></a>    <span class="co">"""Return the global mapping of names to named colors."""</span></span>
+<span id="cb7-3"><a href="#cb7-3"></a>    <span class="cf">return</span> _colors_full_map</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Docstrings (should) follow an <a href="https://peps.python.org/pep-0257/" data-preview-link="true">agreed convention</a></p>
 </section>
 <section id="a-first-task-writing-a-docstring" class="slide level2">
 <h2>A first task: writing a docstring</h2>
-<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1"></a><span class="kw">def</span> calculate_fastest_time(time_list):</span>
-<span id="cb6-2"><a href="#cb6-2"></a>    fastest_time <span class="op">=</span> time_list[<span class="dv">0</span>]</span>
-<span id="cb6-3"><a href="#cb6-3"></a>    <span class="cf">for</span> time <span class="kw">in</span> time_list:</span>
-<span id="cb6-4"><a href="#cb6-4"></a>        <span class="cf">if</span> time <span class="op">&gt;</span> fastest_time:</span>
-<span id="cb6-5"><a href="#cb6-5"></a>            fastest_time <span class="op">=</span> time</span>
-<span id="cb6-6"><a href="#cb6-6"></a>    <span class="cf">return</span> fastest_time</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1"></a><span class="kw">def</span> calculate_fastest_time(time_list):</span>
+<span id="cb8-2"><a href="#cb8-2"></a>    fastest_time <span class="op">=</span> time_list[<span class="dv">0</span>]</span>
+<span id="cb8-3"><a href="#cb8-3"></a>    <span class="cf">for</span> time <span class="kw">in</span> time_list:</span>
+<span id="cb8-4"><a href="#cb8-4"></a>        <span class="cf">if</span> time <span class="op">&gt;</span> fastest_time:</span>
+<span id="cb8-5"><a href="#cb8-5"></a>            fastest_time <span class="op">=</span> time</span>
+<span id="cb8-6"><a href="#cb8-6"></a>    <span class="cf">return</span> fastest_time</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div style="text-align: center; margin-top: 1em">
 <p><a href="https://github.com/rse-best-practices-course-2023/rse-best-practices-playground/issues/2">Exercise: write a docstring for a function in <code>times.py</code></a></p>
 </div>
@@ -693,12 +713,12 @@ Alessandro Felder*, Laura Porta, Adam Tyson
 <aside><ol class="aside-footnotes"><li id="fn3"><p><a href="https://software.ac.uk/news/software-horror-stories-fire-lab">https://software.ac.uk/news/software-horror-stories-fire-lab</a></p></li></ol></aside></section>
 <section id="what-things-should-we-sanity-check-about-the-calculate_fastest_time-function" class="slide level2">
 <h2>What things should we sanity check about the <code>calculate_fastest_time</code> function?</h2>
-<div class="sourceCode" id="cb7"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1"></a><span class="kw">def</span> calculate_fastest_time(time_list):</span>
-<span id="cb7-2"><a href="#cb7-2"></a>    fastest_time <span class="op">=</span> time_list[<span class="dv">0</span>]</span>
-<span id="cb7-3"><a href="#cb7-3"></a>    <span class="cf">for</span> time <span class="kw">in</span> time_list:</span>
-<span id="cb7-4"><a href="#cb7-4"></a>        <span class="cf">if</span> time <span class="op">&gt;</span> fastest_time:</span>
-<span id="cb7-5"><a href="#cb7-5"></a>            fastest_time <span class="op">=</span> time</span>
-<span id="cb7-6"><a href="#cb7-6"></a>    <span class="cf">return</span> fastest_time</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1"></a><span class="kw">def</span> calculate_fastest_time(time_list):</span>
+<span id="cb9-2"><a href="#cb9-2"></a>    fastest_time <span class="op">=</span> time_list[<span class="dv">0</span>]</span>
+<span id="cb9-3"><a href="#cb9-3"></a>    <span class="cf">for</span> time <span class="kw">in</span> time_list:</span>
+<span id="cb9-4"><a href="#cb9-4"></a>        <span class="cf">if</span> time <span class="op">&gt;</span> fastest_time:</span>
+<span id="cb9-5"><a href="#cb9-5"></a>            fastest_time <span class="op">=</span> time</span>
+<span id="cb9-6"><a href="#cb9-6"></a>    <span class="cf">return</span> fastest_time</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="what-things-should-we-sanity-check-about-the-calculate_fastest_time-function-1" class="slide level2">
 <h2>What things should we sanity check about the <code>calculate_fastest_time</code> function?</h2>
@@ -716,13 +736,13 @@ Alessandro Felder*, Laura Porta, Adam Tyson
 <section id="testing-with-pytest" class="slide level2">
 <h2>Testing with pytest</h2>
 <p>A neater way to run sanity checks</p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1"></a><span class="im">import</span> .calculate_fastest_time</span>
-<span id="cb8-2"><a href="#cb8-2"></a></span>
-<span id="cb8-3"><a href="#cb8-3"></a><span class="kw">def</span> test_fastest_time_in_a_specific_case():</span>
-<span id="cb8-4"><a href="#cb8-4"></a>    ...</span>
-<span id="cb8-5"><a href="#cb8-5"></a>    result <span class="op">=</span> ...</span>
-<span id="cb8-6"><a href="#cb8-6"></a>    expected <span class="op">=</span> ...</span>
-<span id="cb8-7"><a href="#cb8-7"></a>    <span class="cf">assert</span> result <span class="op">==</span> expected</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1"></a><span class="im">import</span> .calculate_fastest_time</span>
+<span id="cb10-2"><a href="#cb10-2"></a></span>
+<span id="cb10-3"><a href="#cb10-3"></a><span class="kw">def</span> test_fastest_time_in_a_specific_case():</span>
+<span id="cb10-4"><a href="#cb10-4"></a>    ...</span>
+<span id="cb10-5"><a href="#cb10-5"></a>    result <span class="op">=</span> ...</span>
+<span id="cb10-6"><a href="#cb10-6"></a>    expected <span class="op">=</span> ...</span>
+<span id="cb10-7"><a href="#cb10-7"></a>    <span class="cf">assert</span> result <span class="op">==</span> expected</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="exercise-convert-a-sanity-check-into-a-test" class="slide level2">
 <h2>Exercise: convert a sanity check into a test</h2>
@@ -796,21 +816,21 @@ Alessandro Felder*, Laura Porta, Adam Tyson
 </section>
 <section id="an-example-of-a-code-smell" class="slide level2">
 <h2>An example of a code smell</h2>
-<div class="sourceCode" id="cb9"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1"></a><span class="kw">def</span> calculate_fastest_time(time_list):</span>
-<span id="cb9-2"><a href="#cb9-2"></a>    fastest_time <span class="op">=</span> time_list[<span class="dv">0</span>]</span>
-<span id="cb9-3"><a href="#cb9-3"></a>    <span class="cf">for</span> time <span class="kw">in</span> time_list:</span>
-<span id="cb9-4"><a href="#cb9-4"></a>        <span class="cf">if</span> time <span class="op">&gt;</span> fastest_time:</span>
-<span id="cb9-5"><a href="#cb9-5"></a>            fastest_time <span class="op">=</span> time</span>
-<span id="cb9-6"><a href="#cb9-6"></a>    <span class="cf">return</span> fastest_time</span>
-<span id="cb9-7"><a href="#cb9-7"></a></span>
-<span id="cb9-8"><a href="#cb9-8"></a></span>
-<span id="cb9-9"><a href="#cb9-9"></a><span class="kw">def</span> print_fastest_time(time_list):</span>
-<span id="cb9-10"><a href="#cb9-10"></a>    fastest_time <span class="op">=</span> time_list[<span class="dv">0</span>]</span>
-<span id="cb9-11"><a href="#cb9-11"></a>    <span class="cf">for</span> time <span class="kw">in</span> time_list:</span>
-<span id="cb9-12"><a href="#cb9-12"></a>        <span class="cf">if</span> time <span class="op">&gt;</span> fastest_time:</span>
-<span id="cb9-13"><a href="#cb9-13"></a>            fastest_time <span class="op">=</span> time</span>
-<span id="cb9-14"><a href="#cb9-14"></a></span>
-<span id="cb9-15"><a href="#cb9-15"></a>    <span class="bu">print</span>(<span class="ss">f"This is the fastest time: </span><span class="sc">{</span>fastest_time<span class="sc">}</span><span class="ss"> 🚀"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb11"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1"></a><span class="kw">def</span> calculate_fastest_time(time_list):</span>
+<span id="cb11-2"><a href="#cb11-2"></a>    fastest_time <span class="op">=</span> time_list[<span class="dv">0</span>]</span>
+<span id="cb11-3"><a href="#cb11-3"></a>    <span class="cf">for</span> time <span class="kw">in</span> time_list:</span>
+<span id="cb11-4"><a href="#cb11-4"></a>        <span class="cf">if</span> time <span class="op">&gt;</span> fastest_time:</span>
+<span id="cb11-5"><a href="#cb11-5"></a>            fastest_time <span class="op">=</span> time</span>
+<span id="cb11-6"><a href="#cb11-6"></a>    <span class="cf">return</span> fastest_time</span>
+<span id="cb11-7"><a href="#cb11-7"></a></span>
+<span id="cb11-8"><a href="#cb11-8"></a></span>
+<span id="cb11-9"><a href="#cb11-9"></a><span class="kw">def</span> print_fastest_time(time_list):</span>
+<span id="cb11-10"><a href="#cb11-10"></a>    fastest_time <span class="op">=</span> time_list[<span class="dv">0</span>]</span>
+<span id="cb11-11"><a href="#cb11-11"></a>    <span class="cf">for</span> time <span class="kw">in</span> time_list:</span>
+<span id="cb11-12"><a href="#cb11-12"></a>        <span class="cf">if</span> time <span class="op">&gt;</span> fastest_time:</span>
+<span id="cb11-13"><a href="#cb11-13"></a>            fastest_time <span class="op">=</span> time</span>
+<span id="cb11-14"><a href="#cb11-14"></a></span>
+<span id="cb11-15"><a href="#cb11-15"></a>    <span class="bu">print</span>(<span class="ss">f"This is the fastest time: </span><span class="sc">{</span>fastest_time<span class="sc">}</span><span class="ss"> 🚀"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="what-might-be-not-so-good-about-these-two-functions" class="slide level2">
 <h2>What might be not-so-good about these two functions?</h2>
@@ -838,7 +858,7 @@ Alessandro Felder*, Laura Porta, Adam Tyson
 </div>
 </div><div class="column" style="width:50%;">
 <p>Packaging your code makes it easy-to-install.</p>
-<div class="sourceCode" id="cb10" data-code-line-numbers="false"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install my-awesome-package</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb12" data-code-line-numbers="false"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install my-awesome-package</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </section>
@@ -881,10 +901,10 @@ Alessandro Felder*, Laura Porta, Adam Tyson
 </div>
 </div><div class="column" style="width:50%;">
 <p>Use <a href="https://github.com/neuroinformatics-unit/python-cookiecutter">the NIU cookiecutter template</a>.</p>
-<div class="sourceCode" id="cb12" data-code-line-numbers="false"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> create <span class="at">-n</span> <span class="st">"package-playground"</span></span>
-<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> activate package-playground</span>
-<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install cookiecutter</span>
-<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a><span class="ex">cookiecutter</span> https://github.com/neuroinformatics-unit/python-cookiecutter </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb14" data-code-line-numbers="false"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> create <span class="at">-n</span> <span class="st">"package-playground"</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> activate package-playground</span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install cookiecutter</span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a><span class="ex">cookiecutter</span> https://github.com/neuroinformatics-unit/python-cookiecutter </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </section>
@@ -941,6 +961,13 @@ Alessandro Felder*, Laura Porta, Adam Tyson
 <li>writing tests ✅ (pytest, test cases)</li>
 <li>evaluating and improving the quality of code 🤔 (code smells, refactoring, DRY)</li>
 <li>creating a python package 📦 (cookiecutter, pypi)</li>
+</ul>
+</section>
+<section id="retrospective" class="slide level2">
+<h2>Retrospective</h2>
+<ul>
+<li>Anonymously tell us what you thought <a href="https://ideaboardz.com/for/Collaborative%20coding%20retrospective/5104750">on this ideaboardz</a>…</li>
+<li>… and talk to us anytime!</li>
 </ul>
 </section></section>
 <section>
