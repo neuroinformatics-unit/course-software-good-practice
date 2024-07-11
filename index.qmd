@@ -11,7 +11,7 @@ format:
     revealjs:
         theme: [default, niu-dark.scss]
         logo: img/logo_niu_dark.png
-        footer: "Collaborative coding and software engineering good practice | 2023-10-23"
+        footer: "Collaborative coding and software engineering good practice (BIIG hackday) | 2024-07-15"
         slide-number: c
         menu:
             numbers: true
@@ -31,7 +31,7 @@ format:
     html:
         theme: [default, niu-dark.scss]
         logo: img/logo_niu_dark.png
-        date: "2023-07-05"
+        date: "2024-07-15"
         toc: true
         code-overflow: scroll
         highlight-style: atom-one
@@ -57,12 +57,11 @@ exercises:
 :::
 
 ::: {.column width="50%"}
-We are passionate about writing research software well. Please talk to us about software, we like to help (office 439).
+I am passionate about writing research software well. Like many other Research Software Engineers.
 :::
 ::::
 
 ::: {.notes}
-Tell the students to find us on 4th floor or in Brasserie.
 Remark about RSE movement and its importance to research.
 :::
 

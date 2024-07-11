@@ -66,7 +66,25 @@ cookiecutter https://github.com/neuroinformatics-unit/python-cookiecutter
 :::
 ::::
 
+## Automating package creation (fancy)
 
+
+:::: {.columns}
+::: {.column width="50%" style="font-size: 0.5em;"}
+![Photo by <a href="https://unsplash.com/@nevenkrcmarek?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Neven Krcmarek</a> on <a href="https://unsplash.com/photos/0TH1H1rq_eY?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>](img/neven-krcmarek-0TH1H1rq_eY-unsplash.jpg){height=400}
+:::
+
+::: {.column width="50%"}
+Use [the ARC cookiecutter template](https://github.com/UCL-ARC/python-tooling?tab=readme-ov-file#using-this-template).
+
+```{.bash code-line-numbers="false"}
+conda create -n "package-playground"
+conda activate package-playground
+pip install cookiecutter
+cookiecutter https://github.com/neuroinformatics-unit/python-cookiecutter 
+```
+:::
+::::
 ## The Python Package Index (PyPi)
 
 :::: {.columns}
