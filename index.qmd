@@ -44,20 +44,37 @@ format:
         page-layout: full
         default-image-extension: png
 exercises:
-    org-repo: "rse-best-practices-course-2023/rse-best-practices-playground"
+    org-repo: "UCL-bioimage-analysis/rse-best-practices-playground"
 ---
 
-## [Neuroinformatics unit](https://neuroinformatics.dev/people.html){preview-link="true"}
+## Alessandro Felder
 
 :::: {.columns}
 
 <!--  make size of font smaller -->
 ::: {.column width="50%" style="font-size: 0.5em;"}
-![Photo by <a href="https://unsplash.com/@momentance?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">SwapnIl Dwivedi</a> on <a href="https://unsplash.com/photos/w46tRF64qNc?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>](img/swapnil-dwivedi-w46tRF64qNc-unsplash.jpg){height=300 fig-align=center}
+![Photo by Ivo D.](img/alessandro.png){height=500 fig-align=center}
+:::
+
+::: {.column width="50%" .smaller}
+Research Software Engineer at 
+
+* Sainsbury Wellcome Center [Neuroinformatics Unit](https://neuroinformatics.dev/people.html)
+* UCL [Advanced Research Computing](https://www.ucl.ac.uk/advanced-research-computing/research-software-engineers-0)
+:::
+::::
+
+## Alessandro Felder
+
+:::: {.columns}
+
+<!--  make size of font smaller -->
+::: {.column width="50%" style="font-size: 0.5em;"}
+![Photo by Ivo D.](img/alessandro.png){height=500 fig-align=center}
 :::
 
 ::: {.column width="50%"}
-I am passionate about writing research software well. Like many other Research Software Engineers.
+I am passionate about making "good" research software, biological image analysis and about open, collaborative science.
 :::
 ::::
 
@@ -72,9 +89,6 @@ Remark about RSE movement and its importance to research.
 
 ## Prerequisites {.smaller}
 
-[https://neuroinformatics-unit.github.io/software-good-practice-course/](
-[https://neuroinformatics-unit.github.io/software-good-practice-course/])
-
 :::: {.columns}
 
 ::: {.column width="50%" style="font-size: 0.5em;"}
@@ -83,8 +97,7 @@ Remark about RSE movement and its importance to research.
 
 ::: {.column width="50%"}
 * a GitHub account
-* followed setup instructions
-* open these slides on your laptop: [https://neuroinformatics.dev/software-good-practice-course/](https://neuroinformatics.dev/software-good-practice-course/)
+* open these slides on your laptop: [https://neuroinformatics.dev/course-software-good-practice/](https://neuroinformatics.dev/course-software-good-practice/)
 :::
 
 ::::
@@ -158,6 +171,22 @@ pip install my_awesome_package
 
 ::::
 
+## We are in a playground today
+
+:::: {.columns}
+
+::: {.column width="50%" style="font-size: 0.5em;"}
+![Photo by <a href="https://unsplash.com/@tlemaitre?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Thierry Lemaitre</a> on <a href="https://unsplash.com/photos/DCTz78QCY24?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>](img/thierry-lemaitre-DCTz78QCY24-unsplash.jpg){height=500}
+:::
+
+::: {.column width="50%"}
+* some things will come easy to you...
+* ...others not
+* if you find something easy, there are optional exercises...
+* ... or you can help others.
+:::
+
+::::
 ## Set up your playground
 
 :::: {.columns}
@@ -167,13 +196,11 @@ pip install my_awesome_package
 :::
 
 ::: {.column width="50%"}
-* fork and clone the repo locally [as described in Exercise 1](https://github.com/rse-best-practices-course-2023/rse-best-practices-playground/issues/1)
+* fork and clone the repo locally [as described in Exercise 1](https://github.com/{{< meta exercises.org-repo >}}/issues/1)
 * set up a conda environment for today:
 
 ```{.bash}
 conda create -n "software-good-practice-course" python=3.11 
-```
-```{.bash}
 conda activate software-good-practice-course
 ```
 
@@ -181,6 +208,7 @@ conda activate software-good-practice-course
 
 ::::
 
+[https://neuroinformatics.dev/course-software-good-practice/](https://neuroinformatics.dev/course-software-good-practice/)
 
 
 {{< include slides/collaborate.qmd >}}
@@ -206,6 +234,6 @@ conda activate software-good-practice-course
 ## Retrospective
 
 * Anonymously tell us what you thought [on this ideaboardz](https://ideaboardz.com/for/Collaborative%20coding%20retrospective/5104750)...
-* ... and talk to us anytime!
+* ... and get in touch anytime!
 
 {{< include slides/resources.qmd >}}

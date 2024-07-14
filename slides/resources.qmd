@@ -29,14 +29,14 @@
 ## Packaging resources
 
 * [NIU cookiecutter](https://github.com/neuroinformatics-unit/python-cookiecutter)
+* [ARC cookiecutter](https://github.com/UCL-ARC/python-tooling)
 * [Python packaging tutorial](https://packaging.python.org/en/latest/tutorials/packaging-projects/)
 * [Python wheels walkthrough](https://youtu.be/FpIJ7T1Gpjo?feature=shared&t=1638)
+* [`pyproject.toml` file explained](https://packaging.python.org/en/latest/guides/writing-pyproject-toml/)
 
 ## RSE Community
 
 * join the community!
-  * Talk to the NIU members about code! 
-  * [SWC slack `#software-skills`](swc-neuro.slack.com)
   * [UCL Research Programming Hub](https://www.ucl.ac.uk/advanced-research-computing/community/ucl-research-programming-hub)
   * [Research Software London](https://rslondon.ac.uk/)
   * [Research Software Engineering societies](https://society-rse.org/international-rse-organisations/)
@@ -46,3 +46,4 @@
 * [The four pillars of RSE](https://ieeexplore.ieee.org/document/8994167)
 * [The Software Sustainability Institute](https://www.software.ac.uk/)
 * [The hidden REF – Celebrating all research outputs](https://hidden-ref.org/)
+* [Article about RSE careers](https://zenodo.org/records/10073233)

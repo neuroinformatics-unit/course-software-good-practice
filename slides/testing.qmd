@@ -4,11 +4,14 @@
 
 * to find (current and future) bugs earlier and more quickly (before you publish your results, ideally!)
 * to have confidence in your current and future code
+    * important for research[^closed-retractions]
 * (to document how you expect your code to behave)
+
+[^closed-retractions]: [https://doi.org/10.1162/qss_a_00275](https://direct.mit.edu/qss/article/4/4/820/118074/Retracted-articles-use-less-free-and-open-source)
 
 ## Why should you test your research code?
 
-> "Second, a 15-year-old bug was found ... (the bug was fixed ... during preparation of this manuscript). The bug essentially reduced the size of the image searched for clusters, underestimating the severity of the multiplicity correction and overestimating significance ." 
+> "Second, a 15-year-old bug was found ... (the bug was fixed ... during preparation of this manuscript). The bug essentially reduced the size of the image searched for clusters, underestimating the severity of the multiplicity correction and overestimating significance." 
 [^cluster-failure]
 
 [^cluster-failure]: [https://www.pnas.org/doi/full/10.1073/pnas.1602413113](https://www.pnas.org/doi/full/10.1073/pnas.1602413113)

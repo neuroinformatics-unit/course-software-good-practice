@@ -66,25 +66,35 @@ cookiecutter https://github.com/neuroinformatics-unit/python-cookiecutter
 :::
 ::::
 
-## Automating package creation (fancy)
-
+##  Automating package creation
 
 :::: {.columns}
 ::: {.column width="50%" style="font-size: 0.5em;"}
-![Photo by <a href="https://unsplash.com/@nevenkrcmarek?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Neven Krcmarek</a> on <a href="https://unsplash.com/photos/0TH1H1rq_eY?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>](img/neven-krcmarek-0TH1H1rq_eY-unsplash.jpg){height=400}
+![Photo by <a href=https://flic.kr/p/c1otMu">Luke Loughead</a> on flickr](img/fancy_cookiecutter.jpg){height=400}
 :::
 
 ::: {.column width="50%"}
 Use [the ARC cookiecutter template](https://github.com/UCL-ARC/python-tooling?tab=readme-ov-file#using-this-template).
 
 ```{.bash code-line-numbers="false"}
-conda create -n "package-playground"
-conda activate package-playground
+conda create -n "fancy-package-playground"
+conda activate fancy-package-playground
 pip install cookiecutter
-cookiecutter https://github.com/neuroinformatics-unit/python-cookiecutter 
+cookiecutter gh:ucl-arc/python-tooling 
 ```
 :::
 ::::
+
+Also comes with [recommendations](https://github-pages.arc.ucl.ac.uk/python-tooling/).
+
+## `pip` knows what to do
+
+If you have this structure, `pip` will know where to put your Python code in your conda environment, so you can re-use it from anywhere.
+
+```
+pip install .
+```
+
 ## The Python Package Index (PyPi)
 
 :::: {.columns}
@@ -97,6 +107,8 @@ cookiecutter https://github.com/neuroinformatics-unit/python-cookiecutter
 * [Python packaging tutorial](https://packaging.python.org/en/latest/tutorials/packaging-projects/)
 :::
 ::::
+
+This structure will also come in handy when you want to distribute your package widely.
 
 ## Summary
 
