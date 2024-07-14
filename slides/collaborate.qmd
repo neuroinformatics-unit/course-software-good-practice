@@ -9,7 +9,8 @@
 :::
 
 ::: {.column width="50%"}
-* benefits from different perspective and division of labour
+* benefits from different perspectives and division of labour
+* avoids re-inventing the wheel
 * needs async communication and coordination of tasks
 :::
 ::::
@@ -32,7 +33,7 @@
 :::: {.columns}
 
 ::: {.column width="50%" style="font-size: 0.5em;"}
-![Photo by <a href="https://unsplash.com/@mparzuchowski?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Michał Parzuchowski</a> on <a href="https://unsplash.com/photos/yqD-v4fidt0?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>](img/michal-parzuchowski-yqD-v4fidt0-unsplash.jpg){height=400}
+![Graphic by <a href="https://blog.tuleap.org/tuleap-pull-request-open-source-code-review-tool">Tuleap</a>](img/simplified-pull-request-process.jpeg)
 :::
 
 ::: {.column width="50%"}

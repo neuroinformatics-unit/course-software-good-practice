@@ -62,3 +62,12 @@ def calculate_fastest_time(time_list):
 ::: {style="text-align: center; margin-top: 1em"}
 [Exercise: write a docstring for a function in `times.py`](https://github.com/{{< meta exercises.org-repo >}}/issues/2)
 :::
+
+## Building and deploying docs
+
+``` {.bash}
+pip install -r ./docs/requirements.txt
+sphinx-build docs/source docs/build -b html
+```
+
+You can automate docs [building](https://github.com/neuroinformatics-unit/actions/blob/main/build_sphinx_docs/action.yml) and [deploying](https://github.com/neuroinformatics-unit/actions/blob/main/deploy_sphinx_docs/action.yml). See for example the `movement` [docs action](https://github.com/neuroinformatics-unit/movement/blob/main/.github/workflows/docs_build_and_deploy.yml) and [its API reference](https://movement.neuroinformatics.dev/api_index.html).
