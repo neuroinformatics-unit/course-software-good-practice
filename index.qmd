@@ -11,7 +11,7 @@ format:
     revealjs:
         theme: [default, niu-dark.scss]
         logo: img/logo_niu_dark.png
-        footer: "Collaborative coding and software engineering good practice (BIIG hackday) | 2024-07-15"
+        footer: "Collaborative coding and software engineering good practice | 2024-10-02"
         slide-number: c
         menu:
             numbers: true
@@ -31,7 +31,7 @@ format:
     html:
         theme: [default, niu-dark.scss]
         logo: img/logo_niu_dark.png
-        date: "2024-07-15"
+        date: "2024-10-02"
         toc: true
         code-overflow: scroll
         highlight-style: atom-one
