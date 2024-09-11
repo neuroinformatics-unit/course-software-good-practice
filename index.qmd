@@ -44,7 +44,7 @@ format:
         page-layout: full
         default-image-extension: png
 exercises:
-    org-repo: "UCL-bioimage-analysis/rse-best-practices-playground"
+    org-repo: "TO_BE_UPDATED"
 ---
 
 ## Alessandro Felder
@@ -148,9 +148,9 @@ pip install my_awesome_package
 ## The journey of a developer and its Python package
 
 * Refactor your scripts 🏗️
+* Transform them in a modular pipeline 🗂️
 * Package your project 📦
 * Share your project 🌍
-
 
 
 {{< include slides/refactoring.qmd >}}
@@ -161,9 +161,14 @@ pip install my_awesome_package
 
 ## Summary
 
-* Do not repeat yourself 🙊
+* Refactor your scripts 🏗️
+* Transform them in a modular pipeline 🗂️
 * Package your project 📦
 * Share your project 🌍
+
+## Extra resources
+If you want to practice refactoring, testing and documenting we have prepared [some exercises](https://github.com/{{< meta exercises.org-repo >}}/issues/)
+
 
 ## Retrospective
 
