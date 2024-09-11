@@ -145,77 +145,13 @@ pip install my_awesome_package
 
 ::::
 
-## Table of contents
+## The journey of a developer and its Python package
 
-* coding collaboratively 🤝
-* writing documentation 📃
-* writing tests ✅
-* evaluating and improving the quality of code 🤔
-* creating a python package 📦
-
-## We are in a playground today
-
-:::: {.columns}
-
-::: {.column width="50%" style="font-size: 0.5em;"}
-![Photo by <a href="https://unsplash.com/@tlemaitre?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Thierry Lemaitre</a> on <a href="https://unsplash.com/photos/DCTz78QCY24?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>](img/thierry-lemaitre-DCTz78QCY24-unsplash.jpg){height=500}
-:::
-
-::: {.column width="50%"}
-* make a mess
-* break things
-* be active
-* embrace the chaos
-* have fun
-:::
-
-::::
-
-## We are in a playground today
-
-:::: {.columns}
-
-::: {.column width="50%" style="font-size: 0.5em;"}
-![Photo by <a href="https://unsplash.com/@tlemaitre?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Thierry Lemaitre</a> on <a href="https://unsplash.com/photos/DCTz78QCY24?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>](img/thierry-lemaitre-DCTz78QCY24-unsplash.jpg){height=500}
-:::
-
-::: {.column width="50%"}
-* some things will come easy to you...
-* ...others not
-* if you find something easy, there are optional exercises...
-* ... or you can help others.
-:::
-
-::::
-## Set up your playground
-
-:::: {.columns}
-
-::: {.column width="50%" style="font-size: 0.5em;"}
-![Photo by <a href="https://unsplash.com/@tlemaitre?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Thierry Lemaitre</a> on <a href="https://unsplash.com/photos/DCTz78QCY24?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>](img/thierry-lemaitre-DCTz78QCY24-unsplash.jpg){height=500}
-:::
-
-::: {.column width="50%"}
-* fork and clone the repo locally [as described in Exercise 1](https://github.com/{{< meta exercises.org-repo >}}/issues/1)
-* set up a conda environment for today:
-
-```{.bash}
-conda create -n "software-good-practice-course" python=3.11 
-conda activate software-good-practice-course
-```
-
-:::
-
-::::
-
-[https://neuroinformatics.dev/course-software-good-practice/](https://neuroinformatics.dev/course-software-good-practice/)
+* Refactor your scripts 🏗️
+* Package your project 📦
+* Share your project 🌍
 
 
-{{< include slides/collaborate.qmd >}}
-
-{{< include slides/documentation.qmd >}}
-
-{{< include slides/testing.qmd >}}
 
 {{< include slides/refactoring.qmd >}}
 
@@ -225,11 +161,9 @@ conda activate software-good-practice-course
 
 ## Summary
 
-* coding collaboratively 🤝 (issues and pull requests)
-* writing documentation 📃 (docstrings, sphinx)
-* writing tests ✅ (pytest, test cases)
-* evaluating and improving the quality of code 🤔 (code smells, refactoring, DRY)
-* creating a python package 📦 (cookiecutter, pypi)
+* Do not repeat yourself 🙊
+* Package your project 📦
+* Share your project 🌍
 
 ## Retrospective
 
