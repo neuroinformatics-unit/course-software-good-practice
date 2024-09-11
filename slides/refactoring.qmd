@@ -1,5 +1,18 @@
 # Code Quality
 
+## A common scenario
+![Photo by <a href="https://phdcomics.com/comics.php?f=1690">PhD comics</a>](img/programming_for_non_programmers.gif)
+
+## A common scenario
+So, you’ve written your long analysis script, and it works... but the structure is messy:  
+
+- the analysis logic is scattered and hard to follow  
+- plotting functions are mixed with data processing  
+- hardcoded numbers, file paths, and magic values are everywhere  
+
+Don't stop here! Your work isn’t truly finished.  
+Let's start from the basics.
+
 ## Code smells
 
 > A code smell is a surface indication that usually corresponds to a deeper problem in the system.
