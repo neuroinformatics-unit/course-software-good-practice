@@ -64,24 +64,6 @@ Research Software Engineer at
 :::
 ::::
 
-## Alessandro Felder
-
-:::: {.columns}
-
-<!--  make size of font smaller -->
-::: {.column width="50%" style="font-size: 0.5em;"}
-![Photo by Ivo D.](img/alessandro.png){height=500 fig-align=center}
-:::
-
-::: {.column width="50%"}
-I am passionate about making "good" research software, biological image analysis and about open, collaborative science.
-:::
-::::
-
-::: {.notes}
-Remark about RSE movement and its importance to research.
-:::
-
 
 ## Initial checkup
 
