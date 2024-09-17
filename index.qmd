@@ -44,7 +44,7 @@ format:
         page-layout: full
         default-image-extension: png
 exercises:
-    org-repo: "TO_BE_UPDATED"
+    org-repo: "rse-best-practices-course/2024-course"
 ---
 
 ## Alessandro Felder
