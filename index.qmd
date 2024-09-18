@@ -140,4 +140,3 @@ If you want to practice refactoring, testing and documenting we have prepared [s
 * Anonymously tell us what you thought [on this ideaboardz](https://ideaboardz.com/for/Collaborative%20coding%20retrospective/5104750)...
 * ... and get in touch anytime!
 
-{{< include slides/resources.qmd >}}
