@@ -47,23 +47,6 @@ exercises:
     org-repo: "rse-best-practices-course/2024-course"
 ---
 
-## Alessandro Felder
-
-:::: {.columns}
-
-<!--  make size of font smaller -->
-::: {.column width="50%" style="font-size: 0.5em;"}
-![Photo by Ivo D.](img/alessandro.png){height=500 fig-align=center}
-:::
-
-::: {.column width="50%" .smaller}
-Research Software Engineer at 
-
-* Sainsbury Wellcome Center [Neuroinformatics Unit](https://neuroinformatics.dev/people.html)
-* UCL [Advanced Research Computing](https://www.ucl.ac.uk/advanced-research-computing/research-software-engineers-0)
-:::
-::::
-
 
 ## Initial checkup
 
