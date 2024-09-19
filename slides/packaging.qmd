@@ -1,4 +1,4 @@
-# Packaging
+# Package your project 📦
 
 ## What does packaging mean?
 

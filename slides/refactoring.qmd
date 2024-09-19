@@ -1,24 +1,9 @@
-# Code Quality
+# Clean up and organize your scripts 🧹
 
 ## A common scenario
 ![Image by <a href="https://phdcomics.com/comics.php?f=1690">PhD comics</a>](img/programming_for_non_programmers.gif)
 
-## The messy reality
-You've written your analysis script, and it works... but it's chaotic:
-
-- Hardcoded numbers, file paths, and cryptic names are everywhere
-- Analysis logic is scattered and hard to follow
-- Plotting functions are tangled with data processing
-  
-Don't move on the next project! Your work isn’t done yet.
-
-## Code smells
-
-> A code smell is a surface indication that usually corresponds to a deeper problem in the system.
-
-- Martin Fowler
-
-## An example of a code smell
+## Some example code
 
 ```{.python}
 def calculate_fastest_time(time_list):
@@ -42,12 +27,23 @@ def print_fastest_time(time_list):
 
 {{< include slides/mentimeter.qmd >}}
 
-## General tips for writing functions
-- small
-- do one thing
-- one level of abstraction per function
-- use descriptive names
-- limit amount of arguments
+## Code smells
+
+> A code smell is a surface indication that usually corresponds to a deeper problem in the system.
+
+- Martin Fowler
+
+## The messy reality
+:::{.incremental}
+You've written your analysis script, and it "works"... but it's chaotic:
+
+- Hardcoded numbers, file paths, and cryptic names are everywhere
+- Analysis logic is scattered and hard to follow
+- Plotting functions are tangled with data processing
+:::
+:::{.fragment}
+Don't move on to the next project! Your work isn’t done yet.
+:::
 
 ## How many code smells can we find here?
 
@@ -98,11 +94,18 @@ def detect_spikes(data, sampling_rate, threshold):
 spikes = detect_spikes(data, SAMPLING_RATE, SPIKE_THRESHOLD)
 ```
 
+## Organize your functions
+- small
+- do one thing
+- use descriptive names
+- limit amount of arguments
+
 ## Make your code modular
 - preprocess.py
 - analysis.py
 - plot.py
 - io.py (for reading/writing data)
+- my_analysis_pipeline.py
 
 ## An example pipeline
 Import your functions and classes in your main analysis pipeline
@@ -126,8 +129,7 @@ if __name__ == "__main__":
 
 ## To learn more...
 Suggested resources:  
-- Clean Code by Robert C. Martin  
-- Head First Design Patterns: A Brain-Friendly Guide by Eric Freeman  
+- [Clean Code by Robert C. Martin](https://www.oreilly.com/library/view/clean-code-a/9780136083238/)  
 
 ## Next steps
 Now that your logic is split into modules and your pipeline is well crafted you might want to move to the next step...

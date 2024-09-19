@@ -4,7 +4,7 @@ title-slide-attributes:
   data-background-image: img/jukan-tateisi-bJhT_8nbUA0-unsplash.jpg
   data-background-opacity: "0.5"
 subtitle: An introduction to collaborative coding and software engineering good practice
-author: Alessandro Felder*, Laura Porta, Adam Tyson
+author: Alessandro Felder*, Laura Porta, Chang Huan Lo
 execute: 
   enabled: true
 format:
@@ -61,7 +61,6 @@ exercises:
 :::
 
 ::: {.column width="50%"}
-* a GitHub account
 * open these slides on your laptop: [https://neuroinformatics.dev/course-software-good-practice/](https://neuroinformatics.dev/course-software-good-practice/)
 :::
 
@@ -112,8 +111,7 @@ pip install my_awesome_package
 
 ## The journey of a developer and its Python package
 
-* Refactor your scripts 🏗️
-* Transform them in a modular pipeline 🗂️
+* Clean up and organize your scripts 🧹
 * Package your project 📦
 * Share your project 🌍
 
@@ -126,8 +124,7 @@ pip install my_awesome_package
 
 ## Summary
 
-* Refactor your scripts 🏗️
-* Transform them in a modular pipeline 🗂️
+* Clean up and organize your scripts 🧹
 * Package your project 📦
 * Share your project 🌍
 
