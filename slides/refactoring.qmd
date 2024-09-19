@@ -74,7 +74,7 @@ spikes = process_data(data, a, b)
 
 {{< include slides/mentimeter.qmd >}}
 
-## After refactoring
+## Improving the code
 ```{.python}
 # Constants for sampling rate and spike threshold
 SAMPLING_RATE = 500  # Hz
