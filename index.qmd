@@ -4,14 +4,14 @@ title-slide-attributes:
   data-background-image: img/jukan-tateisi-bJhT_8nbUA0-unsplash.jpg
   data-background-opacity: "0.5"
 subtitle: An introduction to collaborative coding and software engineering good practice
-author: Alessandro Felder*, Laura Porta, Adam Tyson
+author: Alessandro Felder*, Laura Porta, Chang Huan Lo
 execute: 
   enabled: true
 format:
     revealjs:
         theme: [default, niu-dark.scss]
         logo: img/logo_niu_dark.png
-        footer: "Collaborative coding and software engineering good practice (BIIG hackday) | 2024-07-15"
+        footer: "Collaborative coding and software engineering good practice | 2024-10-02"
         slide-number: c
         menu:
             numbers: true
@@ -31,7 +31,7 @@ format:
     html:
         theme: [default, niu-dark.scss]
         logo: img/logo_niu_dark.png
-        date: "2024-07-15"
+        date: "2024-10-02"
         toc: true
         code-overflow: scroll
         highlight-style: atom-one
@@ -44,43 +44,8 @@ format:
         page-layout: full
         default-image-extension: png
 exercises:
-    org-repo: "UCL-bioimage-analysis/rse-best-practices-playground"
+    org-repo: "rse-best-practices-course/2024-course"
 ---
-
-## Alessandro Felder
-
-:::: {.columns}
-
-<!--  make size of font smaller -->
-::: {.column width="50%" style="font-size: 0.5em;"}
-![Photo by Ivo D.](img/alessandro.png){height=500 fig-align=center}
-:::
-
-::: {.column width="50%" .smaller}
-Research Software Engineer at 
-
-* Sainsbury Wellcome Center [Neuroinformatics Unit](https://neuroinformatics.dev/people.html)
-* UCL [Advanced Research Computing](https://www.ucl.ac.uk/advanced-research-computing/research-software-engineers-0)
-:::
-::::
-
-## Alessandro Felder
-
-:::: {.columns}
-
-<!--  make size of font smaller -->
-::: {.column width="50%" style="font-size: 0.5em;"}
-![Photo by Ivo D.](img/alessandro.png){height=500 fig-align=center}
-:::
-
-::: {.column width="50%"}
-I am passionate about making "good" research software, biological image analysis and about open, collaborative science.
-:::
-::::
-
-::: {.notes}
-Remark about RSE movement and its importance to research.
-:::
 
 
 ## Initial checkup
@@ -96,7 +61,6 @@ Remark about RSE movement and its importance to research.
 :::
 
 ::: {.column width="50%"}
-* a GitHub account
 * open these slides on your laptop: [https://neuroinformatics.dev/course-software-good-practice/](https://neuroinformatics.dev/course-software-good-practice/)
 :::
 
@@ -145,95 +109,31 @@ pip install my_awesome_package
 
 ::::
 
-## Table of contents
+## The journey of a developer and its Python package
 
-* coding collaboratively 🤝
-* writing documentation 📃
-* writing tests ✅
-* evaluating and improving the quality of code 🤔
-* creating a python package 📦
+* Clean up and organize your scripts 🧹
+* Package your project 📦
+* Share your project 🌍
 
-## We are in a playground today
-
-:::: {.columns}
-
-::: {.column width="50%" style="font-size: 0.5em;"}
-![Photo by <a href="https://unsplash.com/@tlemaitre?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Thierry Lemaitre</a> on <a href="https://unsplash.com/photos/DCTz78QCY24?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>](img/thierry-lemaitre-DCTz78QCY24-unsplash.jpg){height=500}
-:::
-
-::: {.column width="50%"}
-* make a mess
-* break things
-* be active
-* embrace the chaos
-* have fun
-:::
-
-::::
-
-## We are in a playground today
-
-:::: {.columns}
-
-::: {.column width="50%" style="font-size: 0.5em;"}
-![Photo by <a href="https://unsplash.com/@tlemaitre?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Thierry Lemaitre</a> on <a href="https://unsplash.com/photos/DCTz78QCY24?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>](img/thierry-lemaitre-DCTz78QCY24-unsplash.jpg){height=500}
-:::
-
-::: {.column width="50%"}
-* some things will come easy to you...
-* ...others not
-* if you find something easy, there are optional exercises...
-* ... or you can help others.
-:::
-
-::::
-## Set up your playground
-
-:::: {.columns}
-
-::: {.column width="50%" style="font-size: 0.5em;"}
-![Photo by <a href="https://unsplash.com/@tlemaitre?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Thierry Lemaitre</a> on <a href="https://unsplash.com/photos/DCTz78QCY24?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>](img/thierry-lemaitre-DCTz78QCY24-unsplash.jpg){height=500}
-:::
-
-::: {.column width="50%"}
-* fork and clone the repo locally [as described in Exercise 1](https://github.com/{{< meta exercises.org-repo >}}/issues/1)
-* set up a conda environment for today:
-
-```{.bash}
-conda create -n "software-good-practice-course" python=3.11 
-conda activate software-good-practice-course
-```
-
-:::
-
-::::
-
-[https://neuroinformatics.dev/course-software-good-practice/](https://neuroinformatics.dev/course-software-good-practice/)
-
-
-{{< include slides/collaborate.qmd >}}
-
-{{< include slides/documentation.qmd >}}
-
-{{< include slides/testing.qmd >}}
 
 {{< include slides/refactoring.qmd >}}
 
 {{< include slides/packaging.qmd >}}
 
-# Summary
+# Conclusion
 
-## Summary
+## What we have learned today
 
-* coding collaboratively 🤝 (issues and pull requests)
-* writing documentation 📃 (docstrings, sphinx)
-* writing tests ✅ (pytest, test cases)
-* evaluating and improving the quality of code 🤔 (code smells, refactoring, DRY)
-* creating a python package 📦 (cookiecutter, pypi)
+* Clean up and organize your scripts 🧹
+* Package your project 📦
+* Share your project 🌍
+
+## Extra resources
+If you want to practice refactoring, testing and documenting we have prepared [some exercises](https://github.com/{{< meta exercises.org-repo >}}/issues/)
+
 
 ## Retrospective
 
 * Anonymously tell us what you thought [on this ideaboardz](https://ideaboardz.com/for/Collaborative%20coding%20retrospective/5104750)...
 * ... and get in touch anytime!
 
-{{< include slides/resources.qmd >}}

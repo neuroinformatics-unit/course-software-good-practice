@@ -1,12 +1,15 @@
-# Code Quality
+# Clean up and organize your scripts 🧹
 
-## Code smells
+## A common scenario
+![Image by <a href="https://phdcomics.com/comics.php?f=1690">PhD comics</a>](img/programming_for_non_programmers_1.png)
 
-> A code smell is a surface indication that usually corresponds to a deeper problem in the system.
+## A common scenario
+![Image by <a href="https://phdcomics.com/comics.php?f=1690">PhD comics</a>](img/programming_for_non_programmers_2.png)
 
-- Martin Fowler
+## A common scenario
+![Image by <a href="https://phdcomics.com/comics.php?f=1690">PhD comics</a>](img/programming_for_non_programmers_3.png)
 
-## An example of a code smell
+## Some example code
 
 ```{.python}
 def calculate_fastest_time(time_list):
@@ -30,7 +33,113 @@ def print_fastest_time(time_list):
 
 {{< include slides/mentimeter.qmd >}}
 
-## [Exercise: don't repeat yourself (DRY)](https://github.com/{{< meta exercises.org-repo >}}/issues/4)
+## Code smells
 
+> A code smell is a surface indication that usually corresponds to a deeper problem in the system.
 
+- Martin Fowler
 
+## The messy reality
+:::{.incremental}
+You've written your analysis script, and it "works"... but it's chaotic:
+
+- Hardcoded numbers, file paths, and cryptic names are everywhere
+- Analysis logic is scattered and hard to follow
+- Plotting functions are tangled with data processing
+:::
+:::{.fragment}
+Don't move on to the next project! Your work isn’t done yet.
+:::
+
+## How many code smells can we find here?
+my_project/  
+   	└── do_all_analysis.py  
+
+```{.python}
+a = 500 
+b = 0.75 
+
+# from michael old analysis pipeline
+def process_data(T, sr, t):
+    s = [x * t for i, x in enumerate(T.iloc[:, 0]) if (x % t) > sr and i % 3 == 0]
+    return sorted(s, reverse=True)[:len(s)//2] if len(s) > 5 else s
+
+import pandas as pd
+data = pd.read_csv("/Users/helen/Desktop/29104629.csv")
+
+spikes = process_data(data, a, b)
+```
+
+## How many code smells can we find here?
+
+{{< include slides/mentimeter.qmd >}}
+
+## Improving the code
+```{.python}
+# Constants for sampling rate and spike threshold
+SAMPLING_RATE = 500  # Hz
+SPIKE_THRESHOLD = 0.75  # Arbitrary units
+
+import pandas as pd
+
+# Load the dataset
+# Avoid hardcoded paths and non-meaningful filenames; use a descriptive path.
+data_path = input()
+data = pd.read_csv(data_path)
+
+# Refactored spike detection function with clear logic and meaningful names
+def detect_spikes(data, sampling_rate, threshold):
+    spike_times = []
+    for i, value in enumerate(data.iloc[:, 0]):
+        # Detect spikes based on threshold and other criteria
+        if value > threshold and i % 3 == 0:
+            spike_times.append(value)
+
+    # Return the list of detected spikes, sorted in descending order
+    return sorted(spike_times, reverse=True)
+
+# Detect spikes using the provided sampling rate and threshold
+spikes = detect_spikes(data, SAMPLING_RATE, SPIKE_THRESHOLD)
+```
+
+## Organize your functions
+- small
+- do one thing
+- use descriptive names
+- limit amount of arguments
+
+## Make your code modular
+my_pipeline/  
+		└── preprocess.py  
+		└── analysis.py  
+		└── plot.py  
+		└── io.py (for reading/writing data)  
+		└── my_analysis_pipeline.py  
+
+## An example pipeline
+Import your functions and classes in your main analysis pipeline
+```{.python}
+# file: my_analysis_pipeline.py
+from my_project.io import load_calcium_data
+from my_project.preprocess import extract_fluorescence
+from my_project.analysis import analyze_calcium_timeseries
+from my_project.plot import make_figures_for_paper
+
+def my_calcium_imaging_pipeline():
+    raw_data = load_calcium_data()
+    delta_fluorescence = extract_fluorescence(raw_data)
+    spike_times_table = analyze_calcium_timeseries(delta_fluorescence)
+    make_figures_for_paper(spike_times_table)
+
+    print("Completed")
+  
+if __name__ == "__main__":
+    my_calcium_imaging_pipeline()
+```
+
+## To learn more...
+Suggested resources:  
+- [Clean Code by Robert C. Martin](https://www.oreilly.com/library/view/clean-code-a/9780136083238/)  
+
+## Next steps
+Now that your logic is split into modules and your pipeline is well crafted you might want to move to the next step...
