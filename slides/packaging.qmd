@@ -1,5 +1,18 @@
 # Package your project 📦
 
+## How can I call my functions from a different project?
+my_pipeline/  
+		└── preprocess.py  
+		└── analysis.py  
+		└── plot.py  
+		└── io.py (for reading/writing data)  
+		└── my_analysis_pipeline.py  
+
+## How can I call my functions from a different project?
+{{< include slides/mentimeter.qmd >}}
+
+## Demo! 🥺
+
 ## What does packaging mean?
 
 :::: {.columns}
@@ -9,14 +22,17 @@
 :::
 
 ::: {.column width="50%"}
-Packaging your code makes it easy-to-install.
-
+Packaging allows Python to "install" your code so that it can be re-used from anywhere.  
+Local installation from the package directory:  
 ```{.bash code-line-numbers="false"}
-pip install my-awesome-package
+pip install .
 ```
 :::
-
 ::::
+
+
+## Demo! 😊
+
 
 ## The Python package structure
 
@@ -28,26 +44,22 @@ pip install my-awesome-package
 
 ::: {.column width="50%"}
 ```
-└── my-awesome-package/
+my-awesome-package/
 	├── LICENSE
-	├── MANIFEST.in
 	├── README.md
-	├── pyproject.toml
-	├── tox.ini
-	├── docs/
+	├── pyproject.toml 👈
+	├── ...
 	├── my_awesome_package/
-	│	└── __init__.py
+	│	└── __init__.py 👈
 	│	└── do_something_awesome.py
-	└── tests/
-		├── __init__.py
-		└── test_placeholder.py
 ```
 :::
 
 ::::
 
-## Automating package creation
+## Demo! 📜
 
+## Automating package creation
 
 :::: {.columns}
 ::: {.column width="50%" style="font-size: 0.5em;"}
@@ -66,34 +78,7 @@ cookiecutter https://github.com/neuroinformatics-unit/python-cookiecutter
 :::
 ::::
 
-##  Automating package creation
-
-:::: {.columns}
-::: {.column width="50%" style="font-size: 0.5em;"}
-![Photo by <a href=https://flic.kr/p/c1otMu">Luke Loughead</a> on flickr](img/fancy_cookiecutter.jpg){height=400}
-:::
-
-::: {.column width="50%"}
-Use [the ARC cookiecutter template](https://github.com/UCL-ARC/python-tooling?tab=readme-ov-file#using-this-template).
-
-```{.bash code-line-numbers="false"}
-conda create -n "fancy-package-playground"
-conda activate fancy-package-playground
-pip install cookiecutter
-cookiecutter gh:ucl-arc/python-tooling 
-```
-:::
-::::
-
-Also comes with [recommendations](https://github-pages.arc.ucl.ac.uk/python-tooling/).
-
-## `pip` knows what to do
-
-If you have this structure, `pip` will know where to put your Python code in your conda environment, so you can re-use it from anywhere.
-
-```
-pip install .
-```
+# Share your project 🌍
 
 ## The Python Package Index (PyPi)
 
@@ -109,6 +94,12 @@ pip install .
 ::::
 
 This structure will also come in handy when you want to distribute your package widely.
+
+## Your package is installable by anyone
+
+```{.bash code-line-numbers="false"}
+pip install my_awesome_package
+```
 
 ## Summary
 

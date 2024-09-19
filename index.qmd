@@ -120,9 +120,9 @@ pip install my_awesome_package
 
 {{< include slides/packaging.qmd >}}
 
-# Summary
+# Conclusion
 
-## Summary
+## What we have learned today
 
 * Clean up and organize your scripts 🧹
 * Package your project 📦
