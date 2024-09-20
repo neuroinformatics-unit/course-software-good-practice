@@ -2,11 +2,11 @@
 
 ## How can I call my functions from a different project?
 my_pipeline/  
-		└── preprocess.py  
-		└── analysis.py  
-		└── plot.py  
-		└── io.py (for reading/writing data)  
-		└── my_analysis_pipeline.py  
+└── preprocess.py  
+└── analysis.py  
+└── plot.py  
+└── read_write.py    
+└── my_analysis_pipeline.py  
 
 ## How can I call my functions from a different project?
 {{< include slides/mentimeter.qmd >}}
