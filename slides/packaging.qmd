@@ -23,9 +23,9 @@ my_pipeline/
 
 ::: {.column width="50%"}
 Packaging allows Python to "install" your code so that it can be re-used from anywhere.  
-Local installation from the package directory:  
+Local, editable installation from the package directory:
 ```{.bash code-line-numbers="false"}
-pip install .
+pip install -e .
 ```
 :::
 ::::
