@@ -51,7 +51,7 @@ You've written your analysis script, and it "works"... but it's chaotic:
 Don't move on to the next project! Your work isn’t done yet.
 :::
 
-## How many code smells can we find here?
+## Which code smells can we find here?
 my_project/  
    	└── do_all_analysis.py  
 
@@ -70,7 +70,7 @@ data = pd.read_csv("/Users/helen/Desktop/29104629.csv")
 spikes = process_data(data, a, b)
 ```
 
-## How many code smells can we find here?
+## Which code smells can we find here?
 
 {{< include slides/mentimeter.qmd >}}
 
