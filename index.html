@@ -8,9 +8,9 @@
 <link href="index_files/libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="index_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="index_files/libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.5.54">
+  <meta name="generator" content="quarto-1.5.57">
 
-  <meta name="author" content="Alessandro Felder*, Laura Porta, Adam Tyson">
+  <meta name="author" content="Alessandro Felder, Laura Porta, Chang Huan Lo">
   <title>Beyond your script</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -400,65 +400,14 @@
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
 <div class="quarto-title-author-name">
-Alessandro Felder*, Laura Porta, Adam Tyson 
+Alessandro Felder, Laura Porta, Chang Huan Lo 
 </div>
 </div>
 </div>
 
 </section>
-<section id="alessandro-felder" class="slide level2">
-<h2>Alessandro Felder</h2>
-<div class="columns">
-<!--  make size of font smaller --><div class="column" style="font-size: 0.5em;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="img/alessandro.png" height="500"></p>
-<figcaption>Photo by Ivo D.</figcaption>
-</figure>
-</div>
-</div><div class="column smaller" style="width:50%;">
-<p>Research Software Engineer at</p>
-<ul>
-<li>Sainsbury Wellcome Center <a href="https://neuroinformatics.dev/people.html">Neuroinformatics Unit</a></li>
-<li>UCL <a href="https://www.ucl.ac.uk/advanced-research-computing/research-software-engineers-0">Advanced Research Computing</a></li>
-</ul>
-</div></div>
-</section>
-<section id="alessandro-felder-1" class="slide level2">
-<h2>Alessandro Felder</h2>
-<div class="columns">
-<!--  make size of font smaller --><div class="column" style="font-size: 0.5em;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="img/alessandro.png" height="500"></p>
-<figcaption>Photo by Ivo D.</figcaption>
-</figure>
-</div>
-</div><div class="column" style="width:50%;">
-<p>I am passionate about making “good” research software, biological image analysis and about open, collaborative science.</p>
-</div></div>
-<aside class="notes">
-<p>Remark about RSE movement and its importance to research.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="initial-checkup" class="slide level2">
-<h2>Initial checkup</h2>
-<div style="text-align: center; margin-top: 1em">
-<p><a href="https://www.menti.com/alstthrccvqk" data-preview-link="true" style="text-align: center">Mentimeter</a></p>
-</div>
-</section>
-<section id="prerequisites" class="slide level2 smaller">
-<h2>Prerequisites</h2>
+<section id="get-ready" class="slide level2 smaller">
+<h2>Get ready!</h2>
 <div class="columns">
 <div class="column" style="font-size: 0.5em;">
 <div class="quarto-figure quarto-figure-center">
@@ -469,10 +418,15 @@ Alessandro Felder*, Laura Porta, Adam Tyson
 </div>
 </div><div class="column" style="width:50%;">
 <ul>
-<li>a GitHub account</li>
 <li>open these slides on your laptop: <a href="https://neuroinformatics.dev/course-software-good-practice/">https://neuroinformatics.dev/course-software-good-practice/</a></li>
 </ul>
 </div></div>
+</section>
+<section id="initial-discussion" class="slide level2">
+<h2>Initial discussion</h2>
+<div style="text-align: center; margin-top: 1em">
+<p><a href="https://www.menti.com/alstthrccvqk" data-preview-link="true" style="text-align: center">Mentimeter</a></p>
+</div>
 </section>
 <section id="the-next-steps" class="slide level2">
 <h2>The next steps</h2>
@@ -513,335 +467,54 @@ Alessandro Felder*, Laura Porta, Adam Tyson
 <div class="sourceCode" id="cb2"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href=""></a><span class="ex">pip</span> install my_awesome_package</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></div>
 </section>
-<section id="table-of-contents" class="slide level2">
-<h2>Table of contents</h2>
+<section id="the-journey-of-a-developer-and-its-python-package" class="slide level2">
+<h2>The journey of a developer and its Python package</h2>
 <ul>
-<li>coding collaboratively 🤝</li>
-<li>writing documentation 📃</li>
-<li>writing tests ✅</li>
-<li>evaluating and improving the quality of code 🤔</li>
-<li>creating a python package 📦</li>
+<li>Clean up and organize your scripts 🧹</li>
+<li>Package your project 📦</li>
+<li>Share your project 🌍</li>
 </ul>
-</section>
-<section id="we-are-in-a-playground-today" class="slide level2">
-<h2>We are in a playground today</h2>
-<div class="columns">
-<div class="column" style="font-size: 0.5em;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="img/thierry-lemaitre-DCTz78QCY24-unsplash.jpg" height="500"></p>
-<figcaption>Photo by <a href="https://unsplash.com/@tlemaitre?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Thierry Lemaitre</a> on <a href="https://unsplash.com/photos/DCTz78QCY24?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></figcaption>
-</figure>
-</div>
-</div><div class="column" style="width:50%;">
-<ul>
-<li>make a mess</li>
-<li>break things</li>
-<li>be active</li>
-<li>embrace the chaos</li>
-<li>have fun</li>
-</ul>
-</div></div>
-</section>
-<section id="we-are-in-a-playground-today-1" class="slide level2">
-<h2>We are in a playground today</h2>
-<div class="columns">
-<div class="column" style="font-size: 0.5em;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="img/thierry-lemaitre-DCTz78QCY24-unsplash.jpg" height="500"></p>
-<figcaption>Photo by <a href="https://unsplash.com/@tlemaitre?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Thierry Lemaitre</a> on <a href="https://unsplash.com/photos/DCTz78QCY24?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></figcaption>
-</figure>
-</div>
-</div><div class="column" style="width:50%;">
-<ul>
-<li>some things will come easy to you…</li>
-<li>…others not</li>
-<li>if you find something easy, there are optional exercises…</li>
-<li>… or you can help others.</li>
-</ul>
-</div></div>
-</section>
-<section id="set-up-your-playground" class="slide level2">
-<h2>Set up your playground</h2>
-<div class="columns">
-<div class="column" style="font-size: 0.5em;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="img/thierry-lemaitre-DCTz78QCY24-unsplash.jpg" height="500"></p>
-<figcaption>Photo by <a href="https://unsplash.com/@tlemaitre?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Thierry Lemaitre</a> on <a href="https://unsplash.com/photos/DCTz78QCY24?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></figcaption>
-</figure>
-</div>
-</div><div class="column" style="width:50%;">
-<ul>
-<li>fork and clone the repo locally <a href="https://github.com/UCL-bioimage-analysis/rse-best-practices-playground/issues/1">as described in Exercise 1</a></li>
-<li>set up a conda environment for today:</li>
-</ul>
-<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href=""></a><span class="ex">conda</span> create <span class="at">-n</span> <span class="st">"software-good-practice-course"</span> python=3.11 </span>
-<span id="cb3-2"><a href=""></a><span class="ex">conda</span> activate software-good-practice-course</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div></div>
-<p><a href="https://neuroinformatics.dev/course-software-good-practice/">https://neuroinformatics.dev/course-software-good-practice/</a></p>
 </section>
 <section>
-<section id="collaborative-coding" class="title-slide slide level1 center">
-<h1>Collaborative coding</h1>
+<section id="clean-up-and-organize-your-scripts" class="title-slide slide level1 center">
+<h1>Clean up and organize your scripts 🧹</h1>
 
 </section>
-<section id="collaborative-coding-1" class="slide level2">
-<h2>Collaborative coding</h2>
-<div class="columns">
-<div class="column" style="font-size: 0.5em;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="img/michal-parzuchowski-yqD-v4fidt0-unsplash.jpg" height="400"></p>
-<figcaption>Photo by <a href="https://unsplash.com/@mparzuchowski?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Michał Parzuchowski</a> on <a href="https://unsplash.com/photos/yqD-v4fidt0?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></figcaption>
-</figure>
-</div>
-</div><div class="column" style="width:50%;">
-<ul>
-<li>benefits from different perspectives and division of labour</li>
-<li>avoids re-inventing the wheel</li>
-<li>needs async communication and coordination of tasks</li>
-</ul>
-</div></div>
+<section id="a-common-scenario" class="slide level2">
+<h2>A common scenario</h2>
+
+<img data-src="img/programming_for_non_programmers_1.png" class="r-stretch quarto-figure-center"><p class="caption">Image by <a href="https://phdcomics.com/comics.php?f=1690">PhD comics</a></p></section>
+<section id="a-common-scenario-1" class="slide level2">
+<h2>A common scenario</h2>
+
+<img data-src="img/programming_for_non_programmers_2.png" class="r-stretch quarto-figure-center"><p class="caption">Image by <a href="https://phdcomics.com/comics.php?f=1690">PhD comics</a></p></section>
+<section id="a-common-scenario-2" class="slide level2">
+<h2>A common scenario</h2>
+
+<img data-src="img/programming_for_non_programmers_3.png" class="r-stretch quarto-figure-center"><p class="caption">Image by <a href="https://phdcomics.com/comics.php?f=1690">PhD comics</a></p></section>
+<section id="some-example-code" class="slide level2">
+<h2>Some example code</h2>
+<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href=""></a><span class="kw">def</span> calculate_fastest_time(time_list):</span>
+<span id="cb3-2"><a href=""></a>    fastest_time <span class="op">=</span> time_list[<span class="dv">0</span>]</span>
+<span id="cb3-3"><a href=""></a>    <span class="cf">for</span> time <span class="kw">in</span> time_list:</span>
+<span id="cb3-4"><a href=""></a>        <span class="cf">if</span> time <span class="op">&gt;</span> fastest_time:</span>
+<span id="cb3-5"><a href=""></a>            fastest_time <span class="op">=</span> time</span>
+<span id="cb3-6"><a href=""></a>    <span class="cf">return</span> fastest_time</span>
+<span id="cb3-7"><a href=""></a></span>
+<span id="cb3-8"><a href=""></a></span>
+<span id="cb3-9"><a href=""></a><span class="kw">def</span> print_fastest_time(time_list):</span>
+<span id="cb3-10"><a href=""></a>    fastest_time <span class="op">=</span> time_list[<span class="dv">0</span>]</span>
+<span id="cb3-11"><a href=""></a>    <span class="cf">for</span> time <span class="kw">in</span> time_list:</span>
+<span id="cb3-12"><a href=""></a>        <span class="cf">if</span> time <span class="op">&gt;</span> fastest_time:</span>
+<span id="cb3-13"><a href=""></a>            fastest_time <span class="op">=</span> time</span>
+<span id="cb3-14"><a href=""></a></span>
+<span id="cb3-15"><a href=""></a>    <span class="bu">print</span>(<span class="ss">f"This is the fastest time: </span><span class="sc">{</span>fastest_time<span class="sc">}</span><span class="ss"> 🚀"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="collaborative-coding-2" class="slide level2">
-<h2>Collaborative coding</h2>
-<div class="columns">
-<div class="column" style="font-size: 0.5em;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="img/michal-parzuchowski-yqD-v4fidt0-unsplash.jpg" height="400"></p>
-<figcaption>Photo by <a href="https://unsplash.com/@mparzuchowski?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Michał Parzuchowski</a> on <a href="https://unsplash.com/photos/yqD-v4fidt0?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></figcaption>
-</figure>
-</div>
-</div><div class="column" style="width:50%;">
-<ul>
-<li>for example, someone else in your lab, or someone in a partner lab in a different time zone.</li>
-</ul>
-</div></div>
-</section>
-<section id="the-development-cycle" class="slide level2">
-<h2><a href="https://github.com/UCL-bioimage-analysis/rse-best-practices-playground" data-preview-link="true" style="text-align: center">The development cycle</a></h2>
-<div class="columns">
-<div class="column" style="font-size: 0.5em;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="img/simplified-pull-request-process.jpeg"></p>
-<figcaption>Graphic by <a href="https://blog.tuleap.org/tuleap-pull-request-open-source-code-review-tool">Tuleap</a></figcaption>
-</figure>
-</div>
-</div><div class="column" style="width:50%;">
-<p><img data-src="icons/issue.png" style="margin:0 !important" height="25"> open / choose a task</p>
-<p><img data-src="icons/branch.png" style="margin:0 !important" height="30"> write a solution to the task independent of main code</p>
-<p><img data-src="icons/pull.png" style="margin:0 !important" height="25"> open a solution proposal</p>
-<p><img data-src="icons/pull.png" style="margin:0 !important" height="25"> review a solution proposal</p>
-</div></div>
-</section>
-<section id="exercise-have-you-set-up-your-playground" class="slide level2">
-<h2>Exercise: Have you set up <a href="https://github.com/UCL-bioimage-analysis/rse-best-practices-playground/issues/1" data-preview-link="true" style="text-align: center">your playground?</a></h2>
-</section>
-<section id="what-makes-research-code-good" class="slide level2">
-<h2>What makes (research) code good?</h2>
+<section id="what-might-be-not-so-good-about-these-two-functions" class="slide level2">
+<h2>What might be not-so-good about these two functions?</h2>
 <div style="text-align: center; margin-top: 1em">
 <p><a href="https://www.menti.com/alstthrccvqk" data-preview-link="true" style="text-align: center">Mentimeter</a></p>
 </div>
-</section></section>
-<section>
-<section id="documentation" class="title-slide slide level1 center">
-<h1>Documentation</h1>
-
-</section>
-<section id="a-simple-python-function" class="slide level2">
-<h2>A simple Python function</h2>
-<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href=""></a><span class="kw">def</span> calculate_fastest_time(time_list):</span>
-<span id="cb4-2"><a href=""></a>    fastest_time <span class="op">=</span> time_list[<span class="dv">0</span>]</span>
-<span id="cb4-3"><a href=""></a>    <span class="cf">for</span> time <span class="kw">in</span> time_list:</span>
-<span id="cb4-4"><a href=""></a>        <span class="cf">if</span> time <span class="op">&gt;</span> fastest_time:</span>
-<span id="cb4-5"><a href=""></a>            fastest_time <span class="op">=</span> time</span>
-<span id="cb4-6"><a href=""></a>    <span class="cf">return</span> fastest_time</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-<section id="what-does-this-function-do" class="slide level2">
-<h2>What does this function do?</h2>
-<div style="text-align: center; margin-top: 1em">
-<p><a href="https://www.menti.com/alstthrccvqk" data-preview-link="true" style="text-align: center">Mentimeter</a></p>
-</div>
-</section>
-<section id="demo-document-what-the-function-does" class="slide level2">
-<h2>Demo: document what the function does?</h2>
-<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href=""></a><span class="kw">def</span> calculate_fastest_time(time_list):</span>
-<span id="cb5-2"><a href=""></a>    fastest_time <span class="op">=</span> time_list[<span class="dv">0</span>]</span>
-<span id="cb5-3"><a href=""></a>    <span class="cf">for</span> time <span class="kw">in</span> time_list:</span>
-<span id="cb5-4"><a href=""></a>        <span class="cf">if</span> time <span class="op">&gt;</span> fastest_time:</span>
-<span id="cb5-5"><a href=""></a>            fastest_time <span class="op">=</span> time</span>
-<span id="cb5-6"><a href=""></a>    <span class="cf">return</span> fastest_time</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-<section id="the-matplotlib-documentation" class="slide level2">
-<h2>The Matplotlib documentation</h2>
-<p><a href="https://matplotlib.org/stable/api/_as_gen/matplotlib.colors.get_named_colors_mapping.html" data-preview-link="true"><code>matplotlib.colors.get_named_colors_mapping()</code></a></p>
-<ul>
-<li>Where does this information come from?</li>
-<li>How is it generated?</li>
-</ul>
-</section>
-<section id="the-matplotlib-source-code" class="slide level2">
-<h2>The Matplotlib source code</h2>
-<p><a href="https://github.com/matplotlib/matplotlib/blob/main/lib/matplotlib/colors.py#L92" data-preview-link="true"><code>matplotlib.colors.get_named_colors_mapping()</code> source code</a></p>
-</section>
-<section id="this-is-called-a-docstring-in-python" class="slide level2">
-<h2>This is called a “docstring” in Python</h2>
-<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href=""></a><span class="kw">def</span> get_named_colors_mapping():</span>
-<span id="cb6-2"><a href=""></a>    <span class="co">"""Return the global mapping of names to named colors."""</span></span>
-<span id="cb6-3"><a href=""></a>    <span class="cf">return</span> _colors_full_map</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Docstrings (should) follow an <a href="https://peps.python.org/pep-0257/" data-preview-link="true">agreed convention</a></p>
-</section>
-<section id="a-first-task-writing-a-docstring" class="slide level2">
-<h2>A first task: writing a docstring</h2>
-<div class="sourceCode" id="cb7"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href=""></a><span class="kw">def</span> calculate_fastest_time(time_list):</span>
-<span id="cb7-2"><a href=""></a>    fastest_time <span class="op">=</span> time_list[<span class="dv">0</span>]</span>
-<span id="cb7-3"><a href=""></a>    <span class="cf">for</span> time <span class="kw">in</span> time_list:</span>
-<span id="cb7-4"><a href=""></a>        <span class="cf">if</span> time <span class="op">&gt;</span> fastest_time:</span>
-<span id="cb7-5"><a href=""></a>            fastest_time <span class="op">=</span> time</span>
-<span id="cb7-6"><a href=""></a>    <span class="cf">return</span> fastest_time</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div style="text-align: center; margin-top: 1em">
-<p><a href="https://github.com/UCL-bioimage-analysis/rse-best-practices-playground/issues/2">Exercise: write a docstring for a function in <code>times.py</code></a></p>
-</div>
-</section>
-<section id="building-and-deploying-docs" class="slide level2">
-<h2>Building and deploying docs</h2>
-<div class="sourceCode" id="cb8"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href=""></a><span class="ex">pip</span> install <span class="at">-r</span> ./docs/requirements.txt</span>
-<span id="cb8-2"><a href=""></a><span class="ex">sphinx-build</span> docs/source docs/build <span class="at">-b</span> html</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>You can automate docs <a href="https://github.com/neuroinformatics-unit/actions/blob/main/build_sphinx_docs/action.yml">building</a> and <a href="https://github.com/neuroinformatics-unit/actions/blob/main/deploy_sphinx_docs/action.yml">deploying</a>. See for example the <code>movement</code> <a href="https://github.com/neuroinformatics-unit/movement/blob/main/.github/workflows/docs_build_and_deploy.yml">docs action</a> and <a href="https://movement.neuroinformatics.dev/api_index.html">its API reference</a>.</p>
-</section></section>
-<section>
-<section id="testing" class="title-slide slide level1 center">
-<h1>Testing</h1>
-
-</section>
-<section id="why-should-you-test" class="slide level2 scrollable">
-<h2>Why should you test</h2>
-<ul>
-<li>to find (current and future) bugs earlier and more quickly (before you publish your results, ideally!)</li>
-<li>to have confidence in your current and future code
-<ul>
-<li>important for research<sup>1</sup></li>
-</ul></li>
-<li>(to document how you expect your code to behave)</li>
-</ul>
-<aside><ol class="aside-footnotes"><li id="fn1"><p><a href="https://direct.mit.edu/qss/article/4/4/820/118074/Retracted-articles-use-less-free-and-open-source">https://doi.org/10.1162/qss_a_00275</a></p></li></ol></aside></section>
-<section id="why-should-you-test-your-research-code" class="slide level2 scrollable">
-<h2>Why should you test your research code?</h2>
-<blockquote>
-<p>“Second, a 15-year-old bug was found … (the bug was fixed … during preparation of this manuscript). The bug essentially reduced the size of the image searched for clusters, underestimating the severity of the multiplicity correction and overestimating significance.” <sup>1</sup></p>
-</blockquote>
-<aside><ol class="aside-footnotes"><li id="fn2"><p><a href="https://www.pnas.org/doi/full/10.1073/pnas.1602413113">https://www.pnas.org/doi/full/10.1073/pnas.1602413113</a></p></li></ol></aside></section>
-<section id="why-should-you-test-your-research-code-1" class="slide level2 smaller scrollable">
-<h2>Why should you test your research code?</h2>
-<blockquote>
-<p>“An <strong>in-house</strong> data reduction program introduced a change in sign for anomalous differences.</p>
-<p>This program, which was not part of a conventional data processing package, converted the anomalous pairs (I+ and I−) to (F− and F+), thereby introducing a sign change.</p>
-<p>We very sincerely regret the confusion that these papers have caused and, in particular, subsequent research efforts that were unproductive as a result of our original findings.” <sup>1</sup></p>
-</blockquote>
-<aside><ol class="aside-footnotes"><li id="fn3"><p><a href="https://www.science.org/doi/10.1126/science.314.5807.1875b">https://www.science.org/doi/10.1126/science.314.5807.1875b</a></p></li></ol></aside></section>
-<section id="why-should-you-test-you-research-code" class="slide level2 scrollable">
-<h2>Why should you test you research code?</h2>
-<blockquote>
-<p>“…basically, I forgot to set something to zero after I finished looping through the loop that moved the motor [and that caused a fire in the lab]”<sup>1</sup></p>
-</blockquote>
-<aside><ol class="aside-footnotes"><li id="fn4"><p><a href="https://software.ac.uk/news/software-horror-stories-fire-lab">https://software.ac.uk/news/software-horror-stories-fire-lab</a></p></li></ol></aside></section>
-<section id="what-things-should-we-sanity-check-about-the-calculate_fastest_time-function" class="slide level2">
-<h2>What things should we sanity check about the <code>calculate_fastest_time</code> function?</h2>
-<div class="sourceCode" id="cb9"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href=""></a><span class="kw">def</span> calculate_fastest_time(time_list):</span>
-<span id="cb9-2"><a href=""></a>    fastest_time <span class="op">=</span> time_list[<span class="dv">0</span>]</span>
-<span id="cb9-3"><a href=""></a>    <span class="cf">for</span> time <span class="kw">in</span> time_list:</span>
-<span id="cb9-4"><a href=""></a>        <span class="cf">if</span> time <span class="op">&gt;</span> fastest_time:</span>
-<span id="cb9-5"><a href=""></a>            fastest_time <span class="op">=</span> time</span>
-<span id="cb9-6"><a href=""></a>    <span class="cf">return</span> fastest_time</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-<section id="what-things-should-we-sanity-check-about-the-calculate_fastest_time-function-1" class="slide level2">
-<h2>What things should we sanity check about the <code>calculate_fastest_time</code> function?</h2>
-<div style="text-align: center; margin-top: 1em">
-<p><a href="https://www.menti.com/alstthrccvqk" data-preview-link="true" style="text-align: center">Mentimeter</a></p>
-</div>
-</section>
-<section id="demo-write-some-sanity-checks" class="slide level2">
-<h2>Demo: write some sanity checks</h2>
-<p>Switch to VS Code</p>
-<div style="text-align: center; margin-top: 1em">
-<p><a href="https://www.menti.com/alstthrccvqk" data-preview-link="true" style="text-align: center">Mentimeter</a></p>
-</div>
-</section>
-<section id="testing-with-pytest" class="slide level2">
-<h2>Testing with pytest</h2>
-<p>A neater way to run sanity checks</p>
-<div class="sourceCode" id="cb10"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href=""></a><span class="im">import</span> .calculate_fastest_time</span>
-<span id="cb10-2"><a href=""></a></span>
-<span id="cb10-3"><a href=""></a><span class="kw">def</span> test_fastest_time_in_a_specific_case():</span>
-<span id="cb10-4"><a href=""></a>    ...</span>
-<span id="cb10-5"><a href=""></a>    result <span class="op">=</span> ...</span>
-<span id="cb10-6"><a href=""></a>    expected <span class="op">=</span> ...</span>
-<span id="cb10-7"><a href=""></a>    <span class="cf">assert</span> result <span class="op">==</span> expected</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-<section id="exercise-convert-a-sanity-check-into-a-test" class="slide level2">
-<h2>Exercise: convert a sanity check into a test</h2>
-<p><a href="https://github.com/UCL-bioimage-analysis/rse-best-practices-playground/issues/2">Testing exercise</a></p>
-</section>
-<section id="how-to-think-about-what-to-test" class="slide level2 scrollable">
-<h2>How to think about what to test</h2>
-<p>What we’ve called sanity checks are referred to as “test cases”. Try to cover all “edge” cases<sup>1</sup>: what happens if …?</p>
-<ul>
-<li>“zero”: I pass an invalid input</li>
-<li>“one”: I pass a simplest possible input</li>
-<li>“two”: I run the code several times</li>
-<li>“two to max-1”: I pass a typical input<br>
-</li>
-<li>“max”: I pass the extremest allowable input</li>
-<li>“max+1”: I pass a too extreme input</li>
-</ul>
-<aside><ol class="aside-footnotes"><li id="fn5"><p><a href="https://www.freecodecamp.org/news/a-beginners-guide-to-testing-implement-these-quick-checks-to-test-your-code-d50027ad5eed/">A Beginner’s Guide to Testing: Error Handling Edge Cases</a></p></li></ol></aside></section>
-<section id="how-to-think-about-what-to-test-1" class="slide level2 smaller">
-<h2>How to think about what to test</h2>
-<p>What we’ve called sanity checks are referred to as “test cases”. For example, what happens/should happen when you call…?</p>
-<ul>
-<li>“zero”: <code>calculate_fastest_time("this is a string")</code></li>
-<li>“one”: <code>calculate_fastest_time([])</code></li>
-<li>“two”: <code>calculate_fastest_time([1.0]); calculate_fastest_time([2.0])</code></li>
-<li>“two to max-1”: <code>calculate_fastest_time([1.0, 0.5, 2.0])</code></li>
-<li>“max”: <code>calculate_fastest_time([1.0, 0.5, 2.0, sys.float_info.max]) # other extreme cases?</code></li>
-<li>“max+1”: <code>calculate_fastest_time([1.0, 0.5, 2.0, float("inf")])</code></li>
-</ul>
-</section>
-<section id="some-software-testing-vocabulary" class="slide level2">
-<h2>Some software testing vocabulary</h2>
-<p>Testing at different levels</p>
-<ul>
-<li>unit tests: tests one function</li>
-<li>integration tests: tests several functions work together as expected</li>
-<li>end-to-end tests: tests an entire pipeline from start to finish</li>
-</ul>
-</section>
-<section id="some-software-testing-vocabulary-1" class="slide level2">
-<h2>Some software testing vocabulary</h2>
-<p>Types of test:</p>
-<ul>
-<li>negative test: test that the expected error is raised when bad input is passed</li>
-<li>regression test: test that behaviour hasn’t changed</li>
-</ul>
-</section>
-<section id="be-careful" class="slide level2">
-<h2>Be careful</h2>
-<p>No matter how much you test, things can still go wrong! (and it’s <a href="https://coding-confessions.github.io/">OK to make mistakes</a>!)</p>
-<blockquote>
-<p>“Program testing can be used to show the presence of bugs, but never to show their absence!” ― <a href="https://en.wikipedia.org/wiki/Edsger_W._Dijkstra">Edsger W. Dijkstra</a></p>
-</blockquote>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/Therac-25">Therac-25</a></li>
-</ul>
-</section></section>
-<section>
-<section id="code-quality" class="title-slide slide level1 center">
-<h1>Code Quality</h1>
-
 </section>
 <section id="code-smells" class="slide level2">
 <h2>Code smells</h2>
@@ -852,37 +525,139 @@ Alessandro Felder*, Laura Porta, Adam Tyson
 <li>Martin Fowler</li>
 </ul>
 </section>
-<section id="an-example-of-a-code-smell" class="slide level2">
-<h2>An example of a code smell</h2>
-<div class="sourceCode" id="cb11"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href=""></a><span class="kw">def</span> calculate_fastest_time(time_list):</span>
-<span id="cb11-2"><a href=""></a>    fastest_time <span class="op">=</span> time_list[<span class="dv">0</span>]</span>
-<span id="cb11-3"><a href=""></a>    <span class="cf">for</span> time <span class="kw">in</span> time_list:</span>
-<span id="cb11-4"><a href=""></a>        <span class="cf">if</span> time <span class="op">&gt;</span> fastest_time:</span>
-<span id="cb11-5"><a href=""></a>            fastest_time <span class="op">=</span> time</span>
-<span id="cb11-6"><a href=""></a>    <span class="cf">return</span> fastest_time</span>
-<span id="cb11-7"><a href=""></a></span>
-<span id="cb11-8"><a href=""></a></span>
-<span id="cb11-9"><a href=""></a><span class="kw">def</span> print_fastest_time(time_list):</span>
-<span id="cb11-10"><a href=""></a>    fastest_time <span class="op">=</span> time_list[<span class="dv">0</span>]</span>
-<span id="cb11-11"><a href=""></a>    <span class="cf">for</span> time <span class="kw">in</span> time_list:</span>
-<span id="cb11-12"><a href=""></a>        <span class="cf">if</span> time <span class="op">&gt;</span> fastest_time:</span>
-<span id="cb11-13"><a href=""></a>            fastest_time <span class="op">=</span> time</span>
-<span id="cb11-14"><a href=""></a></span>
-<span id="cb11-15"><a href=""></a>    <span class="bu">print</span>(<span class="ss">f"This is the fastest time: </span><span class="sc">{</span>fastest_time<span class="sc">}</span><span class="ss"> 🚀"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="the-messy-reality" class="slide level2">
+<h2>The messy reality</h2>
+<div>
+<p>You’ve written your analysis script, and it “works”… but it’s chaotic:</p>
+<ul>
+<li class="fragment">Hardcoded numbers, file paths, and cryptic names are everywhere</li>
+<li class="fragment">Analysis logic is scattered and hard to follow</li>
+<li class="fragment">Plotting functions are tangled with data processing</li>
+</ul>
+</div>
+<div class="fragment">
+<p>Don’t move on to the next project! Your work isn’t done yet.</p>
+</div>
 </section>
-<section id="what-might-be-not-so-good-about-these-two-functions" class="slide level2">
-<h2>What might be not-so-good about these two functions?</h2>
+<section id="which-code-smells-can-we-find-here" class="slide level2">
+<h2>Which code smells can we find here?</h2>
+<p>my_project/<br>
+└── do_all_analysis.py</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href=""></a>a <span class="op">=</span> <span class="dv">500</span> </span>
+<span id="cb4-2"><a href=""></a>b <span class="op">=</span> <span class="fl">0.75</span> </span>
+<span id="cb4-3"><a href=""></a></span>
+<span id="cb4-4"><a href=""></a><span class="co"># from michael old analysis pipeline</span></span>
+<span id="cb4-5"><a href=""></a><span class="kw">def</span> process_data(T, sr, t):</span>
+<span id="cb4-6"><a href=""></a>    s <span class="op">=</span> [x <span class="op">*</span> t <span class="cf">for</span> i, x <span class="kw">in</span> <span class="bu">enumerate</span>(T.iloc[:, <span class="dv">0</span>]) <span class="cf">if</span> (x <span class="op">%</span> t) <span class="op">&gt;</span> sr <span class="kw">and</span> i <span class="op">%</span> <span class="dv">3</span> <span class="op">==</span> <span class="dv">0</span>]</span>
+<span id="cb4-7"><a href=""></a>    <span class="cf">return</span> <span class="bu">sorted</span>(s, reverse<span class="op">=</span><span class="va">True</span>)[:<span class="bu">len</span>(s)<span class="op">//</span><span class="dv">2</span>] <span class="cf">if</span> <span class="bu">len</span>(s) <span class="op">&gt;</span> <span class="dv">5</span> <span class="cf">else</span> s</span>
+<span id="cb4-8"><a href=""></a></span>
+<span id="cb4-9"><a href=""></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb4-10"><a href=""></a>data <span class="op">=</span> pd.read_csv(<span class="st">"/Users/helen/Desktop/29104629.csv"</span>)</span>
+<span id="cb4-11"><a href=""></a></span>
+<span id="cb4-12"><a href=""></a>spikes <span class="op">=</span> process_data(data, a, b)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="which-code-smells-can-we-find-here-1" class="slide level2">
+<h2>Which code smells can we find here?</h2>
 <div style="text-align: center; margin-top: 1em">
 <p><a href="https://www.menti.com/alstthrccvqk" data-preview-link="true" style="text-align: center">Mentimeter</a></p>
 </div>
 </section>
-<section id="exercise-dont-repeat-yourself-dry" class="slide level2">
-<h2><a href="https://github.com/UCL-bioimage-analysis/rse-best-practices-playground/issues/4">Exercise: don’t repeat yourself (DRY)</a></h2>
+<section id="improving-the-code" class="slide level2">
+<h2>Improving the code</h2>
+<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href=""></a><span class="co"># Constants for sampling rate and spike threshold</span></span>
+<span id="cb5-2"><a href=""></a>SAMPLING_RATE <span class="op">=</span> <span class="dv">500</span>  <span class="co"># Hz</span></span>
+<span id="cb5-3"><a href=""></a>SPIKE_THRESHOLD <span class="op">=</span> <span class="fl">0.75</span>  <span class="co"># Arbitrary units</span></span>
+<span id="cb5-4"><a href=""></a></span>
+<span id="cb5-5"><a href=""></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb5-6"><a href=""></a></span>
+<span id="cb5-7"><a href=""></a><span class="co"># Load the dataset</span></span>
+<span id="cb5-8"><a href=""></a><span class="co"># Avoid hardcoded paths and non-meaningful filenames; use a descriptive path.</span></span>
+<span id="cb5-9"><a href=""></a>data_path <span class="op">=</span> <span class="bu">input</span>()</span>
+<span id="cb5-10"><a href=""></a>data <span class="op">=</span> pd.read_csv(data_path)</span>
+<span id="cb5-11"><a href=""></a></span>
+<span id="cb5-12"><a href=""></a><span class="co"># Refactored spike detection function with clear logic and meaningful names</span></span>
+<span id="cb5-13"><a href=""></a><span class="kw">def</span> detect_spikes(data, sampling_rate, threshold):</span>
+<span id="cb5-14"><a href=""></a>    spike_times <span class="op">=</span> []</span>
+<span id="cb5-15"><a href=""></a>    <span class="cf">for</span> i, value <span class="kw">in</span> <span class="bu">enumerate</span>(data.iloc[:, <span class="dv">0</span>]):</span>
+<span id="cb5-16"><a href=""></a>        <span class="co"># Detect spikes based on threshold and other criteria</span></span>
+<span id="cb5-17"><a href=""></a>        <span class="cf">if</span> value <span class="op">&gt;</span> threshold <span class="kw">and</span> i <span class="op">%</span> <span class="dv">3</span> <span class="op">==</span> <span class="dv">0</span>:</span>
+<span id="cb5-18"><a href=""></a>            spike_times.append(value)</span>
+<span id="cb5-19"><a href=""></a></span>
+<span id="cb5-20"><a href=""></a>    <span class="co"># Return the list of detected spikes, sorted in descending order</span></span>
+<span id="cb5-21"><a href=""></a>    <span class="cf">return</span> <span class="bu">sorted</span>(spike_times, reverse<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb5-22"><a href=""></a></span>
+<span id="cb5-23"><a href=""></a><span class="co"># Detect spikes using the provided sampling rate and threshold</span></span>
+<span id="cb5-24"><a href=""></a>spikes <span class="op">=</span> detect_spikes(data, SAMPLING_RATE, SPIKE_THRESHOLD)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="organize-your-functions" class="slide level2">
+<h2>Organize your functions</h2>
+<ul>
+<li>small</li>
+<li>do one thing</li>
+<li>use descriptive names</li>
+<li>limit amount of arguments</li>
+</ul>
+</section>
+<section id="make-your-code-modular" class="slide level2">
+<h2>Make your code modular</h2>
+<p>my_pipeline/<br>
+└── preprocess.py<br>
+└── analysis.py<br>
+└── plot.py<br>
+└── read_write.py<br>
+└── my_analysis_pipeline.py</p>
+</section>
+<section id="an-example-pipeline" class="slide level2">
+<h2>An example pipeline</h2>
+<p>Import your functions and classes in your main analysis pipeline</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href=""></a><span class="co"># file: my_analysis_pipeline.py</span></span>
+<span id="cb6-2"><a href=""></a><span class="im">from</span> my_project.io <span class="im">import</span> load_calcium_data</span>
+<span id="cb6-3"><a href=""></a><span class="im">from</span> my_project.preprocess <span class="im">import</span> extract_fluorescence</span>
+<span id="cb6-4"><a href=""></a><span class="im">from</span> my_project.analysis <span class="im">import</span> analyze_calcium_timeseries</span>
+<span id="cb6-5"><a href=""></a><span class="im">from</span> my_project.plot <span class="im">import</span> make_figures_for_paper</span>
+<span id="cb6-6"><a href=""></a></span>
+<span id="cb6-7"><a href=""></a><span class="kw">def</span> my_calcium_imaging_pipeline():</span>
+<span id="cb6-8"><a href=""></a>    raw_data <span class="op">=</span> load_calcium_data()</span>
+<span id="cb6-9"><a href=""></a>    delta_fluorescence <span class="op">=</span> extract_fluorescence(raw_data)</span>
+<span id="cb6-10"><a href=""></a>    spike_times_table <span class="op">=</span> analyze_calcium_timeseries(delta_fluorescence)</span>
+<span id="cb6-11"><a href=""></a>    make_figures_for_paper(spike_times_table)</span>
+<span id="cb6-12"><a href=""></a></span>
+<span id="cb6-13"><a href=""></a>    <span class="bu">print</span>(<span class="st">"Completed"</span>)</span>
+<span id="cb6-14"><a href=""></a>  </span>
+<span id="cb6-15"><a href=""></a><span class="cf">if</span> <span class="va">__name__</span> <span class="op">==</span> <span class="st">"__main__"</span>:</span>
+<span id="cb6-16"><a href=""></a>    my_calcium_imaging_pipeline()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="to-learn-more" class="slide level2">
+<h2>To learn more…</h2>
+<p>Suggested resources:<br>
+- <a href="https://www.oreilly.com/library/view/clean-code-a/9780136083238/">Clean Code by Robert C. Martin</a></p>
+</section>
+<section id="next-steps" class="slide level2">
+<h2>Next steps</h2>
+<p>Now that your logic is split into modules and your pipeline is well crafted you might want to move to the next step…</p>
 </section></section>
 <section>
-<section id="packaging" class="title-slide slide level1 center">
-<h1>Packaging</h1>
+<section id="package-your-project" class="title-slide slide level1 center">
+<h1>Package your project 📦</h1>
 
+</section>
+<section id="how-can-i-call-my-functions-from-a-different-project" class="slide level2">
+<h2>How can I call my functions from a different project?</h2>
+<p>my_pipeline/<br>
+└── preprocess.py<br>
+└── analysis.py<br>
+└── plot.py<br>
+└── read_write.py<br>
+└── my_analysis_pipeline.py</p>
+</section>
+<section id="how-can-i-call-my-functions-from-a-different-project-1" class="slide level2">
+<h2>How can I call my functions from a different project?</h2>
+<div style="text-align: center; margin-top: 1em">
+<p><a href="https://www.menti.com/alstthrccvqk" data-preview-link="true" style="text-align: center">Mentimeter</a></p>
+</div>
+</section>
+<section id="demo" class="slide level2">
+<h2>Demo! 🥺</h2>
 </section>
 <section id="what-does-packaging-mean" class="slide level2">
 <h2>What does packaging mean?</h2>
@@ -895,9 +670,13 @@ Alessandro Felder*, Laura Porta, Adam Tyson
 </figure>
 </div>
 </div><div class="column" style="width:50%;">
-<p>Packaging your code makes it easy-to-install.</p>
-<div class="sourceCode" id="cb12"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb12-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install my-awesome-package</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Packaging allows Python to “install” your code so that it can be re-used from anywhere.<br>
+Local, editable installation from the package directory:</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install <span class="at">-e</span> .</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></div>
+</section>
+<section id="demo-1" class="slide level2">
+<h2>Demo! 😊</h2>
 </section>
 <section id="the-python-package-structure" class="slide level2">
 <h2>The Python package structure</h2>
@@ -910,20 +689,18 @@ Alessandro Felder*, Laura Porta, Adam Tyson
 </figure>
 </div>
 </div><div class="column" style="width:50%;">
-<pre><code>└── my-awesome-package/
+<pre><code>my-awesome-package/
     ├── LICENSE
-    ├── MANIFEST.in
     ├── README.md
-    ├── pyproject.toml
-    ├── tox.ini
-    ├── docs/
+    ├── pyproject.toml 👈
+    ├── ...
     ├── my_awesome_package/
-    │   └── __init__.py
-    │   └── do_something_awesome.py
-    └── tests/
-        ├── __init__.py
-        └── test_placeholder.py</code></pre>
+    │   └── __init__.py 👈
+    │   └── do_something_awesome.py</code></pre>
 </div></div>
+</section>
+<section id="demo-2" class="slide level2">
+<h2>Demo! 📜</h2>
 </section>
 <section id="automating-package-creation" class="slide level2">
 <h2>Automating package creation</h2>
@@ -937,35 +714,16 @@ Alessandro Felder*, Laura Porta, Adam Tyson
 </div>
 </div><div class="column" style="width:50%;">
 <p>Use <a href="https://github.com/neuroinformatics-unit/python-cookiecutter">the NIU cookiecutter template</a>.</p>
-<div class="sourceCode" id="cb14"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb14-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> create <span class="at">-n</span> <span class="st">"package-playground"</span></span>
-<span id="cb14-2"><a href="" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> activate package-playground</span>
-<span id="cb14-3"><a href="" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install cookiecutter</span>
-<span id="cb14-4"><a href="" aria-hidden="true" tabindex="-1"></a><span class="ex">cookiecutter</span> https://github.com/neuroinformatics-unit/python-cookiecutter </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> create <span class="at">-n</span> <span class="st">"package-playground"</span></span>
+<span id="cb9-2"><a href="" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> activate package-playground</span>
+<span id="cb9-3"><a href="" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install cookiecutter</span>
+<span id="cb9-4"><a href="" aria-hidden="true" tabindex="-1"></a><span class="ex">cookiecutter</span> https://github.com/neuroinformatics-unit/python-cookiecutter </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></div>
-</section>
-<section id="automating-package-creation-1" class="slide level2">
-<h2>Automating package creation</h2>
-<div class="columns">
-<div class="column" style="font-size: 0.5em;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="img/fancy_cookiecutter.jpg" height="400"></p>
-<figcaption>Photo by <a href="https://flic.kr/p/c1otMu&quot;">Luke Loughead</a> on flickr</figcaption>
-</figure>
-</div>
-</div><div class="column" style="width:50%;">
-<p>Use <a href="https://github.com/UCL-ARC/python-tooling?tab=readme-ov-file#using-this-template">the ARC cookiecutter template</a>.</p>
-<div class="sourceCode" id="cb15"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb15-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> create <span class="at">-n</span> <span class="st">"fancy-package-playground"</span></span>
-<span id="cb15-2"><a href="" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> activate fancy-package-playground</span>
-<span id="cb15-3"><a href="" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install cookiecutter</span>
-<span id="cb15-4"><a href="" aria-hidden="true" tabindex="-1"></a><span class="ex">cookiecutter</span> gh:ucl-arc/python-tooling </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div></div>
-<p>Also comes with <a href="https://github-pages.arc.ucl.ac.uk/python-tooling/">recommendations</a>.</p>
-</section>
-<section id="pip-knows-what-to-do" class="slide level2">
-<h2><code>pip</code> knows what to do</h2>
-<p>If you have this structure, <code>pip</code> will know where to put your Python code in your conda environment, so you can re-use it from anywhere.</p>
-<pre><code>pip install .</code></pre>
+</section></section>
+<section>
+<section id="share-your-project" class="title-slide slide level1 center">
+<h1>Share your project 🌍</h1>
+
 </section>
 <section id="the-python-package-index-pypi" class="slide level2">
 <h2>The Python Package Index (PyPi)</h2>
@@ -979,6 +737,10 @@ Alessandro Felder*, Laura Porta, Adam Tyson
 </ul>
 </div></div>
 <p>This structure will also come in handy when you want to distribute your package widely.</p>
+</section>
+<section id="your-package-is-installable-by-anyone" class="slide level2">
+<h2>Your package is installable by anyone</h2>
+<div class="sourceCode" id="cb10"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install my_awesome_package</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="summary" class="slide level2">
 <h2>Summary</h2>
@@ -1007,19 +769,29 @@ Alessandro Felder*, Laura Porta, Adam Tyson
 </div></div>
 </section></section>
 <section>
-<section id="summary-1" class="title-slide slide level1 center">
-<h1>Summary</h1>
+<section id="conclusion" class="title-slide slide level1 center">
+<h1>Conclusion</h1>
 
 </section>
-<section id="summary-2" class="slide level2">
-<h2>Summary</h2>
+<section id="what-we-have-learned-today" class="slide level2">
+<h2>What we have learned today</h2>
 <ul>
-<li>coding collaboratively 🤝 (issues and pull requests)</li>
-<li>writing documentation 📃 (docstrings, sphinx)</li>
-<li>writing tests ✅ (pytest, test cases)</li>
-<li>evaluating and improving the quality of code 🤔 (code smells, refactoring, DRY)</li>
-<li>creating a python package 📦 (cookiecutter, pypi)</li>
+<li>Clean up and organize your scripts 🧹</li>
+<li>Package your project 📦</li>
+<li>Share your project 🌍</li>
 </ul>
+</section>
+<section id="other-areas-of-good-practice" class="slide level2">
+<h2>Other areas of good practice</h2>
+<ul>
+<li>testing</li>
+<li>writing documentation</li>
+<li>asynchronous collaboration (issues and pull requests)</li>
+</ul>
+</section>
+<section id="extra-resources" class="slide level2">
+<h2>Extra resources</h2>
+<p>If you want to practice refactoring, testing and documenting we have prepared <a href="https://github.com/rse-best-practices-course/2024-course/issues/">some exercises</a></p>
 </section>
 <section id="retrospective" class="slide level2">
 <h2>Retrospective</h2>
@@ -1027,84 +799,13 @@ Alessandro Felder*, Laura Porta, Adam Tyson
 <li>Anonymously tell us what you thought <a href="https://ideaboardz.com/for/Collaborative%20coding%20retrospective/5104750">on this ideaboardz</a>…</li>
 <li>… and get in touch anytime!</li>
 </ul>
-</section></section>
-<section>
-<section id="resources" class="title-slide slide level1 center">
-<h1>Resources</h1>
-
-</section>
-<section id="code-review-and-issue-tracking-resources" class="slide level2">
-<h2>Code review and issue tracking resources</h2>
-<ul>
-<li><a href="https://blog.ossph.org/a-beginners-guide-to-contributing-to-open-source-projects/">Step-by-step guide</a></li>
-<li>Advice on how to do code review:
-<ul>
-<li>as <a href="https://mtlynch.io/code-review-love/">an author</a></li>
-<li>as <a href="https://mtlynch.io/human-code-reviews-1/">a reviewer</a></li>
-</ul></li>
-<li>The Zeigarnik effect: Why creating issues <a href="https://todoist.com/inspiration/zeigarnik-effect-comic">helps you switch off</a></li>
-</ul>
-</section>
-<section id="documentation-resources" class="slide level2">
-<h2>Documentation resources</h2>
-<ul>
-<li><a href="https://peps.python.org/pep-0257/#specification">PEP 257 – Docstring Conventions | peps.python.org</a></li>
-<li><a href="https://www.sphinx-doc.org/en/master/usage/quickstart.html">Getting Started — Sphinx documentation</a></li>
-<li><a href="https://sphinx-rtd-tutorial.readthedocs.io/en/latest/read-the-docs.html">Publishing the documentation to ReadTheDocs — Sphinx-RTD-Tutorial documentation</a></li>
-<li><a href="https://www.mkdocs.org/">Mkdocs - a simpler alternative to sphinx</a></li>
-<li><a href="https://diataxis.fr/">Diátaxis - a framework to write technical documentation</a></li>
-</ul>
-</section>
-<section id="testing-resources" class="slide level2">
-<h2>Testing resources</h2>
-<ul>
-<li><a href="https://docs.pytest.org/en/7.3.x/">Pytest docs</a></li>
-<li><a href="https://medium.com/swlh/taking-the-edge-off-of-edge-cases-7b3008d83a57">Taking the edge off edge-cases blog</a></li>
-</ul>
-</section>
-<section id="refactoring-resources" class="slide level2">
-<h2>Refactoring resources</h2>
-<ul>
-<li><a href="https://pragmaticways.com/31-code-smells-you-must-know/">31 code smells</a></li>
-</ul>
-</section>
-<section id="packaging-resources" class="slide level2">
-<h2>Packaging resources</h2>
-<ul>
-<li><a href="https://github.com/neuroinformatics-unit/python-cookiecutter">NIU cookiecutter</a></li>
-<li><a href="https://github.com/UCL-ARC/python-tooling">ARC cookiecutter</a></li>
-<li><a href="https://packaging.python.org/en/latest/tutorials/packaging-projects/">Python packaging tutorial</a></li>
-<li><a href="https://youtu.be/FpIJ7T1Gpjo?feature=shared&amp;t=1638">Python wheels walkthrough</a></li>
-<li><a href="https://packaging.python.org/en/latest/guides/writing-pyproject-toml/"><code>pyproject.toml</code> file explained</a></li>
-</ul>
-</section>
-<section id="rse-community" class="slide level2">
-<h2>RSE Community</h2>
-<ul>
-<li>join the community!
-<ul>
-<li><a href="https://www.ucl.ac.uk/advanced-research-computing/community/ucl-research-programming-hub">UCL Research Programming Hub</a></li>
-<li><a href="https://rslondon.ac.uk/">Research Software London</a></li>
-<li><a href="https://society-rse.org/international-rse-organisations/">Research Software Engineering societies</a></li>
-</ul></li>
-</ul>
-</section>
-<section id="more-context-about-research-software-engineering" class="slide level2">
-<h2>More context about Research Software Engineering</h2>
-<ul>
-<li><a href="https://ieeexplore.ieee.org/document/8994167">The four pillars of RSE</a></li>
-<li><a href="https://www.software.ac.uk/">The Software Sustainability Institute</a></li>
-<li><a href="https://hidden-ref.org/">The hidden REF – Celebrating all research outputs</a></li>
-<li><a href="https://zenodo.org/records/10073233">Article about RSE careers</a></li>
-</ul>
 <div class="quarto-auto-generated-content">
 <p><img src="img/logo_niu_dark.png" class="slide-logo"></p>
 <div class="footer footer-default">
-<p>Collaborative coding and software engineering good practice (BIIG hackday) | 2024-07-15</p>
+<p>Collaborative coding and software engineering good practice | 2024-10-02</p>
 </div>
 </div>
 </section></section>
-
     </div>
   </div>
 
