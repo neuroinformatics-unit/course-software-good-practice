@@ -2,11 +2,11 @@
 
 ## How can I call my functions from a different project?
 my_pipeline/  
-		└── preprocess.py  
-		└── analysis.py  
-		└── plot.py  
-		└── io.py (for reading/writing data)  
-		└── my_analysis_pipeline.py  
+└── preprocess.py  
+└── analysis.py  
+└── plot.py  
+└── read_write.py    
+└── my_analysis_pipeline.py  
 
 ## How can I call my functions from a different project?
 {{< include slides/mentimeter.qmd >}}
@@ -23,9 +23,9 @@ my_pipeline/
 
 ::: {.column width="50%"}
 Packaging allows Python to "install" your code so that it can be re-used from anywhere.  
-Local installation from the package directory:  
+Local, editable installation from the package directory:
 ```{.bash code-line-numbers="false"}
-pip install .
+pip install -e .
 ```
 :::
 ::::
