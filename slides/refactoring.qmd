@@ -76,11 +76,12 @@ spikes = process_data(data, a, b)
 
 ## Improving the code
 ```{.python}
+import pandas as pd
+
+
 # Constants for sampling rate and spike threshold
 SAMPLING_RATE = 500  # Hz
 SPIKE_THRESHOLD = 0.75  # Arbitrary units
-
-import pandas as pd
 
 # Load the dataset
 # Avoid hardcoded paths and non-meaningful filenames; use a descriptive path.
