@@ -9,7 +9,7 @@
 ## A common scenario
 ![Image by <a href="https://phdcomics.com/comics.php?f=1690">PhD comics</a>](img/programming_for_non_programmers_3.png)
 
-## Some example code
+## What might be not-so-good about these two functions?
 
 ```{.python}
 def calculate_fastest_time(time_list):
