@@ -62,7 +62,7 @@ exercises:
 ::::
  
 
-## Initial discussion
+## What makes (research) code good?
 
 {{< include slides/mentimeter.qmd >}}
 
