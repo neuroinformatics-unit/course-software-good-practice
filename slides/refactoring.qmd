@@ -9,6 +9,18 @@
 ## A common scenario
 ![Image by <a href="https://phdcomics.com/comics.php?f=1690">PhD comics</a>](img/programming_for_non_programmers_3.png)
 
+## The messy reality
+:::{.incremental}
+You've written your analysis script, and it "works"... but it's chaotic:
+
+- Hardcoded numbers, file paths, and cryptic names are everywhere
+- Analysis logic is scattered and hard to follow
+- Plotting functions are tangled with data processing
+:::
+:::{.fragment}
+Don't move on to the next project! Your work isn’t done yet.
+:::
+
 ## What might be not-so-good about these two functions?
 
 ```{.python}
@@ -38,18 +50,6 @@ def print_fastest_time(time_list):
 > A code smell is a surface indication that usually corresponds to a deeper problem in the system.
 
 - Martin Fowler
-
-## The messy reality
-:::{.incremental}
-You've written your analysis script, and it "works"... but it's chaotic:
-
-- Hardcoded numbers, file paths, and cryptic names are everywhere
-- Analysis logic is scattered and hard to follow
-- Plotting functions are tangled with data processing
-:::
-:::{.fragment}
-Don't move on to the next project! Your work isn’t done yet.
-:::
 
 ## Which code smells can we find here?
 my_project/  
