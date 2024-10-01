@@ -9,7 +9,19 @@
 ## A common scenario
 ![Image by <a href="https://phdcomics.com/comics.php?f=1690">PhD comics</a>](img/programming_for_non_programmers_3.png)
 
-## Some example code
+## The messy reality
+:::{.incremental}
+You've written your analysis script, and it "works"... but it's chaotic:
+
+- Hardcoded numbers, file paths, and cryptic names are everywhere
+- Analysis logic is scattered and hard to follow
+- Plotting functions are tangled with data processing
+:::
+:::{.fragment}
+Don't move on to the next project! Your work isn’t done yet.
+:::
+
+## What might be not-so-good about these two functions?
 
 ```{.python}
 def calculate_fastest_time(time_list):
@@ -39,18 +51,6 @@ def print_fastest_time(time_list):
 
 - Martin Fowler
 
-## The messy reality
-:::{.incremental}
-You've written your analysis script, and it "works"... but it's chaotic:
-
-- Hardcoded numbers, file paths, and cryptic names are everywhere
-- Analysis logic is scattered and hard to follow
-- Plotting functions are tangled with data processing
-:::
-:::{.fragment}
-Don't move on to the next project! Your work isn’t done yet.
-:::
-
 ## Which code smells can we find here?
 my_project/  
    	└── do_all_analysis.py  
@@ -76,11 +76,12 @@ spikes = process_data(data, a, b)
 
 ## Improving the code
 ```{.python}
+import pandas as pd
+
+
 # Constants for sampling rate and spike threshold
 SAMPLING_RATE = 500  # Hz
 SPIKE_THRESHOLD = 0.75  # Arbitrary units
-
-import pandas as pd
 
 # Load the dataset
 # Avoid hardcoded paths and non-meaningful filenames; use a descriptive path.
@@ -120,7 +121,7 @@ my_pipeline/
 Import your functions and classes in your main analysis pipeline
 ```{.python}
 # file: my_analysis_pipeline.py
-from my_project.io import load_calcium_data
+from my_project.read_write import load_calcium_data
 from my_project.preprocess import extract_fluorescence
 from my_project.analysis import analyze_calcium_timeseries
 from my_project.plot import make_figures_for_paper
