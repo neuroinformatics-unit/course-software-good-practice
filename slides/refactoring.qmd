@@ -121,7 +121,7 @@ my_pipeline/
 Import your functions and classes in your main analysis pipeline
 ```{.python}
 # file: my_analysis_pipeline.py
-from my_project.io import load_calcium_data
+from my_project.read_write import load_calcium_data
 from my_project.preprocess import extract_fluorescence
 from my_project.analysis import analyze_calcium_timeseries
 from my_project.plot import make_figures_for_paper
