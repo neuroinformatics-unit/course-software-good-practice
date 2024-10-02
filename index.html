@@ -422,8 +422,8 @@ Alessandro Felder, Laura Porta, Chang Huan Lo
 </ul>
 </div></div>
 </section>
-<section id="initial-discussion" class="slide level2">
-<h2>Initial discussion</h2>
+<section id="what-makes-research-code-good" class="slide level2">
+<h2>What makes (research) code good?</h2>
 <div style="text-align: center; margin-top: 1em">
 <p><a href="https://www.menti.com/alstthrccvqk" data-preview-link="true" style="text-align: center">Mentimeter</a></p>
 </div>
@@ -492,8 +492,22 @@ Alessandro Felder, Laura Porta, Chang Huan Lo
 <h2>A common scenario</h2>
 
 <img data-src="img/programming_for_non_programmers_3.png" class="r-stretch quarto-figure-center"><p class="caption">Image by <a href="https://phdcomics.com/comics.php?f=1690">PhD comics</a></p></section>
-<section id="some-example-code" class="slide level2">
-<h2>Some example code</h2>
+<section id="the-messy-reality" class="slide level2">
+<h2>The messy reality</h2>
+<div>
+<p>You’ve written your analysis script, and it “works”… but it’s chaotic:</p>
+<ul>
+<li class="fragment">Hardcoded numbers, file paths, and cryptic names are everywhere</li>
+<li class="fragment">Analysis logic is scattered and hard to follow</li>
+<li class="fragment">Plotting functions are tangled with data processing</li>
+</ul>
+</div>
+<div class="fragment">
+<p>Don’t move on to the next project! Your work isn’t done yet.</p>
+</div>
+</section>
+<section id="what-might-be-not-so-good-about-these-two-functions" class="slide level2">
+<h2>What might be not-so-good about these two functions?</h2>
 <div class="sourceCode" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href=""></a><span class="kw">def</span> calculate_fastest_time(time_list):</span>
 <span id="cb3-2"><a href=""></a>    fastest_time <span class="op">=</span> time_list[<span class="dv">0</span>]</span>
 <span id="cb3-3"><a href=""></a>    <span class="cf">for</span> time <span class="kw">in</span> time_list:</span>
@@ -510,7 +524,7 @@ Alessandro Felder, Laura Porta, Chang Huan Lo
 <span id="cb3-14"><a href=""></a></span>
 <span id="cb3-15"><a href=""></a>    <span class="bu">print</span>(<span class="ss">f"This is the fastest time: </span><span class="sc">{</span>fastest_time<span class="sc">}</span><span class="ss"> 🚀"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="what-might-be-not-so-good-about-these-two-functions" class="slide level2">
+<section id="what-might-be-not-so-good-about-these-two-functions-1" class="slide level2">
 <h2>What might be not-so-good about these two functions?</h2>
 <div style="text-align: center; margin-top: 1em">
 <p><a href="https://www.menti.com/alstthrccvqk" data-preview-link="true" style="text-align: center">Mentimeter</a></p>
@@ -524,20 +538,6 @@ Alessandro Felder, Laura Porta, Chang Huan Lo
 <ul>
 <li>Martin Fowler</li>
 </ul>
-</section>
-<section id="the-messy-reality" class="slide level2">
-<h2>The messy reality</h2>
-<div>
-<p>You’ve written your analysis script, and it “works”… but it’s chaotic:</p>
-<ul>
-<li class="fragment">Hardcoded numbers, file paths, and cryptic names are everywhere</li>
-<li class="fragment">Analysis logic is scattered and hard to follow</li>
-<li class="fragment">Plotting functions are tangled with data processing</li>
-</ul>
-</div>
-<div class="fragment">
-<p>Don’t move on to the next project! Your work isn’t done yet.</p>
-</div>
 </section>
 <section id="which-code-smells-can-we-find-here" class="slide level2">
 <h2>Which code smells can we find here?</h2>
@@ -564,30 +564,31 @@ Alessandro Felder, Laura Porta, Chang Huan Lo
 </section>
 <section id="improving-the-code" class="slide level2">
 <h2>Improving the code</h2>
-<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href=""></a><span class="co"># Constants for sampling rate and spike threshold</span></span>
-<span id="cb5-2"><a href=""></a>SAMPLING_RATE <span class="op">=</span> <span class="dv">500</span>  <span class="co"># Hz</span></span>
-<span id="cb5-3"><a href=""></a>SPIKE_THRESHOLD <span class="op">=</span> <span class="fl">0.75</span>  <span class="co"># Arbitrary units</span></span>
-<span id="cb5-4"><a href=""></a></span>
-<span id="cb5-5"><a href=""></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
-<span id="cb5-6"><a href=""></a></span>
-<span id="cb5-7"><a href=""></a><span class="co"># Load the dataset</span></span>
-<span id="cb5-8"><a href=""></a><span class="co"># Avoid hardcoded paths and non-meaningful filenames; use a descriptive path.</span></span>
-<span id="cb5-9"><a href=""></a>data_path <span class="op">=</span> <span class="bu">input</span>()</span>
-<span id="cb5-10"><a href=""></a>data <span class="op">=</span> pd.read_csv(data_path)</span>
-<span id="cb5-11"><a href=""></a></span>
-<span id="cb5-12"><a href=""></a><span class="co"># Refactored spike detection function with clear logic and meaningful names</span></span>
-<span id="cb5-13"><a href=""></a><span class="kw">def</span> detect_spikes(data, sampling_rate, threshold):</span>
-<span id="cb5-14"><a href=""></a>    spike_times <span class="op">=</span> []</span>
-<span id="cb5-15"><a href=""></a>    <span class="cf">for</span> i, value <span class="kw">in</span> <span class="bu">enumerate</span>(data.iloc[:, <span class="dv">0</span>]):</span>
-<span id="cb5-16"><a href=""></a>        <span class="co"># Detect spikes based on threshold and other criteria</span></span>
-<span id="cb5-17"><a href=""></a>        <span class="cf">if</span> value <span class="op">&gt;</span> threshold <span class="kw">and</span> i <span class="op">%</span> <span class="dv">3</span> <span class="op">==</span> <span class="dv">0</span>:</span>
-<span id="cb5-18"><a href=""></a>            spike_times.append(value)</span>
-<span id="cb5-19"><a href=""></a></span>
-<span id="cb5-20"><a href=""></a>    <span class="co"># Return the list of detected spikes, sorted in descending order</span></span>
-<span id="cb5-21"><a href=""></a>    <span class="cf">return</span> <span class="bu">sorted</span>(spike_times, reverse<span class="op">=</span><span class="va">True</span>)</span>
-<span id="cb5-22"><a href=""></a></span>
-<span id="cb5-23"><a href=""></a><span class="co"># Detect spikes using the provided sampling rate and threshold</span></span>
-<span id="cb5-24"><a href=""></a>spikes <span class="op">=</span> detect_spikes(data, SAMPLING_RATE, SPIKE_THRESHOLD)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href=""></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb5-2"><a href=""></a></span>
+<span id="cb5-3"><a href=""></a></span>
+<span id="cb5-4"><a href=""></a><span class="co"># Constants for sampling rate and spike threshold</span></span>
+<span id="cb5-5"><a href=""></a>SAMPLING_RATE <span class="op">=</span> <span class="dv">500</span>  <span class="co"># Hz</span></span>
+<span id="cb5-6"><a href=""></a>SPIKE_THRESHOLD <span class="op">=</span> <span class="fl">0.75</span>  <span class="co"># Arbitrary units</span></span>
+<span id="cb5-7"><a href=""></a></span>
+<span id="cb5-8"><a href=""></a><span class="co"># Load the dataset</span></span>
+<span id="cb5-9"><a href=""></a><span class="co"># Avoid hardcoded paths and non-meaningful filenames; use a descriptive path.</span></span>
+<span id="cb5-10"><a href=""></a>data_path <span class="op">=</span> <span class="bu">input</span>()</span>
+<span id="cb5-11"><a href=""></a>data <span class="op">=</span> pd.read_csv(data_path)</span>
+<span id="cb5-12"><a href=""></a></span>
+<span id="cb5-13"><a href=""></a><span class="co"># Refactored spike detection function with clear logic and meaningful names</span></span>
+<span id="cb5-14"><a href=""></a><span class="kw">def</span> detect_spikes(data, sampling_rate, threshold):</span>
+<span id="cb5-15"><a href=""></a>    spike_times <span class="op">=</span> []</span>
+<span id="cb5-16"><a href=""></a>    <span class="cf">for</span> i, value <span class="kw">in</span> <span class="bu">enumerate</span>(data.iloc[:, <span class="dv">0</span>]):</span>
+<span id="cb5-17"><a href=""></a>        <span class="co"># Detect spikes based on threshold and other criteria</span></span>
+<span id="cb5-18"><a href=""></a>        <span class="cf">if</span> value <span class="op">&gt;</span> threshold <span class="kw">and</span> i <span class="op">%</span> <span class="dv">3</span> <span class="op">==</span> <span class="dv">0</span>:</span>
+<span id="cb5-19"><a href=""></a>            spike_times.append(value)</span>
+<span id="cb5-20"><a href=""></a></span>
+<span id="cb5-21"><a href=""></a>    <span class="co"># Return the list of detected spikes, sorted in descending order</span></span>
+<span id="cb5-22"><a href=""></a>    <span class="cf">return</span> <span class="bu">sorted</span>(spike_times, reverse<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb5-23"><a href=""></a></span>
+<span id="cb5-24"><a href=""></a><span class="co"># Detect spikes using the provided sampling rate and threshold</span></span>
+<span id="cb5-25"><a href=""></a>spikes <span class="op">=</span> detect_spikes(data, SAMPLING_RATE, SPIKE_THRESHOLD)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="organize-your-functions" class="slide level2">
 <h2>Organize your functions</h2>
@@ -611,7 +612,7 @@ Alessandro Felder, Laura Porta, Chang Huan Lo
 <h2>An example pipeline</h2>
 <p>Import your functions and classes in your main analysis pipeline</p>
 <div class="sourceCode" id="cb6"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href=""></a><span class="co"># file: my_analysis_pipeline.py</span></span>
-<span id="cb6-2"><a href=""></a><span class="im">from</span> my_project.io <span class="im">import</span> load_calcium_data</span>
+<span id="cb6-2"><a href=""></a><span class="im">from</span> my_project.read_write <span class="im">import</span> load_calcium_data</span>
 <span id="cb6-3"><a href=""></a><span class="im">from</span> my_project.preprocess <span class="im">import</span> extract_fluorescence</span>
 <span id="cb6-4"><a href=""></a><span class="im">from</span> my_project.analysis <span class="im">import</span> analyze_calcium_timeseries</span>
 <span id="cb6-5"><a href=""></a><span class="im">from</span> my_project.plot <span class="im">import</span> make_figures_for_paper</span>
@@ -699,9 +700,6 @@ Local, editable installation from the package directory:</p>
     │   └── do_something_awesome.py</code></pre>
 </div></div>
 </section>
-<section id="demo-2" class="slide level2">
-<h2>Demo! 📜</h2>
-</section>
 <section id="automating-package-creation" class="slide level2">
 <h2>Automating package creation</h2>
 <div class="columns">
@@ -719,6 +717,9 @@ Local, editable installation from the package directory:</p>
 <span id="cb9-3"><a href="" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install cookiecutter</span>
 <span id="cb9-4"><a href="" aria-hidden="true" tabindex="-1"></a><span class="ex">cookiecutter</span> https://github.com/neuroinformatics-unit/python-cookiecutter </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></div>
+</section>
+<section id="demo-2" class="slide level2">
+<h2>Demo! 📜</h2>
 </section></section>
 <section>
 <section id="share-your-project" class="title-slide slide level1 center">
