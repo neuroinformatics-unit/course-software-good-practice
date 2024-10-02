@@ -57,8 +57,6 @@ my-awesome-package/
 
 ::::
 
-## Demo! 📜
-
 ## Automating package creation
 
 :::: {.columns}
@@ -77,6 +75,8 @@ cookiecutter https://github.com/neuroinformatics-unit/python-cookiecutter
 ```
 :::
 ::::
+
+## Demo! 📜
 
 # Share your project 🌍
 
