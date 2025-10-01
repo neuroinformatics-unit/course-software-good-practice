@@ -141,6 +141,8 @@ if __name__ == "__main__":
 ## To learn more...
 Suggested resources:  
 - [Clean Code by Robert C. Martin](https://www.oreilly.com/library/view/clean-code-a/9780136083238/)  
+- [The Good Research Code Handbook](https://goodresearch.dev/) by Patrick Mineault (neuroscientist turned software engineer)
+- [Refactoring Guru](https://refactoring.guru/)
 
 ## Next steps
 Now that your logic is split into modules and your pipeline is well crafted you might want to move to the next step...

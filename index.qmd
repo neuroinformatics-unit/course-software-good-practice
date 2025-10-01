@@ -108,7 +108,7 @@ pip install my_awesome_package
 
 ::::
 
-## The journey of a developer and its Python package
+## The journey of a developer and their Python package
 
 * Clean up and organize your scripts 🧹
 * Package your project 📦
