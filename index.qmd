@@ -4,14 +4,14 @@ title-slide-attributes:
   data-background-image: img/jukan-tateisi-bJhT_8nbUA0-unsplash.jpg
   data-background-opacity: "0.5"
 subtitle: An introduction to collaborative coding and software engineering good practice
-author: Alessandro Felder, Laura Porta, Chang Huan Lo
+author: Alessandro Felder, Sofía Miñano, Chang Huan Lo
 execute: 
   enabled: true
 format:
     revealjs:
         theme: [default, niu-dark.scss]
         logo: img/logo_niu_dark.png
-        footer: "Collaborative coding and software engineering good practice | 2024-10-02"
+        footer: "Collaborative coding and software engineering good practice | 2025-10-03"
         slide-number: c
         menu:
             numbers: true
@@ -31,7 +31,7 @@ format:
     html:
         theme: [default, niu-dark.scss]
         logo: img/logo_niu_dark.png
-        date: "2024-10-02"
+        date: "2025-10-03"
         toc: true
         code-overflow: scroll
         highlight-style: atom-one
@@ -44,7 +44,7 @@ format:
         page-layout: full
         default-image-extension: png
 exercises:
-    org-repo: "rse-best-practices-course/2024-course"
+    org-repo: "rse-best-practices-course/2025-course"
 ---
 
 ## Get ready! {.smaller}
