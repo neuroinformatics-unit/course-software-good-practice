@@ -430,9 +430,13 @@ Alessandro Felder, Sofía Miñano, Chang Huan Lo
 </section>
 <section id="to-learn-more" class="slide level2">
 <h2>To learn more…</h2>
-<p>Suggested resources:<br>
-- <a href="https://www.oreilly.com/library/view/clean-code-a/9780136083238/">Clean Code by Robert C. Martin</a><br>
-- <a href="https://goodresearch.dev/">The Good Research Code Handbook</a> by Patrick Mineault (neuroscientist turned software engineer) - <a href="https://refactoring.guru/">Refactoring Guru</a></p>
+<p>Suggested resources:</p>
+<ul>
+<li><a href="https://www.oreilly.com/library/view/clean-code-a/9780136083238/">Clean Code by Robert C. Martin</a><br>
+</li>
+<li><a href="https://goodresearch.dev/">The Good Research Code Handbook</a> by Patrick Mineault (neuroscientist turned software engineer)</li>
+<li><a href="https://refactoring.guru/">Refactoring Guru</a></li>
+</ul>
 </section>
 <section id="next-steps" class="slide level2">
 <h2>Next steps</h2>
@@ -461,6 +465,9 @@ Alessandro Felder, Sofía Miñano, Chang Huan Lo
 <section id="demo" class="slide level2">
 <h2>Demo! 🥺</h2>
 </section>
+<section id="demo-1" class="slide level2">
+<h2>Demo! 😊</h2>
+</section>
 <section id="what-does-packaging-mean" class="slide level2">
 <h2>What does packaging mean?</h2>
 <div class="columns">
@@ -473,12 +480,27 @@ Alessandro Felder, Sofía Miñano, Chang Huan Lo
 </div>
 </div><div class="column" style="width:50%;">
 <p>Packaging allows Python to “install” your code so that it can be re-used from anywhere.<br>
-Local, editable installation from the package directory:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install <span class="at">-e</span> .</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+Install from your local git repo:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install .</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div></div>
 </section>
-<section id="demo-1" class="slide level2">
-<h2>Demo! 😊</h2>
+<section id="demo-editable-for-development" class="slide level2">
+<h2>Demo (editable, for development)! 😊</h2>
+</section>
+<section id="packaging-for-local-development" class="slide level2">
+<h2>Packaging for local development</h2>
+<div class="columns">
+<div class="column" style="font-size: 0.5em;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/kadarius-seegars-DevJkLB3hWE-unsplash.jpg" height="400"></p>
+<figcaption>Photo by <a href="https://unsplash.com/@kseegars?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Kadarius Seegars</a> on <a href="https://unsplash.com/photos/DevJkLB3hWE?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:50%;">
+<p>Local, editable installation from local github repo:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install <span class="at">-e</span> .</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div></div>
 </section>
 <section id="the-python-package-structure" class="slide level2">
 <h2>The Python package structure</h2>
@@ -500,7 +522,10 @@ Local, editable installation from the package directory:</p>
     │   └── __init__.py 👈
     │   └── do_something_awesome.py</code></pre>
 </div></div>
-</section>
+
+<aside><div>
+<p>If you want to get deep into <code>__init__.py</code>, checkout out <a href="https://python-notes.curiousefficiency.org/en/latest/python_concepts/import_traps.html">these notes</a></p>
+</div></aside></section>
 <section id="automating-package-creation" class="slide level2">
 <h2>Automating package creation</h2>
 <div class="columns">
@@ -513,10 +538,10 @@ Local, editable installation from the package directory:</p>
 </div>
 </div><div class="column" style="width:50%;">
 <p>Use <a href="https://github.com/neuroinformatics-unit/python-cookiecutter">the NIU cookiecutter template</a>.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> create <span class="at">-n</span> <span class="st">"package-playground"</span></span>
-<span id="cb9-2"><a href="" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> activate package-playground</span>
-<span id="cb9-3"><a href="" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install cookiecutter</span>
-<span id="cb9-4"><a href="" aria-hidden="true" tabindex="-1"></a><span class="ex">cookiecutter</span> https://github.com/neuroinformatics-unit/python-cookiecutter </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> create <span class="at">-n</span> <span class="st">"package-playground"</span></span>
+<span id="cb10-2"><a href="" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> activate package-playground</span>
+<span id="cb10-3"><a href="" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install cookiecutter</span>
+<span id="cb10-4"><a href="" aria-hidden="true" tabindex="-1"></a><span class="ex">cookiecutter</span> https://github.com/neuroinformatics-unit/python-cookiecutter </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div></div>
 </section>
 <section id="demo-2" class="slide level2">
@@ -542,7 +567,7 @@ Local, editable installation from the package directory:</p>
 </section>
 <section id="your-package-is-installable-by-anyone" class="slide level2">
 <h2>Your package is installable by anyone</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install my_awesome_package</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb11-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install my_awesome_package</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="summary" class="slide level2">
 <h2>Summary</h2>
@@ -581,6 +606,14 @@ Local, editable installation from the package directory:</p>
 <li>Clean up and organize your scripts 🧹</li>
 <li>Package your project 📦</li>
 <li>Share your project 🌍</li>
+</ul>
+</section>
+<section id="general-note-about-good-practices" class="slide level2">
+<h2>General note about good practices</h2>
+<ul>
+<li>Any of these steps are useful, at any time.</li>
+<li>Perfect is the enemy of good.</li>
+<li>Improve incrementally</li>
 </ul>
 </section>
 <section id="other-areas-of-good-practice" class="slide level2">
