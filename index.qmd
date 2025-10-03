@@ -127,7 +127,7 @@ pip install my_awesome_package
 * Package your project 📦
 * Share your project 🌍
 
-## General note about good practice
+## General note about good practices
 
 * Any of these steps are useful, at any time. 
 * Perfect is the enemy of good.
