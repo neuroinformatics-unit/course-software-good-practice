@@ -13,6 +13,8 @@ my_pipeline/
 
 ## Demo! 🥺
 
+## Demo! 😊
+
 ## What does packaging mean?
 
 :::: {.columns}
@@ -23,16 +25,30 @@ my_pipeline/
 
 ::: {.column width="50%"}
 Packaging allows Python to "install" your code so that it can be re-used from anywhere.  
-Local, editable installation from the package directory:
+Install from your local git repo:
+```{.bash code-line-numbers="false"}
+pip install .
+```
+:::
+::::
+
+## Demo (editable, for development)! 😊
+
+## Packaging for local development
+
+:::: {.columns}
+
+::: {.column width="50%" style="font-size: 0.5em;"}
+![Photo by <a href="https://unsplash.com/@kseegars?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Kadarius Seegars</a> on <a href="https://unsplash.com/photos/DevJkLB3hWE?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>](img/kadarius-seegars-DevJkLB3hWE-unsplash.jpg){height=400}
+:::
+
+::: {.column width="50%"} 
+Local, editable installation from local github repo:
 ```{.bash code-line-numbers="false"}
 pip install -e .
 ```
 :::
 ::::
-
-
-## Demo! 😊
-
 
 ## The Python package structure
 
@@ -56,6 +72,10 @@ my-awesome-package/
 :::
 
 ::::
+
+::: aside
+If you want to get deep into `__init__.py`, checkout out [these notes](https://python-notes.curiousefficiency.org/en/latest/python_concepts/import_traps.html)
+:::
 
 ## Automating package creation
 
